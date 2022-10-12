@@ -77,6 +77,13 @@
     "text": "Coding in the tidyverse\n\nFor teams that code using the R programming language, the most familiar tools are often part of “base R” meaning that those functions and packages come pre-loaded when R is installed. Relatively recently the tidyverse has emerged as a comprehensive suite of packages that can complement base R or serve as an alternative for some tasks. This includes packages like dplyr and tidyr as well as the perhaps infamous pipe operator (%>%) among many other tools. This workshop is aimed at helping participants use the tidyverse equivalents of fundamental data wrangling tasks that learners may be used to performing with base R.\nThe full workshop materials can be found here.\nThe GitHub  repository for the workshop can be found here."
   },
   {
+    "objectID": "workshops.html#r-shiny-apps-for-sharing-science",
+    "href": "workshops.html#r-shiny-apps-for-sharing-science",
+    "title": "Workshops",
+    "section": "R Shiny Apps for Sharing Science",
+    "text": "R Shiny Apps for Sharing Science\n\nOne of our team members–Nick Lyon–created a workshop on learning to create R Shiny apps. R Shiny includes a suite of R packages (primarily shiny) that allow R users to create interactive apps that can be subsequently deployed to a URL. These apps are most commonly used for data visualization purposes but can also be a neat way of accomplishing other outward-facing tasks without needing to learn a new programming language. This workshop was offered at the 2022 LTER All Scientists’ Meeting (ASM) and is aimed at an audience with moderate R capability but limited prior exposure to Shiny.\nThe full workshop materials can be found here.\nThe GitHub  repository for the workshop can be found here.\nThis workshop also includes a second GitHub  repository that contains several example Shiny apps. See here."
+  },
+  {
     "objectID": "best_practices.html",
     "href": "best_practices.html",
     "title": "Best Practice Manuals",
