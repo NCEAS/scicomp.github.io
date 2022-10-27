@@ -249,6 +249,7 @@ NOTE
 <section id="supplementary-information" class="level3">
 <h3 class="anchored" data-anchor-id="supplementary-information">Supplementary Information</h3>
 <p>If you have tried to use <code>drive_auth</code> and <em>did not</em> check the box indicated above, you need to make the <code>googledrive</code> package ask you again. Using <code>drive_auth</code> will not (annoyingly) return you to the place it sent you the first time. However, if you run the following code chunk it should give you another chance to check the needed box.</p>
+<p>The <a href="https://gargle.r-lib.org/"><code>gargle</code> R package</a> referenced below is required for interacting with Google Application Program Interfaces (APIs). This package does the heavy lifting of secure password and token management and is necessary for the <code>googledrive</code> authentication chunk below.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_auth</span>(</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">email =</span> gargle<span class="sc">::</span><span class="fu">gargle_oauth_email</span>(),</span>

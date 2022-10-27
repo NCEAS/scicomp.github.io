@@ -23,6 +23,8 @@ Feel free to skip any steps that you have already completed!
 
 If you have tried to use `drive_auth` and *did not* check the box indicated above, you need to make the `googledrive` package ask you again. Using `drive_auth` will not (annoyingly) return you to the place it sent you the first time. However, if you run the following code chunk it should give you another chance to check the needed box.
 
+The [`gargle` R package](https://gargle.r-lib.org/) referenced below is required for interacting with Google Application Program Interfaces (APIs). This package does the heavy lifting of secure password and token management and is necessary for the `googledrive` authentication chunk below.
+
 ```{r re-auth, eval = F}
 googledrive::drive_auth(
   email = gargle::gargle_oauth_email(),
