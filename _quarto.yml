@@ -19,9 +19,7 @@ website:
          - workshops.qmd
          - tutorials.qmd
       - best_practices.qmd
-      - text: "Portfolio"
-        menu:
-          - pkgs.qmd
+      - pkgs.qmd
       - text: "Our Team"
         menu:
           - text: "People"
