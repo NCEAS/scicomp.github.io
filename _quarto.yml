@@ -14,12 +14,20 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - staff.qmd
-      - pkgs.qmd
-      - workshops.qmd
-      - tutorials.qmd
+      - text: "Trainings"
+        menu:
+         - workshops.qmd
+         - tutorials.qmd
       - best_practices.qmd
-      - onboarding.qmd
+      - text: "Portfolio"
+        menu:
+          - pkgs.qmd
+      - text: "Our Team"
+        menu:
+          - text: "People"
+            href: staff.qmd
+          - text: "Internal Onboarding"
+            href: onboarding.qmd
     right:
       - icon: github
         href: https://github.com/NCEAS/scicomptasks
