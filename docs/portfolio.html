@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NCEAS Scientific Computing Team - R Package</title>
+<title>NCEAS Scientific Computing Team - Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -122,7 +122,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <link rel="stylesheet" href="styles.css">
-<meta name="twitter:title" content="NCEAS Scientific Computing Team - R Package">
+<meta name="twitter:title" content="NCEAS Scientific Computing Team - Portfolio">
+<meta name="twitter:description" content="Our team created another R package–lterpalettefinder–to extract color palettes from user-supplied photos.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -160,7 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="./best_practices.html">Best Practice Manuals</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./pkgs.html" aria-current="page">R Package</a>
+    <a class="nav-link active" href="./portfolio.html" aria-current="page">Portfolio</a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-our-team" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Team</a>
@@ -200,12 +201,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#scicomptools" id="toc-scicomptools" class="nav-link active" data-scroll-target="#scicomptools"><code>scicomptools</code></a>
+  <li><a href="#r-package---scicomptools" id="toc-r-package---scicomptools" class="nav-link active" data-scroll-target="#r-package---scicomptools">R Package - <code>scicomptools</code></a>
   <ul class="collapse">
   <li><a href="#package-explanation" id="toc-package-explanation" class="nav-link" data-scroll-target="#package-explanation">Package Explanation</a></li>
-  <li><a href="#package-description" id="toc-package-description" class="nav-link" data-scroll-target="#package-description">Package Description</a></li>
   <li><a href="#installation-instructions" id="toc-installation-instructions" class="nav-link" data-scroll-target="#installation-instructions">Installation Instructions</a></li>
+  <li><a href="#package-description" id="toc-package-description" class="nav-link" data-scroll-target="#package-description">Package Description</a></li>
   </ul></li>
+  <li><a href="#r-shiny-app---lterpalettefinder-explorer" id="toc-r-shiny-app---lterpalettefinder-explorer" class="nav-link" data-scroll-target="#r-shiny-app---lterpalettefinder-explorer">R Shiny App - <code>lterpalettefinder</code> Explorer</a></li>
+  <li><a href="#website---soil-organic-matter-wg-website" id="toc-website---soil-organic-matter-wg-website" class="nav-link" data-scroll-target="#website---soil-organic-matter-wg-website">Website - Soil Organic Matter WG Website</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NCEAS/scicomptasks/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -216,7 +219,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R Package</h1>
+<h1 class="title">Portfolio</h1>
 </div>
 
 
@@ -230,16 +233,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="scicomptools" class="level2">
-<h2 class="anchored" data-anchor-id="scicomptools"><code>scicomptools</code></h2>
-<p><img src="images/scicomptools_hex.png" align="right" width="25%"></p>
+<section id="r-package---scicomptools" class="level2">
+<h2 class="anchored" data-anchor-id="r-package---scicomptools">R Package - <code>scicomptools</code></h2>
+<p><img src="images/scicomptools_hex.png" align="right" width="20%"></p>
 <section id="package-explanation" class="level3">
 <h3 class="anchored" data-anchor-id="package-explanation">Package Explanation</h3>
 <p>While much of the work we do is specific to a given working group or task, sometimes we realize afterwards that our functions have the potential to be useful beyond the scope for which they were initially written. To that end, we have created the R package <a href="https://github.com/NCEAS/scicomptools#readme"><code>scicomptools</code></a>!</p>
-</section>
-<section id="package-description" class="level3">
-<h3 class="anchored" data-anchor-id="package-description">Package Description</h3>
-<p>This package contains a diverse mix of functions for everything from repetitive data wrangling tasks to checking whether you have a token attached for GitHub. In addition, functions that we wrote that are deprecated (usually because their internal workings have been superseded by packages on CRAN) are removed from the package but retained in the GitHub repository in case they are useful to you! <strong>All functions–both live and deprecated–are summarized in the README on the <a href="https://github.com/NCEAS/scicomptools">GitHub repository</a> so take a look!</strong></p>
 </section>
 <section id="installation-instructions" class="level3">
 <h3 class="anchored" data-anchor-id="installation-instructions">Installation Instructions</h3>
@@ -248,9 +247,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("devtools")</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"NCEAS/scicomptools"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-
-
 </section>
+<section id="package-description" class="level3">
+<h3 class="anchored" data-anchor-id="package-description">Package Description</h3>
+<p>This package contains a diverse mix of functions for everything from repetitive data wrangling tasks to checking whether you have a token attached for GitHub. In addition, functions that we wrote that are deprecated (usually because their internal workings have been superseded by packages on CRAN) are removed from the package but retained in the GitHub repository in case they are useful to you! <strong>All functions–both live and deprecated–are summarized in the README on the <a href="https://github.com/NCEAS/scicomptools">GitHub repository</a> so take a look!</strong></p>
+</section>
+</section>
+<section id="r-shiny-app---lterpalettefinder-explorer" class="level2">
+<h2 class="anchored" data-anchor-id="r-shiny-app---lterpalettefinder-explorer">R Shiny App - <code>lterpalettefinder</code> Explorer</h2>
+<p>Our team created another R package–<code>lterpalettefinder</code>–to extract color palettes from user-supplied photos. To help non-R users still explore this package and have fun pulling color palettes from photos, we created <a href="https://cosima.nceas.ucsb.edu/lterpalettefinder-shiny/">this standalone Shiny app</a>. This app lets anyone interact with <code>lterpalettefinder</code> via their browser with no R experience required!</p>
+<p>We have also built apps to help working groups visualize data or present survey results in an interactive, visually-appealing format. Shiny apps can also include useful ‘overview’ portions that serve as an excellent landing page for third parties to your group’s activities!</p>
+</section>
+<section id="website---soil-organic-matter-wg-website" class="level2">
+<h2 class="anchored" data-anchor-id="website---soil-organic-matter-wg-website">Website - Soil Organic Matter WG Website</h2>
+<p>Our team also helped build <a href="https://lter.github.io/som-website/index.html">a website</a> for the Soil Organic Matter (SOM) working group. One of this group’s primary products was a synthesized data package containing observed data, modifications of that data, and models based on them. The website operates in part to publicize this data product but also to provide a central location for other resources developed by or important to the SOM group.</p>
+<p>We can build a website using <a href="https://quarto.org/">Quarto</a> for your team that is written entirely in “Markdown syntax” if you’d like. An advantage of Quarto / markdown for website creation and maintenance is that you can do 100% of your Website modification in RStudio which many group members may already be at least somewhat familiar with. Quarto also offers a new “visual editor” that lets you use RStudio similarly to how you’d use a word processor (Microsoft Word, Pages, etc.) where you can format text using drop down menus instead of needing to know HTML and/or Markdown to create pages.</p>
+
+
 </section>
 
 </main> <!-- /main -->

@@ -1,0 +1,36 @@
+---
+title: "Portfolio"
+---
+
+## R Package - `scicomptools`
+
+<img src = "images/scicomptools_hex.png" align = "right" width = "20%" />
+
+### Package Explanation
+
+While much of the work we do is specific to a given working group or task, sometimes we realize afterwards that our functions have the potential to be useful beyond the scope for which they were initially written. To that end, we have created the R package [`scicomptools`](https://github.com/NCEAS/scicomptools#readme)!
+
+### Installation Instructions
+
+To install the package in R, use the following:
+
+```{r, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("NCEAS/scicomptools")
+```
+
+### Package Description
+
+This package contains a diverse mix of functions for everything from repetitive data wrangling tasks to checking whether you have a token attached for GitHub. In addition, functions that we wrote that are deprecated (usually because their internal workings have been superseded by packages on CRAN) are removed from the package but retained in the GitHub repository in case they are useful to you! **All functions--both live and deprecated--are summarized in the README on the [GitHub repository](https://github.com/NCEAS/scicomptools) so take a look!**
+
+## R Shiny App - `lterpalettefinder` Explorer
+
+Our team created another R package--`lterpalettefinder`--to extract color palettes from user-supplied photos. To help non-R users still explore this package and have fun pulling color palettes from photos, we created [this standalone Shiny app](https://cosima.nceas.ucsb.edu/lterpalettefinder-shiny/). This app lets anyone interact with `lterpalettefinder` via their browser with no R experience required!
+
+We have also built apps to help working groups visualize data or present survey results in an interactive, visually-appealing format. Shiny apps can also include useful 'overview' portions that serve as an excellent landing page for third parties to your group's activities!
+
+## Website - Soil Organic Matter WG Website
+
+Our team also helped build [a website](https://lter.github.io/som-website/index.html) for the Soil Organic Matter (SOM) working group. One of this group's primary products was a synthesized data package containing observed data, modifications of that data, and models based on them. The website operates in part to publicize this data product but also to provide a central location for other resources developed by or important to the SOM group.
+
+We can build a website using [Quarto](https://quarto.org/) for your team that is written entirely in "Markdown syntax" if you'd like. An advantage of Quarto / markdown for website creation and maintenance is that you can do 100% of your Website modification in RStudio which many group members may already be at least somewhat familiar with. Quarto also offers a new "visual editor" that lets you use RStudio similarly to how you'd use a word processor (Microsoft Word, Pages, etc.) where you can format text using drop down menus instead of needing to know HTML and/or Markdown to create pages.

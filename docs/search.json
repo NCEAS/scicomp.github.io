@@ -56,13 +56,6 @@
     "text": "To do this, go to the “Settings” tab with a gear icon and click it. You may be prompted to re-enter your GitHub password, do so and you can proceed.\n\nIn the resulting page, look towards the bottom of the left sidebar of settings categories and click the “Pages” option. This is at the very bottom of the sidebar in the screen capture below but is towards the middle of all of the settings categories Github offers you.\n\nScroll down to the middle of this page and where it says “Branch” click the dropdown menu that says “None” by default.\n\nSelect “main” from the dropdown.\n\nThis opens up a new dropdown menu where you can select which folder in your repository contains your website’s content (it defaults to “/ (root)”). Because we specified output-dir: docs in the .yml file earlier we can select “/docs” from the dropdown menu.\n\nOnce you’ve told GitHub that you want a website generated from the “docs” folder on the main branch, click the “Save” button.\n\nFrom this moment your website has begun being deployed by GitHub! You can check the status of the building process by navigating to the “Actions” tab of your repository.\nSelect the “pages build and deployment workflow” in the list of workflows on the bottom righthand side of the page.\n\nThis shows you GitHub’s building and deployment process as a flowchart. While it is working on each step there will be an amber circle next to the name of that sub-task. When a sub-task is completed, the amber circle becomes a green circle with a check mark.\n\nWhen the three steps are complete the amber clock symbol next to the “pages build and deployment” action will turn into a larger green circle with a check mark. This is GitHub’s way of telling you that your website is live and accessible to anyone on the internet.\n\nYou can now visit your website by visiting its dedicated URL. This URL can be found by returning to the “Settings” tab and then scrolling through the sidebar to the “Pages” section.\nAlternately, the website for your repository always uses the following composition: https://repository owner.github.io/repository name/\n\nIf we visit that link, we can see that our website is live!\n\n\nGitHub Housekeeping\nWe recommend a quick housekeeping step now to make it easier to find this URL in the future. Copy the URL from the Pages setting area and return to the “Code” tab of the repository.\nOnce there, click the small gear icon to the right of the “About” header.\n\nIn the resulting window, paste the copied URL into the “Website” field. Once you’ve pasted it in, click the green “Save changes” button.\n\nThis places the link to your deployed website in an intuitive, easy-to-find location both for interested third parties and yourself in the future."
   },
   {
-    "objectID": "pkgs.html",
-    "href": "pkgs.html",
-    "title": "R Package",
-    "section": "",
-    "text": "While much of the work we do is specific to a given working group or task, sometimes we realize afterwards that our functions have the potential to be useful beyond the scope for which they were initially written. To that end, we have created the R package scicomptools!\n\n\n\nThis package contains a diverse mix of functions for everything from repetitive data wrangling tasks to checking whether you have a token attached for GitHub. In addition, functions that we wrote that are deprecated (usually because their internal workings have been superseded by packages on CRAN) are removed from the package but retained in the GitHub repository in case they are useful to you! All functions–both live and deprecated–are summarized in the README on the GitHub repository so take a look!\n\n\n\nTo install the package in R, use the following:\n\n# install.packages(\"devtools\")\ndevtools::install_github(\"NCEAS/scicomptools\")"
-  },
-  {
     "objectID": "workshops.html",
     "href": "workshops.html",
     "title": "Workshops",
@@ -236,6 +229,27 @@
     "title": "Onboarding",
     "section": "HR-related Resources",
     "text": "HR-related Resources\n\nReporting Hours & Kronos\nWe submit vacation and sick day hours online through Kronos. You should receive an email at the start of your employment adding you to an email listserv that will send reminders on when to approve each month’s timesheet.\n\n\nUC Path\nUC Path is the online HR portal and can be accessed with your UCSB Net ID. It is where you can access things like your paycheck, next date of paycheck, and benefits (if applicable)."
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "While much of the work we do is specific to a given working group or task, sometimes we realize afterwards that our functions have the potential to be useful beyond the scope for which they were initially written. To that end, we have created the R package scicomptools!\n\n\n\nTo install the package in R, use the following:\n\n# install.packages(\"devtools\")\ndevtools::install_github(\"NCEAS/scicomptools\")\n\n\n\n\nThis package contains a diverse mix of functions for everything from repetitive data wrangling tasks to checking whether you have a token attached for GitHub. In addition, functions that we wrote that are deprecated (usually because their internal workings have been superseded by packages on CRAN) are removed from the package but retained in the GitHub repository in case they are useful to you! All functions–both live and deprecated–are summarized in the README on the GitHub repository so take a look!"
+  },
+  {
+    "objectID": "portfolio.html#r-shiny-app---lterpalettefinder-explorer",
+    "href": "portfolio.html#r-shiny-app---lterpalettefinder-explorer",
+    "title": "Portfolio",
+    "section": "R Shiny App - lterpalettefinder Explorer",
+    "text": "R Shiny App - lterpalettefinder Explorer\nOur team created another R package–lterpalettefinder–to extract color palettes from user-supplied photos. To help non-R users still explore this package and have fun pulling color palettes from photos, we created this standalone Shiny app. This app lets anyone interact with lterpalettefinder via their browser with no R experience required!\nWe have also built apps to help working groups visualize data or present survey results in an interactive, visually-appealing format. Shiny apps can also include useful ‘overview’ portions that serve as an excellent landing page for third parties to your group’s activities!"
+  },
+  {
+    "objectID": "portfolio.html#website---soil-organic-matter-wg-website",
+    "href": "portfolio.html#website---soil-organic-matter-wg-website",
+    "title": "Portfolio",
+    "section": "Website - Soil Organic Matter WG Website",
+    "text": "Website - Soil Organic Matter WG Website\nOur team also helped build a website for the Soil Organic Matter (SOM) working group. One of this group’s primary products was a synthesized data package containing observed data, modifications of that data, and models based on them. The website operates in part to publicize this data product but also to provide a central location for other resources developed by or important to the SOM group.\nWe can build a website using Quarto for your team that is written entirely in “Markdown syntax” if you’d like. An advantage of Quarto / markdown for website creation and maintenance is that you can do 100% of your Website modification in RStudio which many group members may already be at least somewhat familiar with. Quarto also offers a new “visual editor” that lets you use RStudio similarly to how you’d use a word processor (Microsoft Word, Pages, etc.) where you can format text using drop down menus instead of needing to know HTML and/or Markdown to create pages."
   },
   {
     "objectID": "modules_best-practices/suggested-tools.html",

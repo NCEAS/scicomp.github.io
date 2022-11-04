@@ -19,7 +19,7 @@ website:
          - workshops.qmd
          - tutorials.qmd
       - best_practices.qmd
-      - pkgs.qmd
+      - portfolio.qmd
       - text: "Our Team"
         menu:
           - text: "People"
