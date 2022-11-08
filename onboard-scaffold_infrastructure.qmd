@@ -1,0 +1,21 @@
+---
+title: "NCEAS Infrastructure"
+---
+
+NCEAS offers an array of helpful infrastructure for your group's visits to Santa Barbara. These resources are purely optional but can be a significant aid to your projects' progression! Our team is ready and willing to explain these in greater detail or help your group build them into your workflow so don't hesitate to reach out!
+
+## Access to NCEAS analytical servers 
+Working groups have access to several high-performance computers at NCEAS, which provide advanced analytical, web, and database capabilities that far exceed the capabilities of desktop computers. We are available to set up and instruct you in the use of these Linux/Unix systems for demanding scientific analyses and modeling runs that benefit from lots of memory or storage, or access to multiple CPU’s.
+
+Our [most powerful system](https://help.nceas.ucsb.edu/NCEAS/Computing/high_performance_computing) currently offers 384GB of RAM memory, along with 44 cores (CPUs), and several terabytes of fast storage. Several scientific software packages – such as R/RStudio, Python, Matlab, QGIS – are already installed. Ask us if you need us to install any specific analytical libraries or packages.
+
+We can also set up shared storage space on our server to facilitate data sharing within your working group.
+
+To request access to the NCEAS analytical server, please coordinate with your PIs and contact with your request.
+
+## Data Preservation
+
+NCEAS is committed to practicing and promoting open science, making scientific research and its supporting data and information accessible to all levels of society. Therefore, we recommend that any input data used for your synthesis work be well documented and preserved in a long-term data repository.
+
+It is required to document and preserve any products resulting from working group activities in a long-term data repository, such as the NCEAS-supported [KNB Data Repository](https://knb.ecoinformatics.org/) or the [Environmental Data Initiative](https://edirepository.org/) (EDI) data repository, which are part of the [Data Observation Network for Earth](https://www.dataone.org/) (DataONE). 
+
