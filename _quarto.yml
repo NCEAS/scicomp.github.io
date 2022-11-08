@@ -13,7 +13,14 @@ website:
     background: primary
     left:
       - href: index.qmd
-        text: Home
+        text: "Home"
+      - text: "Working Group Onboarding"
+        menu: 
+          - sci-comp-definition.qmd
+          - onboard-scaffold_services.qmd
+          - onboard-scaffold_infrastructure.qmd
+          - onboard-scaffold_suggested-tools.qmd
+          - onboard-scaffold_other-materials.qmd
       - text: "Trainings"
         menu:
          - workshops.qmd
@@ -25,7 +32,7 @@ website:
           - text: "People"
             href: staff.qmd
           - text: "Internal Onboarding"
-            href: onboarding.qmd
+            href: team-onboarding.qmd
     right:
       - icon: github
         href: https://github.com/NCEAS/scicomptasks
@@ -34,7 +41,6 @@ website:
     background: secondary
   margin-footer: |
     <img src="images/nceas_logo_square.png" width="40%"/>
-    <img src="images/lter_logo_square.png" width = "40%"/>
 
 format:
   html:
