@@ -203,11 +203,11 @@
     "text": "R Shiny Apps for Sharing Science\n\nOne of our team members–Nick Lyon–created a workshop on learning to create R Shiny apps. R Shiny includes a suite of R packages (primarily shiny) that allow R users to create interactive apps that can be subsequently deployed to a URL. These apps are most commonly used for data visualization purposes but can also be a neat way of accomplishing other outward-facing tasks without needing to learn a new programming language. This workshop was offered at the 2022 LTER All Scientists’ Meeting (ASM) and is aimed at an audience with moderate R capability but limited prior exposure to Shiny.\nThe full workshop materials can be found here.\nThe GitHub  repository for the workshop can be found here.\nThis workshop also includes a second GitHub  repository that contains several example Shiny apps. See here."
   },
   {
-    "objectID": "workshops.html#nceas-learning-hub",
-    "href": "workshops.html#nceas-learning-hub",
+    "objectID": "workshops.html#other-training-resources",
+    "href": "workshops.html#other-training-resources",
     "title": "Workshops",
-    "section": "NCEAS Learning Hub",
-    "text": "NCEAS Learning Hub\n\nIn addition to the workshops described above, NCEAS offers a variety of other workshops and trainings that may be of interest to you or your group via the Learning Hub. While these trainings can be very helpful, it is important to note that our team may or may not be involved with teaching them. Also, workshops we create will be hosted on this website rather than on the Learning Hub.\nThe Learning Hub’s full course catalog can be viewed here."
+    "section": "Other Training Resources",
+    "text": "Other Training Resources\n\nNCEAS Learning Hub\n\nIn addition to the workshops described above, NCEAS offers a variety of other workshops and trainings that may be of interest to you or your group via the Learning Hub. While these trainings can be very helpful, it is important to note that our team may or may not be involved with teaching them. Also, workshops we create will be hosted on this website rather than on the Learning Hub.\nThe Learning Hub’s full course catalog can be viewed here.\n\n\nThe Carpentries\n\nThe Carpentries is another great place to find workshops and tutorials on various data and programming topics. All of their materials are publicly available so even if a workshop isn’t being offered, you can visit that site and review the content at your own pace! This can be a nice way of refreshing yourself on the fundamentals of something you have prior experience with or teaching yourself something totally new! For example, the Carpentries include helpful workshops on using R for ecologists, using the “shell” or command line, or handling geospatial data in R.\nFor the set of lessons that are most likely to be helpful to your groups, explore the Data Carpentry and Software Carpentry lesson lists."
   },
   {
     "objectID": "sci-comp-definition.html",

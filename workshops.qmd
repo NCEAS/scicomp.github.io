@@ -36,10 +36,20 @@ The GitHub <img src="images/github_logo_gray.png" width="2%"/> repository for th
 
 This workshop also includes a second GitHub <img src="images/github_logo_gray.png" width="2%"/> repository that contains several example Shiny apps. See [here](https://github.com/njlyon0/asm-2022_shiny-workshop-examples).
 
-## NCEAS Learning Hub
+## Other Training Resources
 
-<img src="images/nceas_logo_square.png"  align="right" width="20%" />
+### NCEAS Learning Hub
+
+<img src="images/nceas_logo_square.png"  align="right" width="15%" />
 
 In addition to the workshops described above, NCEAS offers a variety of other workshops and trainings that may be of interest to you or your group via the [Learning Hub](https://www.nceas.ucsb.edu/learning-hub). While these trainings can be very helpful, it is *important to note that our team may or may not be involved with teaching them.* Also, workshops we create will be hosted on this website rather than on the Learning Hub.
 
 **The Learning Hub's full course catalog can be viewed [here](https://learning.nceas.ucsb.edu/).**
+
+### The Carpentries
+
+<img src="images/carpentries_logo.png"  align="right" width="40%" />
+
+[The Carpentries](https://carpentries.org/) is another great place to find workshops and tutorials on various data and programming topics. All of their materials are publicly available so even if a workshop isn't being offered, you can visit that site and review the content at your own pace! This can be a nice way of refreshing yourself on the fundamentals of something you have prior experience with or teaching yourself something totally new! For example, the Carpentries include helpful workshops on [using R for ecologists](https://datacarpentry.org/R-ecology-lesson/), [using the "shell" or command line](https://swcarpentry.github.io/shell-novice/), or [handling geospatial data in R](https://datacarpentry.org/r-intro-geospatial/).
+
+For the set of lessons that are most likely to be helpful to your groups, explore the [Data Carpentry](https://datacarpentry.org/lessons/) and [Software Carpentry](https://software-carpentry.org/lessons/) lesson lists.
