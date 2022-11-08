@@ -6,7 +6,25 @@ title: "Scientific Computing Support at NCEAS"
 
 ## What We Do
 
-We are a small (but mighty!) team of data scientists working at the National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/)). We primarily work with LTER (Long Term Ecological Research) Working Groups and provide all manner of data-adjacent assistance. This can include:
+We are a small (but mighty!) team of data scientists working at the National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/)). We provide modern technological infrastructure to support your analytical and other computing or network-based needs. In addition to the technical support during your visit at NCEAS, our scientific computing team is available to discuss and advise on data science and scientific programming tasks, such as:
+
+- Organizing and assembling your data
+- Assistance with data harmonization and documentation
+- Structuring and integrating heterogeneous datasets
+- Modeling and analysis of your data
+- Scaling your analysis using NCEAS' analytical server
+- Scripting best practices and reviewing code
+- Preserving and promoting your products on the Web - from derived datasets and terminological glossaries/vocabularies, to scripts, model codes, and interactive “web applications”
+- Contact [our team](https://nceas.github.io/scicomp.github.io/staff.html) with your requests at scicomp@nceas.ucsb.edu
+
+
+### OTHER CONTENT UNDER CONSTRUCTION
+
+
+**Below here is leftover from old home page**
+
+<br> </br>
+
 
 - Offering **workshops** on new skills or programs
 - Helping you get set up on **NCEAS' server**
