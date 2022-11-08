@@ -42,18 +42,18 @@
     "text": "NCEAS offers an array of helpful infrastructure for your group’s visits to Santa Barbara. These resources are purely optional but can be a significant aid to your projects’ progression! Our team is ready and willing to explain these in greater detail or help your group build them into your workflow so don’t hesitate to reach out!"
   },
   {
-    "objectID": "onboard-scaffold_infrastructure.html#access-to-nceas-analytical-servers",
-    "href": "onboard-scaffold_infrastructure.html#access-to-nceas-analytical-servers",
+    "objectID": "onboard-scaffold_infrastructure.html#analytical-servers",
+    "href": "onboard-scaffold_infrastructure.html#analytical-servers",
     "title": "NCEAS Infrastructure",
-    "section": "Access to NCEAS analytical servers",
-    "text": "Access to NCEAS analytical servers\nWorking groups have access to several high-performance computers at NCEAS, which provide advanced analytical, web, and database capabilities that far exceed the capabilities of desktop computers. We are available to set up and instruct you in the use of these Linux/Unix systems for demanding scientific analyses and modeling runs that benefit from lots of memory or storage, or access to multiple CPU’s.\nOur most powerful system currently offers 384GB of RAM memory, along with 44 cores (CPUs), and several terabytes of fast storage. Several scientific software packages – such as R/RStudio, Python, Matlab, QGIS – are already installed. Ask us if you need us to install any specific analytical libraries or packages.\nWe can also set up shared storage space on our server to facilitate data sharing within your working group.\nTo request access to the NCEAS analytical server, please coordinate with your PIs and contact with your request."
+    "section": "Analytical Servers",
+    "text": "Analytical Servers\nWorking groups have access to several high-performance computers at NCEAS, which provide advanced analytical, web, and database capabilities that far exceed the capabilities of desktop computers. We are available to set up and instruct you in the use of these Linux/Unix systems for demanding scientific analyses and modeling runs that benefit from lots of memory or storage, or access to multiple CPU’s.\nOur most powerful system currently offers 384GB of RAM memory, along with 44 cores (CPUs), and several terabytes of fast storage. Several scientific software packages – such as R/RStudio, Python, Matlab, and QGIS – are already installed. Ask us if you need us to install any specific analytical libraries or packages.\nWe can also set up shared storage space on our server to facilitate data sharing within your working group. This is particularly valuable for large files that would take up a significant amount of your group’s cloud storage system (e.g., GoogleDrive, Dropbox, etc.)\nTo request access to the NCEAS analytical server, please coordinate with your PIs and contact us with your request."
   },
   {
     "objectID": "onboard-scaffold_infrastructure.html#data-preservation",
     "href": "onboard-scaffold_infrastructure.html#data-preservation",
     "title": "NCEAS Infrastructure",
     "section": "Data Preservation",
-    "text": "Data Preservation\nNCEAS is committed to practicing and promoting open science, making scientific research and its supporting data and information accessible to all levels of society. Therefore, we recommend that any input data used for your synthesis work be well documented and preserved in a long-term data repository.\nIt is required to document and preserve any products resulting from working group activities in a long-term data repository, such as the NCEAS-supported KNB Data Repository or the Environmental Data Initiative (EDI) data repository, which are part of the Data Observation Network for Earth (DataONE)."
+    "text": "Data Preservation\nWhile we know that you are just getting started, it is never too early to start thinking about where you are going to store the data your group will collate and synthesize! NCEAS is committed to practicing and promoting open science, making scientific research and its supporting data and information accessible to all levels of society. Therefore, we recommend that any input data used for your synthesis work be well documented and preserved in a long-term data repository.\nIt is required to document and preserve any products resulting from working group activities in a long-term data repository, such as the NCEAS-supported KNB Data Repository or the Environmental Data Initiative (EDI) data repository, which are part of the Data Observation Network for Earth (DataONE).\n\n\n\nWe are happy to discuss which of these options might fit your group best though we recognize this discussion can probably be left alone until your group has amassed a substantial amount of data."
   },
   {
     "objectID": "tutorial-scaffold_quarto-website.html",
@@ -175,11 +175,25 @@
     "text": "Each of our staff members offers a one-hour block weekly as a standing office hour each week. This is a great time to join us with small hurdles or obstacles you’re experiencing in a given week. For example, previous office hours have dealt with topics like refreshing on git/GitHub vocabulary, authenticating the googledrive R package, or solving a specific error in a new R script."
   },
   {
+    "objectID": "modules_wg-onboarding/infrastructure-server.html",
+    "href": "modules_wg-onboarding/infrastructure-server.html",
+    "title": "NCEAS Scientific Computing Team",
+    "section": "",
+    "text": "Working groups have access to several high-performance computers at NCEAS, which provide advanced analytical, web, and database capabilities that far exceed the capabilities of desktop computers. We are available to set up and instruct you in the use of these Linux/Unix systems for demanding scientific analyses and modeling runs that benefit from lots of memory or storage, or access to multiple CPU’s.\nOur most powerful system currently offers 384GB of RAM memory, along with 44 cores (CPUs), and several terabytes of fast storage. Several scientific software packages – such as R/RStudio, Python, Matlab, and QGIS – are already installed. Ask us if you need us to install any specific analytical libraries or packages.\nWe can also set up shared storage space on our server to facilitate data sharing within your working group. This is particularly valuable for large files that would take up a significant amount of your group’s cloud storage system (e.g., GoogleDrive, Dropbox, etc.)\nTo request access to the NCEAS analytical server, please coordinate with your PIs and contact us with your request."
+  },
+  {
     "objectID": "modules_wg-onboarding/services-sprints.html",
     "href": "modules_wg-onboarding/services-sprints.html",
     "title": "NCEAS Scientific Computing Team",
     "section": "",
     "text": "For larger tasks, we offer “analytical sprints.” If your group requests an analytical sprint, you will get one of our team members working full time only for your group’s tasks for 3-4 weeks! This can be a great option if your group has many smaller tasks or fewer larger projects that are particularly time-sensitive.\nWe are excited that these sprints are a part of our “menu” of offerings to you all but please reach out to us to start the conversation before requesting a sprint so that we can make sure we are all on the same page."
+  },
+  {
+    "objectID": "modules_wg-onboarding/infrastructure-data-archive.html",
+    "href": "modules_wg-onboarding/infrastructure-data-archive.html",
+    "title": "NCEAS Scientific Computing Team",
+    "section": "",
+    "text": "While we know that you are just getting started, it is never too early to start thinking about where you are going to store the data your group will collate and synthesize! NCEAS is committed to practicing and promoting open science, making scientific research and its supporting data and information accessible to all levels of society. Therefore, we recommend that any input data used for your synthesis work be well documented and preserved in a long-term data repository.\nIt is required to document and preserve any products resulting from working group activities in a long-term data repository, such as the NCEAS-supported KNB Data Repository or the Environmental Data Initiative (EDI) data repository, which are part of the Data Observation Network for Earth (DataONE).\n\n\n\nWe are happy to discuss which of these options might fit your group best though we recognize this discussion can probably be left alone until your group has amassed a substantial amount of data."
   },
   {
     "objectID": "modules_wg-onboarding/services-tasks.html",
@@ -367,48 +381,6 @@
     "objectID": "team-onboarding.html#hr-related-resources",
     "href": "team-onboarding.html#hr-related-resources",
     "title": "Sci Comp Team Onboarding",
-    "section": "HR-related Resources",
-    "text": "HR-related Resources\n\nReporting Hours & Kronos\nWe submit vacation and sick day hours online through Kronos. You should receive an email at the start of your employment adding you to an email listserv that will send reminders on when to approve each month’s timesheet.\n\n\nUC Path\nUC Path is the online HR portal and can be accessed with your UCSB Net ID. It is where you can access things like your paycheck, next date of paycheck, and benefits (if applicable)."
-  },
-  {
-    "objectID": "onboarding.html",
-    "href": "onboarding.html",
-    "title": "Onboarding",
-    "section": "",
-    "text": "This page contains a quick, cookbook-style set of instructions for new staff on the Scientific Computing Team. We are so excited to have you join us and we hope that these instructions are clear and easy-to-follow. Please don’t hesitate to reach out if you run into any issues (see the “Our Team” tab of this site) or post a GitHub issue yourself on this website’s repository!\nListed below are a mix of references and tutorials on concepts we aim to promote to researchers who we support, as well as tools and workflows we use in our team. The goal is to give context about open and reproducible science principles NCEAS is promoting to the scientific community. You will also find information on getting access to the tools that you will need and some general information about working at NCEAS."
-  },
-  {
-    "objectID": "onboarding.html#background-reading-material",
-    "href": "onboarding.html#background-reading-material",
-    "title": "Onboarding",
-    "section": "Background Reading Material",
-    "text": "Background Reading Material\n\nHampton et al 2015. “The Tao of open science for ecology”\nBorer et al 2009. “Effective Data Management”\nFegraus et al 2005. “Maximizing the Value of Ecological Data with Structured Metadata:”\nHeidborn 2008. “Shedding Light on the Dark Data in the Long Tail of Science”"
-  },
-  {
-    "objectID": "onboarding.html#programs-resources",
-    "href": "onboarding.html#programs-resources",
-    "title": "Onboarding",
-    "section": "Programs & Resources",
-    "text": "Programs & Resources\n\nGitHub Tutorial\nWe rely heavily on GitHub for collaboration, and there are a few things you must do to get set up. First, complete the NCEAS GitHub Tutorial here. This tutorial will help you with getting started with git and GitHub using RStudio.\n\n\nLTER GitHub Organization\nRegister (if you have not already) for a personal GitHub account and send your username to Julien to be added to the LTER GitHub. This GitHub Organization “owns” the working groups repositories that you will be directly working with so being added to this organization will give you access to needed repositories.\n\n\nNCEAS GitHub Enterprise Organization\nWe use a GitHub Enterprise account to keep track of tasks for the Scientific Computing Support of LTER working groups. To be added to the account you must create an NCEAS account.\nFollow the directions outlined here and send your username to Julien Brun (not the email outlined in the Google Doc).\nAfter you have been added, you will be able to access the Issues tab of the lter-wg-scicomp GitHub repository. We use issues on this repository to keep track of tasks and projects as well as who is primarily responsible for a given task and which working group gave us the task initially.\n\n\nSlack\nWe use Slack to communicate with one another throughout the day. To be added to the NCEAS Slack group, register here. If you already have a slack account, be sure to use the email address you used to register.\nFind and join our #scicomp channel by clicking the plus sign next to the Channels section. Feel free to join any other channels that you might find interesting! Popular channels include #diversity, #nceas, and #social.\nFinally, complete this short tutorial on using Slack.\n\n\nNCEAS Server: Aurora\nWe use the Aurora server (located at aurora.nceas.ucsb.edu) when working with RStudio or JupyterHub. Send an email to help@nceas.ucsb.edu requesting an account mentioning you are working with Julien. Thomas Hetmank or Nick Outin will contact you with directions for setting up an account."
-  },
-  {
-    "objectID": "onboarding.html#recurring-nceas-meetings",
-    "href": "onboarding.html#recurring-nceas-meetings",
-    "title": "Onboarding",
-    "section": "Recurring NCEAS Meetings",
-    "text": "Recurring NCEAS Meetings\nThere are a number of recurring meetings that you are encouraged to attend. At your hiring, you should recieve an invitation to the NCEAS Google Calendar which has links to all the meeting information. These include Coffee Klatch (a coffee social), Hacky Hours, and Data Science Chats (to name a few).\nWe also have a team Google Calendar to manage team events. Julien will add you if you have not been already."
-  },
-  {
-    "objectID": "onboarding.html#data-science-background-and-tutorials",
-    "href": "onboarding.html#data-science-background-and-tutorials",
-    "title": "Onboarding",
-    "section": "Data Science Background and Tutorials",
-    "text": "Data Science Background and Tutorials\nFor good background information on the tools that we use, read through and practice examples of the following chapters from a training we did for postdocs in early 2020: https://science-for-nature-and-people.github.io/2020-data-collab-workshop/2020-02-snapp/index.html\nChapters 3, 5, 8 are a good background about the tools we use.\nChapters 9, 10 are a good introduction to data modeling.\n\nR Self-Assessment\nFinally, please complete this R Training Assessment to self-assess your skills in R.\nSchedule a session with Julien to debrief on your experience."
-  },
-  {
-    "objectID": "onboarding.html#hr-related-resources",
-    "href": "onboarding.html#hr-related-resources",
-    "title": "Onboarding",
     "section": "HR-related Resources",
     "text": "HR-related Resources\n\nReporting Hours & Kronos\nWe submit vacation and sick day hours online through Kronos. You should receive an email at the start of your employment adding you to an email listserv that will send reminders on when to approve each month’s timesheet.\n\n\nUC Path\nUC Path is the online HR portal and can be accessed with your UCSB Net ID. It is where you can access things like your paycheck, next date of paycheck, and benefits (if applicable)."
   },
