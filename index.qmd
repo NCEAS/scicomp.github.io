@@ -32,7 +32,7 @@ Contact [our team](https://nceas.github.io/scicomp.github.io/staff.html) with yo
 <img src = "images/lter_asm.jpeg" width = "80%"/>
 </p>
 
-Currently we are only supporting [Long Term Ecological Research (LTER) Network](https://lternet.edu/) synthesis working groups. The LTER Network Office (LNO) regularly issues calls for synthesis working group proposals, which are open to scientists from within and outside of the LTER Network. The LNO, which operates out of NCEAS, fosters enhanced communication, collaboration, synthesis, training, and engagement across the network through these working groups. For more information, visit the LTER website for more information on the [current LTER working groups](https://lternet.edu/current-working-groups/).
+Currently we are only supporting [Long Term Ecological Research (LTER) Network](https://lternet.edu/) synthesis working groups. The LTER Network Office (LNO) regularly issues calls for synthesis working group proposals, which are open to scientists from within and outside of the LTER Network. The LNO, which operates out of NCEAS, fosters enhanced communication, collaboration, synthesis, training, and engagement across the network through these working groups. For more information, visit the LTER website on the [current LTER working groups](https://lternet.edu/current-working-groups/).
 
 ## Navigating this Website
 
