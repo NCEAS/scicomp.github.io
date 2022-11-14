@@ -34,7 +34,7 @@ Contact [our team](https://nceas.github.io/scicomp.github.io/staff.html) with yo
 
 Currently we are only supporting [Long Term Ecological Research (LTER) Network](https://lternet.edu/) synthesis working groups. The LTER Network Office (LNO) regularly issues calls for synthesis working group proposals, which are open to scientists from within and outside of the LTER Network. The LNO, which operates out of NCEAS, fosters enhanced communication, collaboration, synthesis, training, and engagement across the network through these working groups. For more information, visit the LTER website for more information on the [current LTER working groups](https://lternet.edu/current-working-groups/).
 
-## This Website
+## Navigating this Website
 
 ### If you're a working group member...
 
@@ -50,6 +50,6 @@ For other miscellaneous resources, see [**Other Resources**](https://nceas.githu
 
 We look forward to assisting your group however we can! Please do not hesitate to contact [our team](https://nceas.github.io/scicomp.github.io/staff.html) for any task requests and questions. 
 
-### For all our other visitors...
+### For working groups and all our other visitors...
 
 Welcome! Even if you're not a part of a synthesis working group, we hope that you find the various resources on this website helpful! Please feel free to take a look at our [**Workshops**](https://nceas.github.io/scicomp.github.io/workshops.html) on GitHub, `tidyverse`, and R Shiny apps! Or peruse our [**Tutorials**](https://nceas.github.io/scicomp.github.io/tutorials.html) and [**Best Practices**](https://nceas.github.io/scicomp.github.io/best_practices.html) pages for other useful tips in R. 
