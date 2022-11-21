@@ -30,7 +30,7 @@ The GitHub <img src="images/github_logo_gray.png" width="2%"/> repository for th
 
 One of our team members--Nick Lyon--created a workshop on learning to create R Shiny apps. R Shiny includes a suite of R packages (primarily `shiny`) that allow R users to create interactive apps that can be subsequently deployed to a URL. These apps are most commonly used for data visualization purposes but can also be a neat way of accomplishing other outward-facing tasks without needing to learn a new programming language. This workshop was offered at the 2022 LTER All Scientists' Meeting (ASM) and is aimed at an audience with moderate R capability but limited prior exposure to Shiny.
 
-**The full workshop materials can be found [here](https://njlyon0.github.io/asm-2022_github-workshop/).** 
+**The full workshop materials can be found [here](https://njlyon0.github.io/asm-2022_shiny-workshop/).** 
 
 The GitHub <img src="images/github_logo_gray.png" width="2%"/> repository for the workshop can be found [here](https://github.com/njlyon0/asm-2022_shiny-workshop).
 
