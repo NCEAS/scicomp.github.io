@@ -1,5 +1,5 @@
 ---
-title: "Best Practices"
+title: "Coding Tips"
 ---
 ```{r libraries, include = FALSE, message = FALSE, echo = FALSE}
 library(librarian)
