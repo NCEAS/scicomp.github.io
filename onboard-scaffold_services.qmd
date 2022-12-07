@@ -2,7 +2,7 @@
 title: "Working Together"
 ---
 
-We are excited to work with your team and currently offer a range of options for what that collaboration might look like. The categories below are not exhaustive so if you think your needs will fall between or outside of these tasks, please don't hesitate to email [us](https://nceas.github.io/scicomp.github.io/staff.html) to start that conversation!
+We are excited to work with your team and currently offer a range of options for what that collaboration might look like. The categories below are not exhaustive so if you think your needs will fall between or outside of these tasks, please don't hesitate to contact [our team](https://nceas.github.io/scicomp.github.io/staff.html) to start that conversation!
 
 {{< include /modules_wg-onboarding/services-tasks.qmd >}}
 
