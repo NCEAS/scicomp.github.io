@@ -4,14 +4,14 @@
 
 // Colors
 /* LTER Network Office logo colors */
-$a: #5A5C37;
-$b: #209ACA;
-$c: #97AE3F;
-$x: #FFDF1D;
-$y: #4AB2CB;
-$z: #DA6641;
-$w: #B89E92;
-$p: #374228;
+$lter-green-1: #97AE3F;
+$lter-green-2: #5A5C37;
+$lter-green-3: #374228;
+$lter-blue-1: #209ACA;
+$lter-blue-2: #4AB2CB;
+$lter-tan: #B89E92;
+$lter-yellow: #FFDF1D;
+$lter-orange: #DA6641;
 
 /* generally useful other colors */
 $cream: #F4F3EE;
@@ -27,17 +27,15 @@ $font-size: 25px;
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 
 // Base document colors
-$navbar-bg: $a; // navbar
-$navbar-fg: $b; // navbar foreground elements
-$navbar-hl: $c; // highlight color when on a page
+$navbar-bg: $lter-green-1; // navbar
+$navbar-fg: $cream; // navbar foreground elements
+$navbar-hl: $lter-green-3; // highlight color when on a page
 $body-bg: $cream; // page background
 $body-color: $black; // page text
-$footer-bg: $x; // footer
-$link-color: $y; // hyperlinks
+$footer-bg: $lter-blue-1; // footer
+$link-color: $lter-blue-2; // hyperlinks
 
-// Inline code
+// Code text
 $code-bg: $gray-0; // inline code background color
-$code-color: $z; // inline code text color
-
-// Code blocks
-$code-block-bg: $w; // code block background color
+$code-block-bg: $gray-0; // code block background color
+$code-color: $lter-orange; // inline code text color
