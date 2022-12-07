@@ -50,7 +50,6 @@ format:
        light: scicomplight.scss
        dark: scicompdark.scss
     mainfont: Lato
-    css: styles.css
     toc: true
     link-external-newwindow: true
     link-external-icon: false
