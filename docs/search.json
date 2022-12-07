@@ -425,5 +425,12 @@
     "title": "Other Resources",
     "section": "NCEAS’ Resources for Working Groups",
     "text": "NCEAS’ Resources for Working Groups\nNCEAS hosts many working groups and so has drawn from its wealth of experience to assemble a set of useful information on its Resources for Working Groups page.\nIn particular, we recommend checking out the documents nested in the “How to Run a Working Group” dropdown menu. Your group may also want to check out the “Reimbursement Forms” dropdown after your meetings in Santa Barbara to ensure that your eligible expenses get reimbursed!"
+  },
+  {
+    "objectID": "portfolio.html#spatial-analysis-wrangling",
+    "href": "portfolio.html#spatial-analysis-wrangling",
+    "title": "Portfolio",
+    "section": "Spatial Analysis & Wrangling",
+    "text": "Spatial Analysis & Wrangling\nOur team has also been instrumental in acquiring, wrangling, and summarizing spatial data. For the Silica Exports working group we developed a workflow (see here) that accomplishes teh following tasks:\n\nCreates shapefiles that identify the drainage basin linked to several hundred stream gages\n“Cookie cuts” spatial data within those drainage basins (e.g., land cover, lithology, precipitation, etc.)\nSummarizes that extracted data both as rasters and as data tables for use as explanatory variables in other analyses\n\nWe are comfortable working with such data and can help your team acquire and/or process spatial data if that is of interest!"
   }
 ]

@@ -196,7 +196,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
   <li class="nav-item">
     <a class="nav-link" href="./best_practices.html">
- <span class="menu-text">Best Practices</span></a>
+ <span class="menu-text">Coding Tips</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./portfolio.html" aria-current="page">
@@ -250,10 +250,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </ul></li>
   <li><a href="#r-shiny-app---lterpalettefinder-explorer" id="toc-r-shiny-app---lterpalettefinder-explorer" class="nav-link" data-scroll-target="#r-shiny-app---lterpalettefinder-explorer">R Shiny App - <code>lterpalettefinder</code> Explorer</a></li>
   <li><a href="#website---soil-organic-matter-wg-website" id="toc-website---soil-organic-matter-wg-website" class="nav-link" data-scroll-target="#website---soil-organic-matter-wg-website">Website - Soil Organic Matter WG Website</a></li>
+  <li><a href="#spatial-analysis-wrangling" id="toc-spatial-analysis-wrangling" class="nav-link" data-scroll-target="#spatial-analysis-wrangling">Spatial Analysis &amp; Wrangling</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NCEAS/scicomptasks/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="images/nceas_logo_square.png" width="40%"></p>
+<p><img src="images/lter_logo_square.png" width="40%"> <img src="images/nceas_logo_square.png" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -304,6 +305,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="website---soil-organic-matter-wg-website">Website - Soil Organic Matter WG Website</h2>
 <p>Our team also helped build <a href="https://lter.github.io/som-website/index.html">a website</a> for the Soil Organic Matter (SOM) working group. One of this group’s primary products was a synthesized data package containing observed data, modifications of that data, and models based on them. The website operates in part to publicize this data product but also to provide a central location for other resources developed by or important to the SOM group.</p>
 <p>We can build a website using <a href="https://quarto.org/">Quarto</a> for your team that is written entirely in “Markdown syntax” if you’d like. An advantage of Quarto / markdown for website creation and maintenance is that you can do 100% of your Website modification in RStudio which many group members may already be at least somewhat familiar with. Quarto also offers a new “visual editor” that lets you use RStudio similarly to how you’d use a word processor (Microsoft Word, Pages, etc.) where you can format text using drop down menus instead of needing to know HTML and/or Markdown to create pages.</p>
+</section>
+<section id="spatial-analysis-wrangling" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-analysis-wrangling">Spatial Analysis &amp; Wrangling</h2>
+<p>Our team has also been instrumental in acquiring, wrangling, and summarizing spatial data. For the Silica Exports working group we developed a workflow (see <a href="https://github.com/lter/lterwg-si-export">here</a>) that accomplishes teh following tasks:</p>
+<ol type="1">
+<li><p>Creates shapefiles that identify the drainage basin linked to several hundred stream gages</p></li>
+<li><p>“Cookie cuts” spatial data within those drainage basins (e.g., land cover, lithology, precipitation, etc.)</p></li>
+<li><p>Summarizes that extracted data both as rasters and as data tables for use as explanatory variables in other analyses</p></li>
+</ol>
+<p>We are comfortable working with such data and can help your team acquire and/or process spatial data if that is of interest!</p>
 
 
 </section>

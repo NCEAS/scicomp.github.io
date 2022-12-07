@@ -34,3 +34,15 @@ We have also built apps to help working groups visualize data or present survey 
 Our team also helped build [a website](https://lter.github.io/som-website/index.html) for the Soil Organic Matter (SOM) working group. One of this group's primary products was a synthesized data package containing observed data, modifications of that data, and models based on them. The website operates in part to publicize this data product but also to provide a central location for other resources developed by or important to the SOM group.
 
 We can build a website using [Quarto](https://quarto.org/) for your team that is written entirely in "Markdown syntax" if you'd like. An advantage of Quarto / markdown for website creation and maintenance is that you can do 100% of your Website modification in RStudio which many group members may already be at least somewhat familiar with. Quarto also offers a new "visual editor" that lets you use RStudio similarly to how you'd use a word processor (Microsoft Word, Pages, etc.) where you can format text using drop down menus instead of needing to know HTML and/or Markdown to create pages.
+
+## Spatial Analysis & Wrangling
+
+Our team has also been instrumental in acquiring, wrangling, and summarizing spatial data. For the Silica Exports working group we developed a workflow (see [here](https://github.com/lter/lterwg-si-export)) that accomplishes teh following tasks:
+
+1. Creates shapefiles that identify the drainage basin linked to several hundred stream gages
+
+2. "Cookie cuts" spatial data within those drainage basins (e.g., land cover, lithology, precipitation, etc.)
+
+3. Summarizes that extracted data both as rasters and as data tables for use as explanatory variables in other analyses
+
+We are comfortable working with such data and can help your team acquire and/or process spatial data if that is of interest!
