@@ -310,9 +310,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>googledrive<span class="sc">::</span><span class="fu">drive_auth</span>(<span class="at">email =</span> <span class="st">"enter your gmail here!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>If this is your <em>first time</em> using <code>googledrive</code>, <code>drive_auth</code> will kick you to a new tab of your browser (see below for a screen grab of that screen) where you can pick which Gmail you’d like to connect to R.</p>
-<p><img src="images/tutorial_drive-auth/drive-auth-1.png" width="50%"></p>
+<p align="center">
+<img src="images/tutorial_drive-auth/drive-auth-1.png" width="50%">
+</p>
 <p><strong>Click the Gmail you want to use</strong> and you will get a second screen where Google tells you that “Tidyverse API” wants access to your Google Account. This message is followed by three checkboxes, the first two are grayed out but the third is unchecked.</p>
-<p><img src="images/tutorial_drive-auth/drive-auth-2.png" width="50%"></p>
+<p align="center">
+<img src="images/tutorial_drive-auth/drive-auth-2.png" width="50%">
+</p>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -327,13 +331,19 @@ NOTE
 </div>
 </div>
 <p>In this screen, <strong>you must check the unchecked box</strong> to be able to use the <code>googledrive</code> R package. If you do not check this box all attempts to use <code>googledrive</code> functions will get an error that says “insufficient permissions”.</p>
-<p><img src="images/tutorial_drive-auth/drive-auth-3.png" width="50%"></p>
+<p align="center">
+<img src="images/tutorial_drive-auth/drive-auth-3.png" width="50%">
+</p>
 <p>While granting access to “see, edit, create, and”delete” all of your Google Drive files” sounds like a significant security risk, those powers are actually why you’re using the <code>googledrive</code> package in the first place! You want to be able to download existing Drive files, change them in R on your computer, and then put them back in Google Drive which is exactly what is meant by “see, edit, create, and delete”.</p>
 <p>Also, this power <em>only applies to the computer you’re currently working on!</em> Granting access on your work computer allows <strong>only</strong> that computer to access your Drive files. So don’t worry about giving access to your Drive to the whole world, that is protected by the same failsafes that you use when you let your computer remember a password to a website you frequent.</p>
 <p><em>After</em> you’ve checked the authorization box, <strong>scroll down and click the “Continue” button</strong>.</p>
-<p><img src="images/tutorial_drive-auth/drive-auth-4.png" width="50%"></p>
+<p align="center">
+<img src="images/tutorial_drive-auth/drive-auth-4.png" width="50%">
+</p>
 <p>This should result in a plain text page that tells you to close this window and return to R. If you see this message you are ready to use the <code>googledrive</code> package!</p>
-<p><img src="images/tutorial_drive-auth/drive-auth-5.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_drive-auth/drive-auth-5.png" width="75%">
+</p>
 </section>
 <section id="supplementary-information" class="level3">
 <h3 class="anchored" data-anchor-id="supplementary-information">Supplementary Information</h3>
@@ -372,20 +382,30 @@ NOTE
 <p>To begin, <strong>click the “Project” button</strong> in the top right of your RStudio session.</p>
 <p><img src="images/tutorial_quarto-website/website-tutorial_new-proj-1.png" width="100%"></p>
 <p>In the resulting dialogue, <strong>click the “New Directory” option.</strong></p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-proj-2.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-proj-2.png" width="60%">
+</p>
 <p>From the list of options for project templates, <strong>select “Quarto Website”.</strong></p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-proj-3.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-proj-3.png" width="60%">
+</p>
 <p><strong>Pick a title</strong> and <strong>check the “Create a git repository” checkbox.</strong> For your title, short but descriptive titles are most effective. Once that is done, click <strong>“Create Project”</strong> in the bottom right of the window.</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-proj-4.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-proj-4.png" width="60%">
+</p>
 <p>After a few seconds, RStudio should refresh with a Quarto document (such documents have the file extension “.qmd”) and a “_quarto.yml” file open.</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-proj-5.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-proj-5.png" width="75%">
+</p>
 <p>Part of Quarto’s central philosophy is that all of the formatting of individual .qmd files in a project is governed by the settings created by a singular .yml file. In an R markdown project some of the global settings are set in .yml but other settings are handled within each .Rmd file. This centralization is a key innovation in streamlining projects and is one reason for Quarto’s quick popularity.</p>
 </section>
 <section id="preparing-project-for-web-deployment" class="level3">
 <h3 class="anchored" data-anchor-id="preparing-project-for-web-deployment">Preparing Project for Web Deployment</h3>
 <p>To prepare your project for web deployment via GitHub Pages, we have <strong>three</strong> quick steps that we must first complete.</p>
 <p><em>First</em>, in the “_quarto.yml” file, <strong>add <code>output-dir: docs</code> as a subheading beneath the <code>project:</code> heading.</strong> Make sure that the indentation is the same as the <code>type: website</code> but the new line can be either above or below that line.</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_deploy-prep-1.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_deploy-prep-1.png" width="75%">
+</p>
 <p><em>Second</em>, <strong>in the “Terminal” pane run <code>touch .nojekyll</code>.</strong> This creates a file called “.nojekyll” that is necessary for hosting your website via GitHub Pages.</p>
 <p><em>Third</em>, <strong>in the “Terminal” pane run <code>quarto render</code>.</strong> This processes the template .qmd files you currently have in the repository and prepares them to become actual web pages.</p>
 <p>Once you’ve done these three things you can move on to creating a GitHub repository so that we can take the necessary steps to having GitHub host your website!</p>
@@ -395,12 +415,18 @@ NOTE
 <p>From your GitHub <strong>“Repositories”</strong> tab, click the <strong><span style="color:green"> green </span> “New”</strong> button.</p>
 <p><img src="images/tutorial_github-modules/new-github-1.png" width="100%"></p>
 <p><strong>Add a title</strong> to your repository and <strong>add a description.</strong> Once you’ve added these two things, scroll down and click the <strong><span style="color:green"> green </span> “Create repository” button.</strong></p>
-<p><img src="images/tutorial_github-modules/new-github-2.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_github-modules/new-github-2.png" width="60%">
+</p>
 <p>Be sure that you <strong>do not add a README</strong>, <strong>do not add a gitignore</strong>, and <strong>do not add a license.</strong> Adding any of these three will cause a merge conflict when we link the project that you just created with the GitHub repository that you are in the process of creating.</p>
-<p><img src="images/tutorial_github-modules/new-github-3.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_github-modules/new-github-3.png" width="60%">
+</p>
 <p>After a few seconds you should be placed on your new repository’s landing page which will look like the below image because there isn’t anything in your repository (yet).</p>
 <p>Copy the link in the field and go back to your RStudio session.</p>
-<p><img src="images/tutorial_github-modules/new-github-4.png" width="100%"></p>
+<p align="center">
+<img src="images/tutorial_github-modules/new-github-4.png" width="100%">
+</p>
 </section>
 <section id="adding-your-project-to-github" class="level3">
 <h3 class="anchored" data-anchor-id="adding-your-project-to-github">Adding your Project to GitHub</h3>
@@ -448,11 +474,17 @@ NOTE
 <p>Scroll down to the middle of this page and where it says “Branch” <strong>click the dropdown menu that says “None” by default.</strong></p>
 <p><img src="images/tutorial_github-modules/github-deploy-3.png" width="100%"></p>
 <p><strong>Select “main”</strong> from the dropdown.</p>
-<p><img src="images/tutorial_github-modules/github-deploy-4.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_github-modules/github-deploy-4.png" width="60%">
+</p>
 <p>This opens up a new dropdown menu where you can select which folder in your repository contains your website’s content (it defaults to “/ (root)”). Because we specified <code>output-dir: docs</code> in the .yml file earlier we can <strong>select “/docs” from the dropdown menu.</strong></p>
-<p><img src="images/tutorial_github-modules/github-deploy-5.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_github-modules/github-deploy-5.png" width="60%">
+</p>
 <p>Once you’ve told GitHub that you want a website generated from the “docs” folder on the main branch, <strong>click the “Save” button.</strong></p>
-<p><img src="images/tutorial_github-modules/github-deploy-6.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_github-modules/github-deploy-6.png" width="75%">
+</p>
 <p>From this moment your website has begun being deployed by GitHub! You can check the status of the building process by <strong>navigating to the “Actions” tab of your repository.</strong></p>
 <p><strong>Select the “pages build and deployment workflow”</strong> in the list of workflows on the bottom righthand side of the page.</p>
 <p><img src="images/tutorial_github-modules/github-deploy-7.png" width="100%"></p>
@@ -471,7 +503,9 @@ NOTE
 <p>Once there, <strong>click the small gear icon to the right of the “About” header.</strong></p>
 <p><img src="images/tutorial_github-modules/github-tidy-1.png" width="100%"></p>
 <p>In the resulting window, <strong>paste the copied URL into the “Website” field.</strong> Once you’ve pasted it in, <strong>click the</strong> <strong><span style="color:green">green</span></strong> <strong>“Save changes” button.</strong></p>
-<p><img src="images/tutorial_github-modules/github-tidy-2.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_github-modules/github-tidy-2.png" width="60%">
+</p>
 <p>This places the link to your deployed website in an intuitive, easy-to-find location both for interested third parties and yourself in the future.</p>
 <p><img src="images/tutorial_github-modules/github-tidy-3.png" width="100%"></p>
 </section>
@@ -480,15 +514,25 @@ NOTE
 <h3 class="anchored" data-anchor-id="adding-website-content">Adding Website Content</h3>
 <p>Now that you have a live website you can build whatever you’d like! Given the wide range of possibility, we’ll only cover how to add a new page but the same process applies to any edit to the living webpage.</p>
 <p>To add a new page <strong>create a new Quarto document.</strong> You can do this by going to the “File” menu, entering the “New File” options, and selecting “Quarto Document…”</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-1.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-1.png" width="60%">
+</p>
 <p>Similarly to an R markdown file, this will open a new window that lets you enter a title and author as well as decide what format you want to render files to along with some other settings options. <strong>You only need to click the “Create” button</strong> in the bottom right of this dialogue (though you can definitely play with the other options and text boxes as you desire).</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-2.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-2.png" width="75%">
+</p>
 <p>After a moment, a new .qmd file will open in Quarto’s visual editor. <strong>For the purposes of this tutorial, you only need to add a <code>title</code> in the top of the file</strong> but for a real website you can add whatever content sparks joy for you!</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-3.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-3.png" width="75%">
+</p>
 <p><strong>Save that file into your project folder.</strong> Its name can be anything but be sure that you remember what you name it!</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-4.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-4.png" width="60%">
+</p>
 <p><strong>Add the name of the new Quarto document to the .yml file</strong> in the website navbar area (in this example the file is called “more-stuff.qmd”).</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-5.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-5.png" width="75%">
+</p>
 <p>Once you’ve added the file to the fundamental architecture of your website, you need to tell Quarto to re-build the part of the website that GitHub looks for when it deploys. To do this <strong>run <code>quarto render</code> in the Terminal.</strong></p>
 <p>If you want to <em>preview</em> your changes, run <code>quarto preview</code> in the Terminal and a new browser window will be displayed showing your current website content. This preview continues until you click the <strong><span style="color:red">red</span></strong> stop sign icon in RStudio so be sure to end it when you’re done with the preview!</p>
 <p><img src="images/tutorial_quarto-website/website-tutorial_new-content-6.png" width="100%"></p>
