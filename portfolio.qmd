@@ -37,7 +37,7 @@ We can build a website using [Quarto](https://quarto.org/) for your team that is
 
 ## Spatial Analyses & Wrangling
 
-Our team has also been instrumental in acquiring, wrangling, and summarizing spatial data. For the Silica Exports working group we developed a workflow (see [here](https://github.com/lter/lterwg-si-export)) that accomplishes teh following tasks:
+Our team has also been instrumental in acquiring, wrangling, and summarizing spatial data. For the Silica Exports working group we developed a workflow (see [here](https://github.com/lter/lterwg-si-export)) that accomplishes the following tasks:
 
 1. Creates shapefiles that identify the drainage basin linked to several hundred stream gages
 
