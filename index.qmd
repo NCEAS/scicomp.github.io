@@ -4,7 +4,6 @@ title: "Scientific Computing Support"
 
 <p align="center">
 <img src = "images/lter_logo_wide.png" width = "70%"/>
-<img src = "images/lter_asm.jpeg" width = "100%"/>
 </p>
 
 ## What We Do
@@ -47,3 +46,7 @@ We look forward to assisting your group however we can! Please do not hesitate t
 ### For working groups and all our other visitors...
 
 Welcome! Even if you're not a part of a synthesis working group, we hope that you find the various resources on this website helpful! If you're interested in learning more about open, reproducible science, please feel free to take a look at our [**Workshops**](https://nceas.github.io/scicomp.github.io/workshops.html) on GitHub, `tidyverse`, and R Shiny apps! Or peruse our [**Tutorials**](https://nceas.github.io/scicomp.github.io/tutorials.html) and [**Best Practices**](https://nceas.github.io/scicomp.github.io/best_practices.html) pages for other useful tips in R. 
+
+<p align="center">
+<img src = "images/lter_asm.jpeg" width = "100%"/>
+</p>
