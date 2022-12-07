@@ -3,10 +3,7 @@ title: "Scientific Computing Support"
 ---
 
 <p align="center">
-<img src = "images/LTER-network-horizontal-sm.png" width = "70%"/>
-</p>
-
-<p align="center">
+<img src = "images/lter_logo_wide.png" width = "70%"/>
 <img src = "images/lter_asm.jpeg" width = "100%"/>
 </p>
 
