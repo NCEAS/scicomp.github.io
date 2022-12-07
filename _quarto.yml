@@ -16,7 +16,8 @@ website:
         text: "Home"
       - text: "Working Group Onboarding"
         menu: 
-          - sci-comp-definition.qmd
+          - href: sci-comp-definition.qmd
+            text: "What is Scientific Computing?"
           - onboard-scaffold_services.qmd
           - onboard-scaffold_infrastructure.qmd
           - onboard-scaffold_suggested-tools.qmd
