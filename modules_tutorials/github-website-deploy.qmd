@@ -15,15 +15,21 @@ Scroll down to the middle of this page and where it says "Branch" **click the dr
 
 **Select "main"** from the dropdown.
 
+<p align="center">
 <img src="images/tutorial_github-modules/github-deploy-4.png" width = "60%" />
+</p>
 
 This opens up a new dropdown menu where you can select which folder in your repository contains your website's content (it defaults to "/ (root)"). Because we specified `output-dir: docs` in the .yml file earlier we can **select "/docs" from the dropdown menu.**
 
+<p align="center">
 <img src="images/tutorial_github-modules/github-deploy-5.png" width = "60%" />
+</p>
 
 Once you've told GitHub that you want a website generated from the "docs" folder on the main branch, **click the "Save" button.**
 
+<p align="center">
 <img src="images/tutorial_github-modules/github-deploy-6.png" width = "75%" />
+</p>
 
 From this moment your website has begun being deployed by GitHub! You can check the status of the building process by **navigating to the "Actions" tab of your repository.**
 
@@ -59,7 +65,9 @@ Once there, **click the small gear icon to the right of the "About" header.**
 
 In the resulting window, **paste the copied URL into the "Website" field.** Once you've pasted it in, **click the** **<span style="color:green">green</span>** **"Save changes" button.**
 
+<p align="center">
 <img src="images/tutorial_github-modules/github-tidy-2.png" width = "60%" />
+</p>
 
 This places the link to your deployed website in an intuitive, easy-to-find location both for interested third parties and yourself in the future.
 

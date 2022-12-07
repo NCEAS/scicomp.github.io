@@ -3,23 +3,33 @@ Now that you have a live website you can build whatever you'd like! Given the wi
 
 To add a new page **create a new Quarto document.** You can do this by going to the "File" menu, entering the "New File" options, and selecting "Quarto Document..."
 
+<p align="center">
 <img src="images/tutorial_quarto-website/website-tutorial_new-content-1.png" width = "60%" />
+</p>
 
 Similarly to an R markdown file, this will open a new window that lets you enter a title and author as well as decide what format you want to render files to along with some other settings options. **You only need to click the "Create" button** in the bottom right of this dialogue (though you can definitely play with the other options and text boxes as you desire).
 
+<p align="center">
 <img src="images/tutorial_quarto-website/website-tutorial_new-content-2.png" width = "75%" />
+</p>
 
 After a moment, a new .qmd file will open in Quarto's visual editor. **For the purposes of this tutorial, you only need to add a `title` in the top of the file** but for a real website you can add whatever content sparks joy for you!
 
+<p align="center">
 <img src="images/tutorial_quarto-website/website-tutorial_new-content-3.png" width = "75%" />
+</p>
 
 **Save that file into your project folder.** Its name can be anything but be sure that you remember what you name it!
 
+<p align="center">
 <img src="images/tutorial_quarto-website/website-tutorial_new-content-4.png" width = "60%" />
+</p>
 
 **Add the name of the new Quarto document to the .yml file** in the website navbar area (in this example the file is called "more-stuff.qmd").
 
+<p align="center">
 <img src="images/tutorial_quarto-website/website-tutorial_new-content-5.png" width = "75%" />
+</p>
 
 Once you've added the file to the fundamental architecture of your website, you need to tell Quarto to re-build the part of the website that GitHub looks for when it deploys. To do this **run `quarto render` in the Terminal.**
 
