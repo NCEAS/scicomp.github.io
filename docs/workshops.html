@@ -42,6 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -96,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-working-group-onboarding">    
         <li>
     <a class="dropdown-item" href="./sci-comp-definition.html">
- <span class="dropdown-text">Scientific Computing Definition</span></a>
+ <span class="dropdown-text">What is Scientific Computing?</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./onboard-scaffold_services.html">
@@ -133,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item">
     <a class="nav-link" href="./best_practices.html">
- <span class="menu-text">Best Practices</span></a>
+ <span class="menu-text">Coding Tips</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./portfolio.html">
@@ -179,18 +181,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#collaborative-coding-with-github" id="toc-collaborative-coding-with-github" class="nav-link active" data-scroll-target="#collaborative-coding-with-github">Collaborative Coding with GitHub</a></li>
-  <li><a href="#coding-in-the-tidyverse" id="toc-coding-in-the-tidyverse" class="nav-link" data-scroll-target="#coding-in-the-tidyverse">Coding in the <code>tidyverse</code></a></li>
-  <li><a href="#r-shiny-apps-for-sharing-science" id="toc-r-shiny-apps-for-sharing-science" class="nav-link" data-scroll-target="#r-shiny-apps-for-sharing-science">R Shiny Apps for Sharing Science</a></li>
+  <li><a href="#collaborative-coding-with-github" id="toc-collaborative-coding-with-github" class="nav-link active" data-scroll-target="#collaborative-coding-with-github">Collaborative Coding with GitHub</a>
+  <ul class="collapse">
+  <li><a href="#workshop-website" id="toc-workshop-website" class="nav-link" data-scroll-target="#workshop-website">Workshop Website</a></li>
+  </ul></li>
+  <li><a href="#coding-in-the-tidyverse" id="toc-coding-in-the-tidyverse" class="nav-link" data-scroll-target="#coding-in-the-tidyverse">Coding in the <code>tidyverse</code></a>
+  <ul class="collapse">
+  <li><a href="#workshop-website-1" id="toc-workshop-website-1" class="nav-link" data-scroll-target="#workshop-website-1">Workshop Website</a></li>
+  </ul></li>
+  <li><a href="#r-shiny-apps-for-sharing-science" id="toc-r-shiny-apps-for-sharing-science" class="nav-link" data-scroll-target="#r-shiny-apps-for-sharing-science">R Shiny Apps for Sharing Science</a>
+  <ul class="collapse">
+  <li><a href="#workshop-website-2" id="toc-workshop-website-2" class="nav-link" data-scroll-target="#workshop-website-2">Workshop Website</a></li>
+  </ul></li>
   <li><a href="#other-training-resources" id="toc-other-training-resources" class="nav-link" data-scroll-target="#other-training-resources">Other Training Resources</a>
   <ul class="collapse">
   <li><a href="#nceas-learning-hub" id="toc-nceas-learning-hub" class="nav-link" data-scroll-target="#nceas-learning-hub">NCEAS Learning Hub</a></li>
+  <li><a href="#training-catalog" id="toc-training-catalog" class="nav-link" data-scroll-target="#training-catalog">Training Catalog</a></li>
   <li><a href="#the-carpentries" id="toc-the-carpentries" class="nav-link" data-scroll-target="#the-carpentries">The Carpentries</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NCEAS/scicomptasks/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="images/nceas_logo_square.png" width="40%"></p>
+<p><img src="images/lter_logo_square.png" width="40%"> <img src="images/nceas_logo_square.png" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -215,33 +227,41 @@ ul.task-list li input[type="checkbox"] {
 <p>In addition to the specific task-based support we offer, we can also create and run interactive workshops on data or coding topics. The specific goals of these workshops can be modified to best suit your team and meet all attendees where they are to ensure no one is left behind. While we are always happy to discuss developing new workshops we do have some materials that have already been designed (and tested by other working groups!) and are happy to offer any of these workshops to your group if it is of interest.</p>
 <section id="collaborative-coding-with-github" class="level2">
 <h2 class="anchored" data-anchor-id="collaborative-coding-with-github">Collaborative Coding with GitHub</h2>
+<section id="workshop-website" class="level3">
+<h3 class="anchored" data-anchor-id="workshop-website"><a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/">Workshop Website</a></h3>
 <p><img src="images/github_logo_gray.png" align="right" width="18%"></p>
 <p>In synthesis science, collaboration on code products is often integral to the productivity of the group. However, learning to use the software and graphical user interfaces that support this kind of teamwork can be a significant hurdle for teams that are already experts in their subject areas. This workshop is aimed at helping participants gain an understanding of the fundamental purpose and functioning of “version control” systems–specifically <a href="https://github.com/">GitHub</a>–to help teams more effectively code collaboratively.</p>
-<p><strong>The full workshop materials can be found <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/">here</a>.</strong></p>
-<p>The GitHub <img src="images/github_logo_gray.png" width="2%"> repository for the workshop can be found <a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding">here</a>.</p>
+<p>The GitHub <i class="fa-brands fa-github" aria-label="github"></i> repository for the workshop can be found <a href="https://github.com/NCEAS/scicomp-workshop-collaborative-coding">here</a>.</p>
+</section>
 </section>
 <section id="coding-in-the-tidyverse" class="level2">
 <h2 class="anchored" data-anchor-id="coding-in-the-tidyverse">Coding in the <code>tidyverse</code></h2>
+<section id="workshop-website-1" class="level3">
+<h3 class="anchored" data-anchor-id="workshop-website-1"><a href="https://nceas.github.io/scicomp-workshop-tidyverse/">Workshop Website</a></h3>
 <p><img src="images/tidyverse_hex.png" align="right" width="20%"></p>
 <p>For teams that code using the R programming language, the most familiar tools are often part of “base R” meaning that those functions and packages come pre-loaded when R is installed. Relatively recently the <code>tidyverse</code> has emerged as a comprehensive suite of packages that can complement base R or serve as an alternative for some tasks. This includes packages like <code>dplyr</code> and <code>tidyr</code> as well as the perhaps infamous pipe operator (<code>%&gt;%</code>) among many other tools. This workshop is aimed at helping participants use the <code>tidyverse</code> equivalents of fundamental data wrangling tasks that learners may be used to performing with base R.</p>
-<p><strong>The full workshop materials can be found <a href="https://nceas.github.io/scicomp-workshop-tidyverse/">here</a>.</strong></p>
-<p>The GitHub <img src="images/github_logo_gray.png" width="2%"> repository for the workshop can be found <a href="https://github.com/NCEAS/scicomp-workshop-tidyverse">here</a>.</p>
+<p>The GitHub <i class="fa-brands fa-github" aria-label="github"></i> repository for the workshop can be found <a href="https://github.com/NCEAS/scicomp-workshop-tidyverse">here</a>.</p>
+</section>
 </section>
 <section id="r-shiny-apps-for-sharing-science" class="level2">
 <h2 class="anchored" data-anchor-id="r-shiny-apps-for-sharing-science">R Shiny Apps for Sharing Science</h2>
+<section id="workshop-website-2" class="level3">
+<h3 class="anchored" data-anchor-id="workshop-website-2"><a href="https://njlyon0.github.io/asm-2022_shiny-workshop/">Workshop Website</a></h3>
 <p><img src="images/shiny_hex.png" align="right" width="20%"></p>
 <p>One of our team members–Nick Lyon–created a workshop on learning to create R Shiny apps. R Shiny includes a suite of R packages (primarily <code>shiny</code>) that allow R users to create interactive apps that can be subsequently deployed to a URL. These apps are most commonly used for data visualization purposes but can also be a neat way of accomplishing other outward-facing tasks without needing to learn a new programming language. This workshop was offered at the 2022 LTER All Scientists’ Meeting (ASM) and is aimed at an audience with moderate R capability but limited prior exposure to Shiny.</p>
-<p><strong>The full workshop materials can be found <a href="https://njlyon0.github.io/asm-2022_shiny-workshop/">here</a>.</strong></p>
-<p>The GitHub <img src="images/github_logo_gray.png" width="2%"> repository for the workshop can be found <a href="https://github.com/njlyon0/asm-2022_shiny-workshop">here</a>.</p>
-<p>This workshop also includes a second GitHub <img src="images/github_logo_gray.png" width="2%"> repository that contains several example Shiny apps. See <a href="https://github.com/njlyon0/asm-2022_shiny-workshop-examples">here</a>.</p>
+<p>The GitHub <i class="fa-brands fa-github" aria-label="github"></i> repository for the workshop can be found <a href="https://github.com/njlyon0/asm-2022_shiny-workshop">here</a>.</p>
+<p>This workshop also includes a second GitHub <i class="fa-brands fa-github" aria-label="github"></i> repository that contains several example Shiny apps. See <a href="https://github.com/njlyon0/asm-2022_shiny-workshop-examples">here</a>.</p>
+</section>
 </section>
 <section id="other-training-resources" class="level2">
 <h2 class="anchored" data-anchor-id="other-training-resources">Other Training Resources</h2>
 <section id="nceas-learning-hub" class="level3">
 <h3 class="anchored" data-anchor-id="nceas-learning-hub">NCEAS Learning Hub</h3>
+</section>
+<section id="training-catalog" class="level3">
+<h3 class="anchored" data-anchor-id="training-catalog"><a href="https://learning.nceas.ucsb.edu/">Training Catalog</a></h3>
 <p><img src="images/nceas_logo_square.png" align="right" width="15%"></p>
 <p>In addition to the workshops described above, NCEAS offers a variety of other workshops and trainings that may be of interest to you or your group via the <a href="https://www.nceas.ucsb.edu/learning-hub">Learning Hub</a>. While these trainings can be very helpful, it is <em>important to note that our team may or may not be involved with teaching them.</em> Also, workshops we create will be hosted on this website rather than on the Learning Hub.</p>
-<p><strong>The Learning Hub’s full course catalog can be viewed <a href="https://learning.nceas.ucsb.edu/">here</a>.</strong></p>
 </section>
 <section id="the-carpentries" class="level3">
 <h3 class="anchored" data-anchor-id="the-carpentries">The Carpentries</h3>
