@@ -1,5 +1,5 @@
 ---
-title: "Best Practices"
+title: "Coding Tips"
 ---
 ```{r libraries, include = FALSE, message = FALSE, echo = FALSE}
 library(librarian)
@@ -18,9 +18,17 @@ Check the headings below or in the table of contents on the right of this page t
 
 {{< include /modules_best-practices/markdown-vs-script.qmd >}}
 
+<p align="center">
+<img src="images/lter-photos/patches.jpg" width="100%"/>
+</p>
+
 ## File Paths
 
 {{< include /modules_best-practices/file-paths.qmd >}}
+
+<p align="center">
+<img src="images/lter-photos/penguins.jpg" width="100%"/>
+</p>
 
 ## Package Loading
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NCEAS Scientific Computing Team – quarto-website_add-content</title>
+<title>Scientific Computing Support – quarto-website_add-content</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,7 +63,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -74,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">NCEAS Scientific Computing Team</span>
+    <span class="navbar-title">Scientific Computing Support</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -93,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-working-group-onboarding">    
         <li>
     <a class="dropdown-item" href="../sci-comp-definition.html">
- <span class="dropdown-text">Scientific Computing Definition</span></a>
+ <span class="dropdown-text">What is Scientific Computing?</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../onboard-scaffold_services.html">
@@ -101,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../onboard-scaffold_infrastructure.html">
- <span class="dropdown-text">NCEAS Infrastructure</span></a>
+ <span class="dropdown-text">Computing Infrastructure</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../onboard-scaffold_suggested-tools.html">
@@ -130,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../best_practices.html">
- <span class="menu-text">Best Practices</span></a>
+ <span class="menu-text">Coding Tips</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../portfolio.html">
@@ -174,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
     <div class="quarto-margin-footer"><div class="margin-footer-item">
-<p><img src="images/nceas_logo_square.png" width="40%"></p>
+<p><img src="images/lter_logo_square.png" width="40%"> <img src="images/nceas_logo_square.png" width="40%"></p>
 </div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -183,15 +182,25 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Now that you have a live website you can build whatever you’d like! Given the wide range of possibility, we’ll only cover how to add a new page but the same process applies to any edit to the living webpage.</p>
 <p>To add a new page <strong>create a new Quarto document.</strong> You can do this by going to the “File” menu, entering the “New File” options, and selecting “Quarto Document…”</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-1.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-1.png" width="60%">
+</p>
 <p>Similarly to an R markdown file, this will open a new window that lets you enter a title and author as well as decide what format you want to render files to along with some other settings options. <strong>You only need to click the “Create” button</strong> in the bottom right of this dialogue (though you can definitely play with the other options and text boxes as you desire).</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-2.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-2.png" width="75%">
+</p>
 <p>After a moment, a new .qmd file will open in Quarto’s visual editor. <strong>For the purposes of this tutorial, you only need to add a <code>title</code> in the top of the file</strong> but for a real website you can add whatever content sparks joy for you!</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-3.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-3.png" width="75%">
+</p>
 <p><strong>Save that file into your project folder.</strong> Its name can be anything but be sure that you remember what you name it!</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-4.png" width="60%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-4.png" width="60%">
+</p>
 <p><strong>Add the name of the new Quarto document to the .yml file</strong> in the website navbar area (in this example the file is called “more-stuff.qmd”).</p>
-<p><img src="images/tutorial_quarto-website/website-tutorial_new-content-5.png" width="75%"></p>
+<p align="center">
+<img src="images/tutorial_quarto-website/website-tutorial_new-content-5.png" width="75%">
+</p>
 <p>Once you’ve added the file to the fundamental architecture of your website, you need to tell Quarto to re-build the part of the website that GitHub looks for when it deploys. To do this <strong>run <code>quarto render</code> in the Terminal.</strong></p>
 <p>If you want to <em>preview</em> your changes, run <code>quarto preview</code> in the Terminal and a new browser window will be displayed showing your current website content. This preview continues until you click the <strong><span style="color:red">red</span></strong> stop sign icon in RStudio so be sure to end it when you’re done with the preview!</p>
 <p><img src="images/tutorial_quarto-website/website-tutorial_new-content-6.png" width="100%"></p>
