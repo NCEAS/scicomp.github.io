@@ -1,4 +1,4 @@
-## Scientific Computing Definition
+## What is Scientific Computing?
 
 In the most fundamental sense, **scientific computing refers to the process of organizing, managing, and analyzing scientific data using computers.** This process takes place at the interface between several distinct disciplines:
 
