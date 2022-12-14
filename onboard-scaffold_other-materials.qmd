@@ -4,6 +4,7 @@ title: "Other Resources"
 
 <p align="center">
 <img src="images/lter-photos/notes.jpg" width="100%"/>
+<figcaption>REU Student Organizing Data Sheets, Harvard Forest - Photographer: Jocelyn Fahlen</figcaption>
 </p>
 
 ## LTER Network Office Guidance

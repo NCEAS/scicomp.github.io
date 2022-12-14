@@ -11,4 +11,5 @@ With these many links to other fields, modern scientific computing is now viewed
 
 <p align="center">
 <img src="images/lter-photos/regal-fritillary.jpg" width="100%"/>
+<figcaption>Regal Fritillary on Milkweed, Konza Prairie Biological Station - Photographer: Jill Haukos</figcaption>
 </p>

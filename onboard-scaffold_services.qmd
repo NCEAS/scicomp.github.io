@@ -6,6 +6,7 @@ We are excited to work with your team and currently offer a range of options for
 
 <p align="center">
 <img src="images/lter-photos/hiking.jpg" width="100%"/>
+<figcaption>Field Work With a View, Arctic LTER - Photographer: Nicole Williamson</figcaption>
 </p>
 
 {{< include /modules_wg-onboarding/services-tasks.qmd >}}
