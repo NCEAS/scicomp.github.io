@@ -375,7 +375,7 @@
     "href": "portfolio.html#project-websites",
     "title": "Portfolio",
     "section": "Project Websites",
-    "text": "Project Websites\nOur team also helped build a website for the Soil Organic Matter (SOM) working group. One of this group’s primary products was a synthesized data package containing observed data, modifications of that data, and models based on them. The website operates in part to publicize this data product but also to provide a central location for other resources developed by or important to the SOM group.\nWe can build a website using Quarto for your team that is written entirely in “Markdown syntax” if you’d like. An advantage of Quarto / markdown for website creation and maintenance is that you can do 100% of your Website modification in RStudio which many group members may already be at least somewhat familiar with. Quarto also offers a new “visual editor” that lets you use RStudio similarly to how you’d use a word processor (Microsoft Word, Pages, etc.) where you can format text using drop down menus instead of needing to know HTML and/or Markdown to create pages."
+    "text": "Project Websites\nOur team also helped build a website for the Soil Organic Matter (SOM) working group. One of this group’s primary products was a synthesized data package containing observed data, modifications of that data, and models based on them. The website operates in part to publicize this data product but also to provide a central location for other resources developed by or important to the SOM group.\nFor your group we can (if desired):\n\nBuild a website using Quarto\n\nAll website content creation can be done via RStudio which your group may already be somewhat familiar with\nQuarto also offers a new “visual editor” that lets you format text as you would in any word processor (i.e., Microsoft Word, Pages, etc.)\n\nMaintain the website OR help you to maintain it\n\nQuarto is written entirely in “Markdown syntax” which makes it easily maintained by either our team or yours depending on your preference\nWe have also created a tutorial on making websites with Quarto that you are welcome to explore!"
   },
   {
     "objectID": "portfolio.html#spatial-analyses-wrangling",
@@ -420,11 +420,11 @@
     "text": "NCEAS’ Resources for Working Groups\nNCEAS hosts many working groups and so has drawn from its wealth of experience to assemble a set of useful information on its Resources for Working Groups page.\nIn particular, we recommend checking out the documents nested in the “How to Run a Working Group” dropdown menu. Your group may also want to check out the “Reimbursement Forms” dropdown after your meetings in Santa Barbara to ensure that your eligible expenses get reimbursed!"
   },
   {
-    "objectID": "onboard-scaffold_other-materials.html#diversity-inclusion-at-nceas",
-    "href": "onboard-scaffold_other-materials.html#diversity-inclusion-at-nceas",
+    "objectID": "onboard-scaffold_other-materials.html#diversity-equity-and-inclusion",
+    "href": "onboard-scaffold_other-materials.html#diversity-equity-and-inclusion",
     "title": "Other Resources",
-    "section": "Diversity & Inclusion at NCEAS",
-    "text": "Diversity & Inclusion at NCEAS\nNCEAS is committed to improving diversity and inclusion in science. For more information on NCEAS’ commitment to this mission–and related links, please visit NCEAS’ diversity and inclusion page."
+    "section": "Diversity, Equity, and Inclusion",
+    "text": "Diversity, Equity, and Inclusion\nThe LTER Network and NCEAS are committed to improving diversity and inclusion in science. For the LTER Network Office’s diversity, equity and inclusion resources see here. For more information on NCEAS’ commitment to this mission–and related links–please visit NCEAS’ DEI page."
   },
   {
     "objectID": "onboard-scaffold_other-materials.html#visiting-santa-barbara",
@@ -432,19 +432,5 @@
     "title": "Other Resources",
     "section": "Visiting Santa Barbara",
     "text": "Visiting Santa Barbara\nWhen your group is visiting at NCEAS’ office in beautiful Santa Barbara there are additional resources available to your group and opportunities for recreation and bonding as a team! Check out NCEAS’ general computing resources page for a quick rundown of some resources available only in Santa Barbara (including how to get on the WiFi!).\nWe very much recommend taking an afternoon or morning on one of the days of your visit to get out and explore Santa Barbara! NCEAS’ page for things to do in SB for new employees might prove to be a helpful resource for you and your group as you’re deciding where to eat and what to do!"
-  },
-  {
-    "objectID": "onboard-scaffold_other-materials.html#diversity-inclusion",
-    "href": "onboard-scaffold_other-materials.html#diversity-inclusion",
-    "title": "Other Resources",
-    "section": "Diversity & Inclusion",
-    "text": "Diversity & Inclusion\nNCEAS is committed to improving diversity and inclusion in science. For more information on NCEAS’ commitment to this mission–and related links, please visit NCEAS’ diversity and inclusion page."
-  },
-  {
-    "objectID": "onboard-scaffold_other-materials.html#diversity-equity-and-inclusion",
-    "href": "onboard-scaffold_other-materials.html#diversity-equity-and-inclusion",
-    "title": "Other Resources",
-    "section": "Diversity, Equity, and Inclusion",
-    "text": "Diversity, Equity, and Inclusion\nThe LTER Network and NCEAS are committed to improving diversity and inclusion in science. For the LTER Network Office’s diversity, equity and inclusion resources see here. For more information on NCEAS’ commitment to this mission–and related links–please visit NCEAS’ DEI page."
   }
 ]
