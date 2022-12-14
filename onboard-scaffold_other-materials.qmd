@@ -9,7 +9,9 @@ title: "Other Resources"
 
 ## LTER Network Office Guidance
 
-The LTER Network Office (LNO) has curated some useful resources on their website ([lternet.edu](https://lternet.edu/)) that we strongly recommend exploring! In particular, the LNO has centralized resources for working group primary investigators (PIs) (see [here](https://lternet.edu/synthesis/guidance-working-group-pis/)). Additionally, the LNO has created some broader resources for all members of working groups (see [here](https://lternet.edu/synthesis/synthesis-resources/))
+The LTER Network Office (LNO) has curated some useful resources on their website ([lternet.edu](https://lternet.edu/)) that we strongly recommend exploring! In particular, the LNO has centralized resources for working group primary investigators (PIs) (see [here](https://lternet.edu/synthesis/guidance-working-group-pis/)). Additionally, the LNO has created some broader resources for all members of working groups (see [here](https://lternet.edu/synthesis/synthesis-resources/)).
+
+The [LTER Code of Conduct](https://lternet.edu/lter-meetings-code-of-conduct/) is also publicly available if you'd like to explore it.
 
 ## NCEAS' Resources for Working Groups
 
@@ -17,9 +19,9 @@ NCEAS hosts many working groups and so has drawn from its wealth of experience t
 
 In particular, *we recommend checking out the documents nested in the "How to Run a Working Group" dropdown menu.* Your group may also want to check out the "Reimbursement Forms" dropdown after your meetings in Santa Barbara to ensure that your eligible expenses get reimbursed!
 
-## Diversity & Inclusion at NCEAS
+## Diversity, Equity, and Inclusion
 
-NCEAS is committed to improving diversity and inclusion in science. For more information on NCEAS' commitment to this mission--and related links, please visit NCEAS' [diversity and inclusion page](https://www.nceas.ucsb.edu/diversity-inclusion).
+The LTER Network and NCEAS are committed to improving diversity and inclusion in science. For the LTER Network Office's diversity, equity and inclusion resources see [here](https://lternet.edu/network-organization/diversity-resources/). For more information on NCEAS' commitment to this mission--and related links--please visit NCEAS' [DEI page](https://www.nceas.ucsb.edu/diversity-inclusion).
 
 ## Visiting Santa Barbara
 
