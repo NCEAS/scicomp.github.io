@@ -10,7 +10,7 @@ title: "Scientific Computing Support"
 
 The Scientific Computing team is a small (but mighty!) team of data analysts/scientists supporting Long Term Ecological Research ([LTER](https://lternet.edu/)) Network synthesis working groups. The LTER Network Office (LNO) regularly issues calls for synthesis research projects, which are open to scientists from within and outside of the LTER Network. We provide modern technological infrastructure to support analytical, computing, or network-based needs for these synthesis working groups. 
 
-We are housed at the National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/)). *Our goal is to support and promote an open and reproducible approach to synthesis science*. We do so by providing on-demand training, coaching, and analytical support via sprints of 3-4 weeks. In addition to the support during meetings at NCEAS, our team is available in-between visits to discuss and advise on data science and scientific programming tasks, such as:
+We are housed at the National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/)). **Our goal is to support and promote an open and reproducible approach to synthesis science**. We do so by providing on-demand training, coaching, and analytical support via sprints of 3-4 weeks. In addition to the support during meetings at NCEAS, our team is available in-between visits to discuss and advise on data science and scientific programming tasks, such as:
 
 - Structuring and integrating heterogeneous datasets
 - Writing code to wrangle, analyze, model, or visualize the data your group has already collected
