@@ -47,3 +47,6 @@ best_practice_manuals/*.html
 
 # Ignore quarto
 /.quarto/
+
+# ignore rendering folder since we have github actions
+docs/
