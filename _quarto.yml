@@ -25,6 +25,7 @@ website:
       - text: "Trainings"
         menu:
          - workshops.qmd
+         - tutorial_server.qmd
          - tutorials.qmd
       - best_practices.qmd
       - portfolio.qmd

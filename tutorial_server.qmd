@@ -1,0 +1,237 @@
+---
+title: "Server Tutorial"
+---
+
+## Overview
+
+Working on [NCEAS' Server](https://aurora.nceas.ucsb.edu/) is similar to working on an entirely separate computer from the laptop or desktop computer on which you typically work. This means that you need to go through the steps of connecting GitHub to your "RStudio" again for the instance of RStudio accessed through Aurora. GitHub's Personal Access Token is referred to as "token" hereafter for simplicity.
+
+Often the reason to engage with the server is to increase the scale of your analyses far beyond what your personal computer can handle. There are other advantages such as:
+
+- **Storage Capacity** -- More disk space & faster storage
+- **Computing Power** -- More CPUs & RAM
+- **Security** -- Nightly backups and data are distributed across multiple drives
+- **Collaboration** -- Shared data & consistent software versions accessible to everyone on your team
+
+## Server Workflow
+
+Before diving into the process of getting set up on and using the server, it will be helpful to briefly consider what a workflow involving the server "looks" like! When you are working on the server you will need to consider what is stored on your personal computer (bottom left), on GitHub (bottom right), and on NCEAS' server (top).
+
+To simplify, let's focus on (1) where your data live and (2) where your code lives.
+
+<p align="center">
+<img src="images/tutorial_server/workflow-server.png" width="100%"/>
+</p>
+
+### Data
+
+Your data (or at least some of it) is likely on your personal computer. Those specific files are only accessible to you and you almost certainly have a file path to those data (i.e., levels of nested folders) that is unique to you. Even if you share the data file with someone on your team--via email or a cloud storage device--they will likely have to tweak any code that you share to ensure that the file paths are correct for their computer.
+
+When you involve the server, all of your group's data can live in a folder on the server within the `shares` folder. Only your group will have access to the data in that subfolder of `shares` . A huge advantage of this is that everyone in your group will now have <u>the exact same file path to the data</u>* while working on the server.
+
+This means that there is *no chance* that you can be working in the "wrong" version of the data (i.e., one that is outdated, doesn't reflect new metadata, etc.) because everyone is using the <u>exact same file(s)</u> rather than emailing static copies of data that may become outdated without warning.
+
+### Code
+
+We strongly recommend that you use [GitHub](https://github.com/) to store your code to streamline the use of either the server or your personal computer while collaborating with other group members.
+
+If you are unfamiliar with GitHub, it is a "version control system" that allows line-by-line tracking of changes to code. GitHub also allows multiple people to work on the same code which is very useful in collaborative contexts like working groups. GitHub is not really meant to track or store data (though it can do this in a somewhat limited way) so notice that the yellow "Data" folder is absent from the bottom right part of the triangle. We offer [an entire workshop on GitHub](https://nceas.github.io/scicomp-workshop-collaborative-coding/) that we are happy to offer to your group if that is of interest so just let us know!
+
+Assuming that you use GitHub, your code (and its history) will be preserved there. You can then write or edit code either on your personal computer or on the server. Regardless of where you make the changes, so long as you connect both your personal computer and your server profile to your GitHub account, you will have a centralized place for all of your code that is accessible to both workspaces.
+
+Notice that on the server, your code will be in your subfolder of the `home` folder on the server. Only you can access this folder! This means that everyone in your group can have their own code files while every copy of those scripts can use the file path in the `shares` folder to access the data files.
+
+A final advantage in the 'code' realm is that the server has a consistent version of R, RStudio, and `git` (the program underpinning GitHub) so there is no chance that a software version difference can affect different members of your group differently.
+
+## Getting Set Up
+
+### Necessary Software
+
+The only tool that you will need to get set up on NCEAS' server is RStudio!
+
+You likely have worked in the "Console" tab of RStudio  (where run lines and outputs appear; see below) but RStudio has another tab to the right of the "Console" called "Terminal" which offers RStudio users access to the **command line** (a.k.a. the **shell**). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) on Windows but for the sake of keeping your tool kit streamlined, we'll walk through getting set up on NCEAS' server using only RStudio's Terminal tab.
+
+<p align="center">
+<img src="images/tutorial_server/server-setup-1-console.png" width="85%"/>
+</p>
+
+The Terminal <u>does not</u> accept R syntax (and the Console doesn't accept Terminal syntax) so you may notice that some of the code we'll walk you through below is formatted differently than you would write an R script.
+
+<p align="center">
+<img src="images/tutorial_server/server-setup-2-terminal.png" width="85%"/>
+</p>
+
+### Get Invited!
+
+In order to access the server (and follow the instructions below) we'll need to create an identity for you. Please email [someone on our team](https://nceas.github.io/scicomp.github.io/staff.html) or **scicomp@nceas.ucsb.edu** so that we can contact NCEAS' IT team and get an invite email sent to you.
+
+In that email, please include the name and email addresses of all of your team members who want to access the server. After that information has been received, NCEAS' IT team will create accounts for all of those people and will send you an invitation email to set up your account on the server.
+
+An example of what that email may look like is included below but there are two key pieces of information:
+
+1. Your username
+2. Your temporary password (covered by a **<span style="color:red">red bar</span>** in the screenshot).
+
+If you have not received that email, check your Spam folder for emails from Thomas Hetmank (hetmank@nceas.ucsb.edu) or Nick Outin (outin@nceas.ucsb.edu). If you have not received the email and it is not in your Spam, reach out to our team and we will work to get an invite sent to you.
+
+<p align="center">
+<img src="images/tutorial_server/server-setup-3-invite-email.png" width="85%"/>
+</p>
+
+### Setting your Password
+
+#### Note on this Step of the Set Up
+
+Note that _you only have to set your password once!_ For security, when we create your account on the server we create a temporary password that can only be used once (see the invite email screenshot above). So, when you first login to the server by following the instructions below, you'll need to create a "real" (i.e., non-temporary) password. Subsequent sign-ins to the server do not require this 'Setting your Password' section at all!
+
+In the following instructions we use text formatting to explain what you should type.
+
+1. Text `like this` should be typed into the Terminal tab of Rstudio
+
+ - Run it by pressing "enter" or "return"
+ - Note that typing these commands into an R script or R Markdown *will not work* because it will attempt to run in the Console rather than the Terminal
+
+2. Text wrapped by brackets `[like this]` should also be typed in the Terminal tab **BUT** <u>you should replace the text in brackets</u> in a user-specific way that is clarified in the nearby text
+
+#### Password Setting Instructions
+
+1. In the Terminal pane of RStudio, you will "ssh" into the server by running the following code: `ssh [your username]@aurora.nceas.ucsb.edu`.  It is "@aurora" because **the name of the server is Aurora**.
+
+2. You will need to enter `yes` to accept the server's SSH key.
+
+3. You will then be prompted to enter your `[temporary password]` (see the above email example). **Note that the cursor will <u>not</u> advance as you type but it <u>is</u> registering your entries!** There will be no indication that you are typing (such as: "•••••••••"). This throws off many users so hopefully this note helps set your mind at ease!
+
+Next, you will be prompted to change your "expired" password. We consider your temporary password to be expired as soon as you use it because sharing passwords via email is not secure and this "expiration" lets you set the password to something that only you know at the outset of your time in the server. **<u>Note again that the cursor will not advance as you type but it is working</u>!** 
+
+4. To update your password, (i) enter your `[temporary password]`, then (ii) `[your strong new password]` and finally (iii) re-type `[your strong new password]` to confirm it. Note that your new password should not be "your strong new password" {{< fa face-smile >}}
+
+5. You are all set up! Run `exit` to log out of the server in the Terminal tab.
+
+## Accessing the Server
+
+1. Use your favorite web browser (e.g., Firefox, Chrome, etc.) to access Aurora at [aurora.nceas.ucsb.edu](https://aurora.nceas.ucsb.edu/) and click "Login to RStudio Server"
+
+<p align="center">
+<img src="images/tutorial_server/server-signin-1.png" width="60%"/>
+</p>
+
+2. Sign in with your username and the password that you created in the "Getting Set Up" section of this tutorial.
+
+<p align="center">
+<img src="images/tutorial_server/server-signin-2.png" width="100%"/>
+</p>
+
+You should now be in something that looks very much like RStudio but is housed in a tab on your browser!
+
+<p align="center">
+<img src="images/tutorial_server/server-signin-3.png" width="100%"/>
+</p>
+
+If the above steps have not resulted in successfully accessing Aurora, consult [NCEAS' instructions on first login](https://help.nceas.ucsb.edu/NCEAS/Computing/first_login_to_nceas_analytical_server) and/or [SSH-specific instructions for Mac vs. Windows](https://help.nceas.ucsb.edu/NCEAS/Computing/connecting_to_linux_using_ssh.html) and/or email us!
+
+## Connecting GitHub
+
+As stated at the beginning of this tutorial, we cannot overstate how strongly we suggest integrating [GitHub](https://github.com/) into your collaborative coding process. We are happy to work through [our GitHub tutorial](https://nceas.github.io/scicomp-workshop-collaborative-coding/) if that is of interest though you may find walking through the materials at your own pace helpful even without a formal workshop!
+
+When setting up `git`/GitHub on your personal computer, you normally have to install R, RStudio, `git`, and make an account on GitHub. When working on the server, R, RStudio, and `git` are already successfully installed and ready for you to use. So, to begin connecting your server profile with GitHub you need only follow these steps:
+
+1. **[Create a GitHub account](https://happygitwithr.com/github-acct.html)** using the web browser of your choosing.
+
+2. Install and load the `usethis` and `gitcreds` packages 
+
+```{r github-conxn-1, eval = F}
+install.packages(c("usethis", "gitcreds"))
+library(usethis); library(gitcreds)
+```
+
+3. Tell the server your GitHub username and email
+
+```{r github-conxn-2, eval = F}
+usethis::use_git_config(user.name = "Your GitHub Username",
+                        user.email = "Your GitHub Email")
+```
+
+4A. Create a Personal Access Token (PAT) on GitHub for your server profile. Note: <u>running the below line of code will open a browser window for you to create a token on GitHub</u>! For additional information, see [GitHub's PAT Tutorial](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or the [Happy Git with R PAT Tutorial](https://happygitwithr.com/https-pat.html).
+
+```{r github-conxn-3, eval = F}
+usethis::create_github_token()
+## Be sure to copy the token when you're done!!!
+## It will be a long string of letters and numbers
+```
+
+4B. Before you navigate away from the token page, <u>copy the token and paste it somewhere safe for the rest of these setup instructions</u>. If you close or leave the window without copying the token, you will <u>not</u> be able to see the token again so you'd have to make a new one to complete the next step.
+
+5. Finally, give your server profile the token you just created! Running the below line of code will prompt you to paste your token into the Console and hit enter. Note that your token *should not* be in quotes when you give it to the Console.
+
+```{r github-conxn-4, eval = F}
+gitcreds::gitcreds_set()
+```
+
+At the end of the above steps your token should be set! You should now be able to interact with code that you can access on GitHub directly from the server.
+
+## Accessing Data
+
+### Via RStudio (Upload Only)
+
+If you are uploading a single file, it may be most convenient to use RStudio's data upload capabilities. In the "Files" pane (default is top right but it may differ on your computer), you can click the button that is a white rectangle with a yellow circle with an upward facing arrow inside of it. In the below image the relevant button is in a red square.
+
+<p align="center">
+<img src="images/tutorial_server/server-upload-1.png" width="75%"/>
+</p>
+
+Clicking that button allows you to choose (1) where you want the uploaded file to go and (2) which file you want to upload.
+
+<p align="center">
+<img src="images/tutorial_server/server-upload-2.png" width="75%"/>
+</p>
+
+This is effective for one or a few files being uploaded to the same directory but can quickly become cumbersome if you want to upload many files or upload files to several different folders.
+
+### Via sFTP Software (Upload & Download)
+
+If you want to upload or download many files we recommend using sFTP software (<u>s</u>ecure <u>F</u>ile <u>T</u>ransfer <u>P</u>rotocol). Mac uers can use [Cyberduck](https://cyberduck.io/) and Windows users can use [WinSCP](https://winscp.net/eng/index.php). Both programs are free to use and more than capable of uploading and download many files to/from the server quickly and easily.
+
+Once you have installed one of these programs, you can sign in to the server from the sFTP program using your server username and password and can then upload or download files from your personal computer in the same way as you would move files among folders within your personal computer.
+
+#### Cyberduck Set Up Tutorial
+
+Here we briefly demonstrate how to set up a connection between Cyberduck and NCEAS' Server. Note that you must have already installed Cyberduck to follow these steps.
+
+1. In the Cyberduck window, click the "Open Connection" button with an icon of a globe with a plus sign. In the below image the button has a red square around it.
+
+<p align="center">
+<img src="images/tutorial_server/server-cyberduck-1.png" width="100%"/>
+</p>
+
+2. In the resulting window, input the following information:
+
+    - "Server" -- "aurora.nceas.ucsb.edu"
+    - "Username" -- whatever your username on the server is
+    - "Password" -- your password to the server
+    - "Port" -- change it to "22" (it will start as "21")
+
+<p align="center">
+<img src="images/tutorial_server/server-cyberduck-2.png" width="85%"/>
+</p>
+
+3. Once you've input the above information, click the "Connect" button and you should have access to the server! You can now click around the different folders you have access to and upload or download from there.
+
+- To download: click the files/folders that you want and they should begin downloading to your personal computer
+- To upload: drag and drop the files where you want them
+
+### Via the Command Line (Upload & Download)
+
+If you are more comfortable with a CLI (<u>C</u>ommand <u>L</u>ine <u>I</u>nterface) you can also use that method of uploading/downloading. The command line includes the Terminal pane in RStudio, Terminal app for Macs, and gitBash among others. As before, text below that is `like this` is a command line command while bracketed text `[like this]` should be replaced by some user-specific information.
+
+1. Connect to the server by running `sftp [user]@aurora.nceas.ucsb.edu:/home/shares`
+
+2. Go inside your group's folder by running `cd [your group's folder]`
+
+3. If needed, continue using `cd [folder]` to get to the subfolder you want to access. 
+
+    - If the folder name has spaces you'll need to "escape" the space by using a backslash (`\`)
+    - So the command would look like this: `cd [folder\ name]`
+
+4. When you are in the folder containing the file(s) you want, download the file you want by running `get [file name]`
+
+5. When you are done down/uploading, run `exit` to close the connection to the server
