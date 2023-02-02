@@ -27,7 +27,7 @@ To simplify, let's focus on (1) where your data live and (2) where your code liv
 
 Your data (or at least some of it) is likely on your personal computer. Those specific files are only accessible to you and you almost certainly have a file path to those data (i.e., levels of nested folders) that is unique to you. Even if you share the data file with someone on your team--via email or a cloud storage device--they will likely have to tweak any code that you share to ensure that the file paths are correct for their computer.
 
-When you involve the server, all of your group's data can live in a folder on the server within the `shares` folder. Only your group will have access to the data in that subfolder of `shares` . A huge advantage of this is that everyone in your group will now have <u>the exact same file path to the data</u>* while working on the server.
+When you involve the server, all of your group's data can live in a folder on the server within the `shares` folder. Only your group will have access to the data in that subfolder of `shares` . A huge advantage of this is that everyone in your group will now have <u>the exact same file path to the data</u> while working on the server.
 
 This means that there is *no chance* that you can be working in the "wrong" version of the data (i.e., one that is outdated, doesn't reflect new metadata, etc.) because everyone is using the <u>exact same file(s)</u> rather than emailing static copies of data that may become outdated without warning.
 
