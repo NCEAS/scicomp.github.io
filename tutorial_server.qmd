@@ -49,7 +49,7 @@ A final advantage in the 'code' realm is that the server has a consistent versio
 
 The only software that you will need on your personal computer to get set up on NCEAS' server is RStudio!
 
-You likely have worked in the "Console" tab of RStudio  (where run lines and outputs appear; see below) but RStudio has another tab to the right of the "Console" called "Terminal" which offers RStudio users access to the **command line** (a.k.a. the **shell**). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) on Windows but for the sake of keeping your tool kit streamlined, we'll walk through getting set up on NCEAS' server using only RStudio's Terminal tab.
+You likely have worked in the "Console" tab of RStudio (where run lines and outputs appear; see below) but RStudio has another tab to the right of the "Console" called "Terminal" which offers RStudio users access to the **command line** (a.k.a. the **shell**). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) on Windows but for the sake of keeping your tool kit streamlined, we'll walk through getting set up on NCEAS' server using only RStudio's Terminal tab.
 
 <p align="center">
 <img src="images/tutorial_server/server-setup-1-console.png" width="85%"/>
@@ -63,7 +63,7 @@ The Terminal <u>does not</u> accept R syntax (and the Console doesn't accept Ter
 
 ### Get Invited!
 
-In order to access the server (and follow the instructions below) we'll need to create an identity for you. Please email [someone on our team](https://nceas.github.io/scicomp.github.io/staff.html) or **scicomp@nceas.ucsb.edu** so that we can contact NCEAS' IT team and get an invite email sent to you.
+In order to access the server (and follow the instructions below) we'll need to create an account on the server for you. Please email [someone on our team](https://nceas.github.io/scicomp.github.io/staff.html) or **scicomp@nceas.ucsb.edu** so that we can contact NCEAS' IT team and get an invite email sent to you.
 
 In that email, please include the name and email addresses of all of your team members who want to access the server. After that information has been received, NCEAS' IT team will create accounts for all of those people and will send you an invitation email to set up your account on the server.
 
@@ -221,7 +221,7 @@ Here we briefly demonstrate how to set up a connection between Cyberduck and NCE
 
 ### Via the Command Line (Upload & Download)
 
-If you are more comfortable with a CLI (<u>C</u>ommand <u>L</u>ine <u>I</u>nterface) you can also use that method of uploading/downloading. The command line includes the Terminal pane in RStudio, Terminal app for Macs, and gitBash among others. As before, text below that is `like this` is a command line command while bracketed text `[like this]` should be replaced by some user-specific information.
+If you are more comfortable with a CLI (<u>C</u>ommand <u>L</u>ine <u>I</u>nterface) you can also use that method of uploading/downloading. The command line includes the Terminal pane in RStudio, Terminal app for Macs, PuTTY, and gitBash among others. As before, text below that is `like this` is a command line command while bracketed text `[like this]` should be replaced by some user-specific information.
 
 1. Connect to the server by running `sftp [user]@aurora.nceas.ucsb.edu:/home/shares`
 
