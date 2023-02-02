@@ -33,13 +33,13 @@ This means that there is *no chance* that you can be working in the "wrong" vers
 
 ### Code
 
-We strongly recommend that you use [GitHub](https://github.com/) to store your code to streamline the use of either the server or your personal computer while collaborating with other group members.
+We strongly recommend that you use [GitHub](https://github.com/) to manage your code to streamline the use of either the server or your personal computer while collaborating with other group members.
 
-If you are unfamiliar with GitHub, it is a "version control system" that allows line-by-line tracking of changes to code. GitHub also allows multiple people to work on the same code which is very useful in collaborative contexts like working groups. GitHub is not really meant to track or store data (though it can do this in a somewhat limited way) so notice that the yellow "Data" folder is absent from the bottom right part of the triangle. We offer [an entire workshop on GitHub](https://nceas.github.io/scicomp-workshop-collaborative-coding/) that we are happy to offer to your group if that is of interest so just let us know!
+If you are unfamiliar with git, it is a "version control system" that allows line-by-line tracking of changes to code. GitHub add features to git to enable multiple people to share and work on the same code which is very useful in collaborative contexts like working groups. Git and GitHub are not really meant to track or store data (though it can do this in a somewhat limited way) so notice that the yellow "Data" folder is absent from the bottom right part of the triangle. We offer [an entire workshop on GitHub](https://nceas.github.io/scicomp-workshop-collaborative-coding/) that we are happy to offer to your group if that is of interest so just let us know!
 
 Assuming that you use GitHub, your code (and its history) will be preserved there. You can then write or edit code either on your personal computer or on the server. Regardless of where you make the changes, so long as you connect both your personal computer and your server profile to your GitHub account, you will have a centralized place for all of your code that is accessible to both workspaces.
 
-Notice that on the server, your code will be in your subfolder of the `home` folder on the server. Only you can access this folder! This means that everyone in your group can have their own code files while every copy of those scripts can use the file path in the `shares` folder to access the data files.
+Notice that on the server, your code will be in your subfolder of the `home` folder on the server. Only you can access this folder and you will be leveraging GitHub to share your code with others! This means that everyone in your group can have their own code files while every copy of those scripts can use the file path in the `shares` folder to access the data files. In other words, use GitHub to share your code stored in your home folder and your group shared folder to share data.
 
 A final advantage in the 'code' realm is that the server has a consistent version of R, RStudio, and `git` (the program underpinning GitHub) so there is no chance that a software version difference can affect different members of your group differently.
 
@@ -47,7 +47,7 @@ A final advantage in the 'code' realm is that the server has a consistent versio
 
 ### Necessary Software
 
-The only tool that you will need to get set up on NCEAS' server is RStudio!
+The only software that you will need on your personal computer to get set up on NCEAS' server is RStudio!
 
 You likely have worked in the "Console" tab of RStudio  (where run lines and outputs appear; see below) but RStudio has another tab to the right of the "Console" called "Terminal" which offers RStudio users access to the **command line** (a.k.a. the **shell**). If you are a veteran command line user you may prefer to use the standalone Terminal app on MacOS or [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) on Windows but for the sake of keeping your tool kit streamlined, we'll walk through getting set up on NCEAS' server using only RStudio's Terminal tab.
 
