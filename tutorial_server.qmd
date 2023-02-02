@@ -4,12 +4,12 @@ title: "Server Tutorial"
 
 ## Overview
 
-Working on [NCEAS' Server](https://aurora.nceas.ucsb.edu/) is similar to working on an entirely separate computer from the laptop or desktop computer on which you typically work. This means that you need to go through the steps of connecting GitHub to your "RStudio" again for the instance of RStudio accessed through Aurora. GitHub's Personal Access Token is referred to as "token" hereafter for simplicity.
+Working on [NCEAS' Server](https://aurora.nceas.ucsb.edu/) is similar to working on an entirely separate computer from the laptop or desktop computer on which you typically work. This means that you need to go through the steps of connecting GitHub to your "RStudio" again for the instance of RStudio accessed through Aurora. GitHub's Personal Access Token is referred to as "token" hereafter for simplicity. Note that our server also runs other analytical tools such as JupyterHub for python users.
 
 Often the reason to engage with the server is to increase the scale of your analyses far beyond what your personal computer can handle. There are other advantages such as:
 
 - **Storage Capacity** -- More disk space & faster storage
-- **Computing Power** -- More CPUs & RAM
+- **Computing Power** -- More CPUs & RAM (384GB!!)
 - **Security** -- Nightly backups and data are distributed across multiple drives
 - **Collaboration** -- Shared data & consistent software versions accessible to everyone on your team
 
