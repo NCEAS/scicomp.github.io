@@ -161,13 +161,21 @@ usethis::create_github_token()
 
 4B. Before you navigate away from the token page, <u>copy the token and paste it somewhere safe for the rest of these setup instructions</u>. If you close or leave the window without copying the token, you will <u>not</u> be able to see the token again so you'd have to make a new one to complete the next step.
 
-5. Finally, give your server profile the token you just created! Running the below line of code will prompt you to paste your token into the Console and hit enter. Note that your token *should not* be in quotes when you give it to the Console.
+5. Next, give your server profile the token you just created! Running the below line of code will prompt you to paste your token into the Console and hit enter. Note that your token *should not* be in quotes when you give it to the Console.
 
 ```{r github-conxn-4, eval = F}
 gitcreds::gitcreds_set()
 ```
 
 At the end of the above steps your token should be set! You should now be able to interact with code that you can access on GitHub directly from the server.
+
+6. Finally, <u>in the Terminal pane of RStudio</u> you need to tell the server to "remember" your token for some set amount of time.
+
+```{bash github-conxn-5, eval = F}
+git config --global credential.helper 'cache --timeout=10000000'
+```
+
+The `timeout` bit of that argument is the amount of time in minutes you want your token to be remembered. You can't set it to remember your token forever so 10 million minutes (just over 19 years) should be long enough that you don't need to worry about this again.
 
 ## Accessing Data
 
@@ -301,7 +309,7 @@ The `get` command can be used to *download* a file.
 sftp [user]@aurora.nceas.ucsb.edu:/home/shares
 ```
 
-Your prompt at the shell should now have switched to `sftp>` and although it is the same window your are now looking at the files on the server! Try it by typing the `ls` command at the prompts. This will list all the files and folders within the `shares` folder on Aurora.
+Your prompt at the shell should now have switched to `sftp>` and although it is the same window you are now looking at the files on the server! Try it by typing the `ls` command at the prompts. This will list all the files and folders within the `shares` folder on Aurora.
 
 2. Enter your group's folder in the `shares` folder
 
