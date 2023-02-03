@@ -325,7 +325,7 @@ get [file_name_server]
 ```
 
 
-5. ou can also upload a local file to the server by using the `put` sFTP command
+5. You can also upload a local file to the server by using the `put` sFTP command
 ```{bash, eval = F}
 put [file_name_local]
 ```
