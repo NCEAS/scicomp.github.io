@@ -261,19 +261,19 @@ The `scp` command can be used to *upload* a file or folder from your computer to
 
 1A. Navigate to the folder <u>on your computer</u> containing the file(s) you want to upload
 
-```{bash, eval = F}
+```{bash scp-1, eval = F}
 cd [folder]
 ```
 
 - Note that if the folder name has spaces you'll need to "escape" the space by using a backslash (`\`)
 
-```{bash, eval = F}
+```{bash scp-2, eval = F}
 cd [folder\ name]
 ```
 
 2A. Now you can upload that file to the server!
 
-```{bash, eval = F}
+```{bash scp-3, eval = F}
 scp [file_name] [user]@aurora.nceas.ucsb.edu:/[path/to/destination_folder/]
 ```
 
@@ -281,13 +281,13 @@ If instead you'd like to upload all of the files in a folder, do the following:
 
 1B. Navigate to the folder containing the folder on your computer you want to upload (using `cd`)
 
-```{bash, eval = F}
+```{bash scp-4, eval = F}
 cd [folder]
 ```
 
 2B. Use `scp` with the recursive option (`-r`) to upload all of the files in that folder
 
-```{bash, eval = F}
+```{bash scp-5, eval = F}
 scp -r [folder] [user]@aurora.nceas.ucsb.edu:/[path/to/destination_folder/]
 ```
 
@@ -295,7 +295,7 @@ scp -r [folder] [user]@aurora.nceas.ucsb.edu:/[path/to/destination_folder/]
 
 Finally, note that you can also *download* files from the server to your local machine by simply switching the order of the machines:
 
-```{bash, eval = F}
+```{bash scp-6, eval = F}
 scp [user]@aurora.nceas.ucsb.edu:/[path/to/server_folder/file_name] [local_folder] 
 ```
 
@@ -305,7 +305,7 @@ The `get` command can be used to *download* a file.
 
 1. Connect to the server
 
-```{bash, eval = F}
+```{bash sftp-1, eval = F}
 sftp [user]@aurora.nceas.ucsb.edu:/home/shares
 ```
 
@@ -313,13 +313,13 @@ Your prompt at the shell should now have switched to `sftp>` and although it is 
 
 2. Enter your group's folder in the `shares` folder
 
-```{bash, eval = F}
+```{bash sftp-2, eval = F}
 cd [your_group_folder]
 ```
 
 3. If needed, continue using `cd` to get to the subfolder you want to access. Remember to "escape" any spaces in the folder name with backslashes!
 
-```{bash, eval = F}
+```{bash sftp-3, eval = F}
 cd [subfolder]
 ```
 
@@ -327,18 +327,18 @@ Note that most of the bash command will work, so you can use `ls` to list files 
 
 4. When you are in the folder containing the file(s) you want, download the file you want
 
-```{bash, eval = F}
+```{bash sftp-4, eval = F}
 get [file_name_server]
 ```
 
 5. You can also upload a local file to the server by using the `put` sFTP command
 
-```{bash, eval = F}
+```{bash sftp-5, eval = F}
 put [file_name_local]
 ```
 
 6. When you are done downloading, close the connection to the server
 
-```{bash, eval = F}
+```{bash sftp-6, eval = F}
 exit
 ```
