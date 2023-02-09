@@ -49,5 +49,5 @@ Welcome! Even if you're not a part of a synthesis working group, we hope that yo
 
 <p align="center">
 <img src = "images/lter_asm.jpeg" width = "100%"/>
-<figcaption>LTER All Scientists' Meeting 2022, Monterey CA</figcaption>
+<figcaption>LTER All Scientists' Meeting 2022, Pacific Grove CA</figcaption>
 </p>
