@@ -49,4 +49,7 @@ best_practice_manuals/*.html
 /.quarto/
 
 # ignore rendering folder since we have github actions
-# docs/
+docs/
+
+# Ignore .DS_Store
+.DS_Store
