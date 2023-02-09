@@ -2,6 +2,9 @@ project:
   type: website
   execute-dir: project
   output-dir: docs
+  
+execute:
+  freeze: auto
 
 website:
   title: "Scientific Computing Support"
