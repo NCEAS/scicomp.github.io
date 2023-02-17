@@ -1,10 +1,14 @@
 
 In order to connect R with a GoogleDrive, we'll need to authorize `googledrive` to act on our behalf. This only needs to be done once (per computer) so follow along and you'll be building GoogleDrive into your workflows in no time!
 
-First, **install the `googledrive` and `httpuv` R packages**. The `googledrive` package's need is self-evident while the `httpuv` package makes the following steps a little easier than `googledrive` makes it alone.
+First, **install the `googledrive` and `httpuv` R packages**. The `googledrive` package's need is self-evident while the `httpuv` package makes the following steps a little easier than `googledrive` makes it alone. Be sure to load the `googledrive` package after you install it!
 
 ```{r load-packages, eval = F}
+# Install packages
 install.packages(c("googledrive", "httpuv"))
+
+# Load them
+library(googledrive)
 ```
 
 Once you've installed the packages we can begin the authentication in R using the `drive_auth` function in the `googledrive` package.
