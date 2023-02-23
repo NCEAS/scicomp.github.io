@@ -248,9 +248,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <p>In order to connect R with a GoogleDrive, we’ll need to authorize <code>googledrive</code> to act on our behalf. This only needs to be done once (per computer) so follow along and you’ll be building GoogleDrive into your workflows in no time!</p>
-<p>First, <strong>install the <code>googledrive</code> and <code>httpuv</code> R packages</strong>. The <code>googledrive</code> package’s need is self-evident while the <code>httpuv</code> package makes the following steps a little easier than <code>googledrive</code> makes it alone.</p>
+<p>First, <strong>install the <code>googledrive</code> and <code>httpuv</code> R packages</strong>. The <code>googledrive</code> package’s need is self-evident while the <code>httpuv</code> package makes the following steps a little easier than <code>googledrive</code> makes it alone. Be sure to load the <code>googledrive</code> package after you install it!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"googledrive"</span>, <span class="st">"httpuv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"googledrive"</span>, <span class="st">"httpuv"</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load them</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(googledrive)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Once you’ve installed the packages we can begin the authentication in R using the <code>drive_auth</code> function in the <code>googledrive</code> package.</p>
 <div class="cell">
