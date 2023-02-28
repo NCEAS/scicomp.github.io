@@ -12,6 +12,7 @@ website:
   repo-url: https://github.com/NCEAS/scicomptasks
   repo-actions: [issue]
   twitter-card: true
+  google-analytics: "G-YGFW2JT4EY"
   navbar:
     background: primary
     left:
