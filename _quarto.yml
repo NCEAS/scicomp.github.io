@@ -39,6 +39,8 @@ website:
             href: staff.qmd
           - text: "Internal Onboarding"
             href: team-onboarding.qmd
+          - text: "Data Acquisition"
+            href: data-acquisition.qmd
     right:
       - icon: github
         href: https://github.com/NCEAS/scicomptasks
