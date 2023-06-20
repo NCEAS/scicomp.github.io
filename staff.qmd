@@ -4,16 +4,6 @@ title: "Our Team"
 
 Because we live in an era where we may only meet in person sporadically, we felt it would be nice to introduce ourselves here to help you put a face to the emails / Slack messages / GitHub issues we exchange going forward! If you would like to email the whole team as one send your questions to **scicomp@nceas.ucsb.edu**
 
-## Julien Brun
-
-[brunj7.github.io](https://brunj7.github.io/) -- {{< fa brands github >}} [brunj7](https://github.com/brunj7) -- {{< fa brands twitter >}} [\@brunj7](https://twitter.com/brunj7) -- **brun@nceas.ucsb.edu**
-
-<img src="images/jbrun.jpeg" align="right" width="25%"/>
-
-As a senior data scientist, the core of Julien's work is to understand the data and computing challenges researchers are facing and help them to translate these challenges into solvable tasks. Julien advises and mentors on how to clean, structure, combine, and analyze their heterogeneous data sets, as well as scaling up their analysis while promoting open and reproducible data science principles.
-
-Julien is also a Lecturer in the [Master in Environmental Data Science](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) program at Bren School of Environmental Science and Management at UC Santa Barbara, where he teaches “good enough” practices in reproducible and collaborative data science.
-
 ## Angel Chen
 
 {{< fa brands github >}} [angelchen7](https://github.com/angelchen7) -- **anchen@nceas.ucsb.edu**
