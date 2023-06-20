@@ -10,13 +10,13 @@ Since working groups may ask us to get and wrangle data from some popular databa
 
 The [TRY database](https://www.try-db.org/TryWeb/Home.php) offers a wide variety of plant trait data for many species. As of 2023, the database contains over 15 million trait records for over 300 thousand plant taxa. 
 
-**1. Account Registration**
+#### **1. Account Registration**
 
 To get started, first [create an account on TRY](https://www.try-db.org/TryWeb/RegStart.php). After filling out the required fields, TRY will send an email to you with your password. Log in with your email and password. 
 
 <img src="images/data-acquisition-TRY/TRY-1.png" align="center" width="100%"/>
 
-**2. Terms and Conditions**
+#### **2. Terms and Conditions**
 
 After logging in for the first time, TRY will direct you to its Intellectual Property Guidelines. Scroll down and click 'I accept' to proceed.
 
@@ -24,7 +24,7 @@ After logging in for the first time, TRY will direct you to its Intellectual Pro
 
 <img src="images/data-acquisition-TRY/TRY-3.png" align="center" width="40%"/>
 
-**3. Start a Data Request and Select Traits**
+#### **3. Start a Data Request and Select Traits**
 
 TRY will then redirect you to the [Request Data](https://www.try-db.org/TryWeb/Prop2.php) page to begin a new request. This page can also be accessed by clicking "Data Portal" > "TRY Database". The recommendation is to request by traits/species.
 
@@ -36,7 +36,7 @@ The list of all trait IDs is [here](https://www.try-db.org/TryWeb/Prop023.php). 
 
 <img src="images/data-acquisition-TRY/TRY-5.png" align="center" width="100%"/>
 
-**4. Select Species**
+#### **4. Select Species**
 
 Next, you will be prompted to select the species you want data for. Each species is associated with a numeric ID, so enter the desired IDs in the field below. For example, 29 represents Abies alba and 56 represents Abies lasiocarpa. 
 
@@ -46,7 +46,7 @@ The list of all plant IDs is [here](https://www.try-db.org/dnld/TryAccSpecies.tx
 
 <img src="images/data-acquisition-TRY/TRY-7.png" align="center" width="100%"/>
 
-**5. Choose Data Type: Public or Private**
+#### **5. Choose Data Type: Public or Private**
 
 Then, you must choose whether you want to request public data or public+private data. The former option will get you the data faster, while the latter option may take up to 14 days because the dataset custodians must respond to your request. 
 
@@ -54,13 +54,13 @@ In our previous experience, requesting public data usually gets you the data wit
 
 <img src="images/data-acquisition-TRY/TRY-8.png" align="center" width="100%"/>
 
-**6. Describe Data Request**
+#### **6. Describe Data Request**
 
 Once you have chosen which type of data you want, you will be prompted to enter the title and description of your project. These fields will be necessary if you requested for public+private data since the dataset custodians will need a reason to make their data available for your request.
 
 <img src="images/data-acquisition-TRY/TRY-9.png" align="center" width="100%"/>
 
-**7. Add Coauthors**
+#### **7. Add Coauthors**
 
 Add any relevant coauthors to your request before proceeding. It's a good idea to add your fellow data analysts and/or working group PIs.
 
@@ -68,8 +68,14 @@ Add any relevant coauthors to your request before proceeding. It's a good idea t
 
 <img src="images/data-acquisition-TRY/TRY-11.png" align="center" width="100%"/>
 
-**8. Finish Request and Wait**
+#### **8. Finish Request and Wait**
 
 Your request is now complete! You will receive an email from TRY notifiying you that they have received your request. Wait for a subsequent email from them to get the actual download link to the data. 
 
 <img src="images/data-acquisition-TRY/TRY-12.png" align="center" width="100%"/>
+
+### Relevant example
+
+Please see our [GitHub issue #122](https://github.nceas.ucsb.edu/LTER/lter-wg-scicomp/issues/122) and the scripts in this [folder](https://github.com/knigro83/LTER_plant_reproduction/tree/main/traits) for an example on how we pulled and integrated data from the TRY database.
+
+
