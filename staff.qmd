@@ -6,7 +6,7 @@ Because we live in an era where we may only meet in person sporadically, we felt
 
 ### Angel Chen
 
-{{< fa brands github >}} [angelchen7](https://github.com/angelchen7) -- **anchen@nceas.ucsb.edu**
+[angelchen7.github.io](https://angelchen7.github.io/) -- {{< fa brands github >}} [angelchen7](https://github.com/angelchen7) -- **anchen@nceas.ucsb.edu**
 
 <img src="images/achen.jpeg" align="right" width="25%"/>
 
