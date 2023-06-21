@@ -84,9 +84,57 @@ See our [GitHub issue #122](https://github.nceas.ucsb.edu/LTER/lter-wg-scicomp/i
 
 ### Guide
 
-#### 1. ...
+NASA's [AppEEARS](https://appeears.earthdatacloud.nasa.gov/) (<u>App</u>lication for <u>E</u>xtracting and <u>E</u>xploring <u>A</u>nalysis <u>R</u>eady <u>S</u>amples) platform is a useful way of extracting spatial data within a user-defined bounding box or specific points. A ton of spatial data (including MODIS datasets) are available here so it makes this portal a useful 'one-stop shop' for groups that want more than one spatial variable. 
 
-#### 2. ...
+#### 1. Account Registration / Sign In
+
+
+
+#### 2. Begin an Extraction Request
+
+Select "Extract"
+
+Select "Area"
+
+#### 3. Pick Request Type
+
+
+"Start a new request"
+
+
+"Copy a previous request"
+
+#### 4. Fill out Request
+
+
+Request Name (for your future use)
+
+
+Draw polygon over area of interest (*note data download limitation)
+
+
+Pick data product(s) to include in request
+
+
+Choose output file format (raster vs. netCDF)
+
+
+Choose projection system (**so** helpful!)
+
+Click "Submit"
+
+#### 5. Download Completed Request
+
+Await email notification of request **completion**
+
+Will receive a "Request Received" email first and then some time later (longer for bigger requests) will get a "Request Complete" email
+
+
+
+
+
+
+
 
 ### Relevant Example
 
