@@ -28,13 +28,13 @@ We rely heavily on [GitHub](https://github.com/) for collaboration, and there ar
 
 ### LTER GitHub Organization
 
-Register (if you have not already) for a personal GitHub account and send your username to Julien to be added to the [LTER GitHub](https://github.com/LTER). This GitHub Organization "owns" the working groups repositories that you will be directly working with so being added to this organization will give you access to needed repositories.
+Register (if you have not already) for a personal GitHub account and send your username to Marty to be added to the [LTER GitHub](https://github.com/LTER). This GitHub Organization "owns" the working groups repositories that you will be directly working with so being added to this organization will give you access to needed repositories.
 
 ### NCEAS GitHub Enterprise Organization
 
 We use a GitHub Enterprise account to keep track of tasks for the Scientific Computing Support of LTER working groups. To be added to the account you must create an NCEAS account.
 
-Follow the directions outlined [here](https://docs.google.com/document/d/1eoR1oDrCrczgbYHPZU_1szB_2fhzu7EUHnh5nFI3eSg/edit) and send your username to Julien Brun (not the email outlined in the Google Doc).
+Follow the directions outlined [here](https://docs.google.com/document/d/1eoR1oDrCrczgbYHPZU_1szB_2fhzu7EUHnh5nFI3eSg/edit) and send your username to Marty Downs (not the email outlined in the Google Doc).
 
 After you have been added, you will be able to access the [Issues tab of the lter-wg-scicomp GitHub repository](https://github.nceas.ucsb.edu/LTER/lter-wg-scicomp/issues). We use issues on this repository to keep track of tasks and projects as well as who is primarily responsible for a given task and which working group gave us the task initially.
 
@@ -48,13 +48,13 @@ Finally, complete [this short tutorial](https://pages.github.nceas.ucsb.edu/NCEA
 
 ### NCEAS Server: Aurora
 
-We use the Aurora server (located at aurora.nceas.ucsb.edu) when working with RStudio or JupyterHub. Send an email to help@nceas.ucsb.edu requesting an account mentioning you are working with Julien. Thomas Hetmank or Nick Outin will contact you with directions for setting up an account.
+We use the Aurora server (located at aurora.nceas.ucsb.edu) when working with RStudio or JupyterHub. Send an email to help@nceas.ucsb.edu requesting an account mentioning you are working with Marty. Thomas Hetmank or Nick Outin will contact you with directions for setting up an account.
 
 ## Recurring NCEAS Meetings
 
-There are a number of recurring meetings that you are encouraged to attend. At your hiring, you should recieve an invitation to the NCEAS Google Calendar which has links to all the meeting information. These include Coffee Klatch (a coffee social), Hacky Hours, and Data Science Chats (to name a few).
+There are a number of recurring meetings that you are encouraged to attend. At your hiring, you should receive an invitation to the NCEAS Google Calendar which has links to all the meeting information. These include Coffee Klatch (a coffee social), Hacky Hours, and Data Science Chats (to name a few).
 
-We also have a team Google Calendar to manage team events. Julien will add you if you have not been already.
+We also have a team Google Calendar to manage team events. Marty will add you if you have not been already.
 
 ## Data Science Background and Tutorials
 
@@ -68,7 +68,7 @@ Chapters [9](https://science-for-nature-and-people.github.io/2020-data-collab-wo
 
 Finally, please complete this [R Training Assessment](https://cosima.nceas.ucsb.edu/r-self-assessment/) to self-assess your skills in R.
 
-Schedule a session with Julien to debrief on your experience.
+Schedule a session with the rest of the team to debrief on your experience.
 
 ## HR-related Resources
 
