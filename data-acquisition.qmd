@@ -88,60 +88,89 @@ NASA's [AppEEARS](https://appeears.earthdatacloud.nasa.gov/) (<u>App</u>lication
 
 #### 1. Account Registration / Sign In
 
+To begin, visit the [AppEEARS](https://appeears.earthdatacloud.nasa.gov/) website and register for an account. After filling out the necessary personal information and confirming your email address you should be able to sign into the portal using your username and password.
+
+<img src="images/data-acquisition-AppEEARS/AppEEARS-1.png" width="100%"/>
 
 
 #### 2. Begin an Extraction Request
 
-Select "Extract"
+In order to begin an extraction request, navigate to the "Extract" button in the navbar at the top of the site and click it. Select "Area" in the resulting dropdown menu of options.
 
-Select "Area"
+<img src="images/data-acquisition-AppEEARS/AppEEARS-2.png" width="100%"/>
 
 #### 3. Pick Request Type
 
+You can now decide whether to start your data request from scratch ("Start a new request" on the left) or if you'd like to use a previous request as a starting point ("Copy a previous request"). Note that uploading a request as a JSON is also available but I found the user interface intuitive enough that I wasn't tempted to use this option.
 
-"Start a new request"
+The primary advantage--as I see it--of duplicating a request is that it allows you to re-use your manually-drawn bounding box. This makes multiple requests for different datasets exactly share the same area which makes the eventual harmonization of those data that much simpler.
 
+Starting a new request is the option I take only when I haven't previously drawn a bounding box for the area of interest.
 
-"Copy a previous request"
+<img src="images/data-acquisition-AppEEARS/AppEEARS-3.png" width="100%"/>
 
 #### 4. Fill out Request
 
+Regardless of whether you're starting from a blank slate or from a previous request, the next step involves customizing this request. You'll need to perform the following steps to complete the request:
 
-Request Name (for your future use)
+- **Enter a name for this request**
 
+This name is only for your internal use so it can use your idiosyncrasies but should imply something about the data layer(s) and bounding box location to make it decipherable by others.
 
-Draw polygon over area of interest (*note data download limitation)
+- **Draw a polygon over your area of interest**
 
+Note that the multi-point polygon tends to result in larger data requests than a square because it overlaps more separate tiles of the source data.
 
-Pick data product(s) to include in request
+- **Decide on starting/ending dates**
 
+Regardless of the temporal granularity of the source data the time range requires you to specify specific days, months, and years.
 
-Choose output file format (raster vs. netCDF)
+- **Pick data layers for that area and time range**
 
+The search field for the data layers is pretty robust and allows you to either search MODIS codes or names of the data (e.g., "snow" or "MODIS10A2")
 
-Choose projection system (**so** helpful!)
+- **Choose output file format**
 
-Click "Submit"
+Your options are GeoTiff (i.e., raster) or netCDF
 
-#### 5. Download Completed Request
+- **Choose projection system**
 
-Await email notification of request **completion**
+This option is *so helpful!* Specifying your projection system lets you put all of the computational labor for re-projecting into a different coordinate reference system (CRS) onto AppEEARS rather than leaving it for you to handle after the fact
 
-Will receive a "Request Received" email first and then some time later (longer for bigger requests) will get a "Request Complete" email
+<img src="images/data-acquisition-AppEEARS/AppEEARS-4.png" width="100%"/>
+<img src="images/data-acquisition-AppEEARS/AppEEARS-5.png" width="100%"/>
 
+#### 5. Submit Request
 
+When you are ready, click "Submit" at the bottom of the request screen <img src="images/data-acquisition-AppEEARS/AppEEARS-6.png" width="15%"/>
 
+If your request is at or below the data limit per request, you will receive a narrow green banner at the top of the request page notifying you of the success.
 
+<img src="images/data-acquisition-AppEEARS/AppEEARS-7.png" width="100%"/>
 
+If you have requested too much data you will receive a red banner notifying you of this fact and quantifying how far over the limit your request is.
 
+<img src="images/data-acquisition-AppEEARS/AppEEARS-7B.png" width="100%"/>
 
+The data limit is affected by (1) the spatial extent of the request, (2) the temporal extent of the request, and (3) the number of included data layers. If you are over the limit you will need to reduce one of these parameters.
+
+If possible, I recommend first reducing the number of data layers as you duplicating a request with a shared bounding box and time range with a different data layer is really straightforward. If you need to re-draw the bounding box you'll need to open another data request and manually draw additional bounding boxes to eventually fill out the total area of interest which can be somewhat cumbersome.
+
+#### 6. Download Completed Request
+
+Moments after submitting the request successfully you will receive a "Request Received" email from AppEEARS inviting you to 'explore' your request. This can be safely ignored as it contains only the information that you just entered.
+
+Some time later (usually hours if not a day or two for larger requests) you will receive a second email notifying you that the request is complete! That email has both the "Explore" link from the preceding email and a "Download" link.
+
+Click the provided link and on the resulting AppEEARS page you can download the data your request yields onto your computer to do with what you will.
+
+Note that requests do expire after a few weeks/months so you'll want to download the data as soon as possible. If a request is expired and you'd like to re-request, there is a button to do exactly that but you'll need to wait for the request to process again before being able to re-download the data.
 
 ### Relevant Example
 
+Consult the LTER Organization-owned Silica Export GitHub repository (see the [README here](https://github.com/lter/lterwg-si-export#readme)) for an example of how we wrangled and extracted data retrieved from AppEEARS.
 
-
-
-
+Of particular relevance is likely the "crop-drivers.R" script where we read in the data downloaded from AppEEARS and crop each data request to avoid the small amount of spatial overlap among requests. These requests ran into the data limit and had to be split among several requests that (slightly) overlap one another. To avoid re-sampling the same pixels, the rasters retrieved from AppEEARS each needed to be cropped slightly.
 
 ## NEON
 
