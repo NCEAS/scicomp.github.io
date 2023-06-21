@@ -22,7 +22,9 @@ After logging in for the first time, TRY will direct you to its Intellectual Pro
 
 <img src="images/data-acquisition-TRY/TRY-2.png" align="center" width="100%"/>
 
-<img src="images/data-acquisition-TRY/TRY-3.png" align="center" width="40%"/>
+<p align="center">
+<img src="images/data-acquisition-TRY/TRY-3.png" width="40%"/>
+</p>
 
 #### **3. Start a Data Request and Select Traits**
 
