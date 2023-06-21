@@ -154,7 +154,7 @@ If you have requested too much data you will receive a red banner notifying you 
 
 The data limit is affected by (1) the spatial extent of the request, (2) the temporal extent of the request, and (3) the number of included data layers. If you are over the limit you will need to reduce one of these parameters.
 
-If possible, I recommend first reducing the number of data layers as you duplicating a request with a shared bounding box and time range with a different data layer is really straightforward. If you need to re-draw the bounding box you'll need to open another data request and manually draw additional bounding boxes to eventually fill out the total area of interest which can be somewhat cumbersome.
+If possible, I recommend first reducing the number of data layers as duplicating a request with a shared bounding box and time range with a different data layer is really straightforward. If you need to re-draw the bounding box you'll need to open another data request and manually draw additional bounding boxes to eventually fill out the total area of interest which can be somewhat cumbersome.
 
 ### **6. Download Completed Request**
 
