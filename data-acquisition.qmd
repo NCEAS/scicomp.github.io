@@ -86,20 +86,20 @@ See our [GitHub issue #122](https://github.nceas.ucsb.edu/LTER/lter-wg-scicomp/i
 
 NASA's [AppEEARS](https://appeears.earthdatacloud.nasa.gov/) (<u>App</u>lication for <u>E</u>xtracting and <u>E</u>xploring <u>A</u>nalysis <u>R</u>eady <u>S</u>amples) platform is a useful way of extracting spatial data within a user-defined bounding box or specific points. A ton of spatial data (including MODIS datasets) are available here so it makes this portal a useful 'one-stop shop' for groups that want more than one spatial variable. 
 
-### 1. Account Registration / Sign In
+### **1. Account Registration / Sign In**
 
 To begin, visit the [AppEEARS](https://appeears.earthdatacloud.nasa.gov/) website and register for an account. After filling out the necessary personal information and confirming your email address you should be able to sign into the portal using your username and password.
 
 <img src="images/data-acquisition-AppEEARS/AppEEARS-1.png" width="100%"/>
 
 
-### 2. Begin an Extraction Request
+### **2. Begin an Extraction Request**
 
 In order to begin an extraction request, navigate to the "Extract" button in the navbar at the top of the site and click it. Select "Area" in the resulting dropdown menu of options.
 
 <img src="images/data-acquisition-AppEEARS/AppEEARS-2.png" width="100%"/>
 
-### 3. Pick Request Type
+### **3. Pick Request Type**
 
 You can now decide whether to start your data request from scratch ("Start a new request" on the left) or if you'd like to use a previous request as a starting point ("Copy a previous request"). Note that uploading a request as a JSON is also available but I found the user interface intuitive enough that I wasn't tempted to use this option.
 
@@ -109,7 +109,7 @@ Starting a new request is the option I take only when I haven't previously drawn
 
 <img src="images/data-acquisition-AppEEARS/AppEEARS-3.png" width="100%"/>
 
-### 4. Fill out Request
+### **4. Fill out Request**
 
 Regardless of whether you're starting from a blank slate or from a previous request, the next step involves customizing this request. You'll need to perform the following steps to complete the request:
 
@@ -140,7 +140,7 @@ This option is *so helpful!* Specifying your projection system lets you put all 
 <img src="images/data-acquisition-AppEEARS/AppEEARS-4.png" width="100%"/>
 <img src="images/data-acquisition-AppEEARS/AppEEARS-5.png" width="100%"/>
 
-### 5. Submit Request
+### **5. Submit Request**
 
 When you are ready, click "Submit" at the bottom of the request screen <img src="images/data-acquisition-AppEEARS/AppEEARS-6.png" width="15%"/>
 
@@ -156,7 +156,7 @@ The data limit is affected by (1) the spatial extent of the request, (2) the tem
 
 If possible, I recommend first reducing the number of data layers as you duplicating a request with a shared bounding box and time range with a different data layer is really straightforward. If you need to re-draw the bounding box you'll need to open another data request and manually draw additional bounding boxes to eventually fill out the total area of interest which can be somewhat cumbersome.
 
-### 6. Download Completed Request
+### **6. Download Completed Request**
 
 Moments after submitting the request successfully you will receive a "Request Received" email from AppEEARS inviting you to 'explore' your request. This can be safely ignored as it contains only the information that you just entered.
 
