@@ -22,11 +22,11 @@ Once everything has been staged, **you now must commit those staged files** with
 git commit -m "Initial commit"
 ```
 
-Now that your project files have been committed, you need to **tell your computer where you will be pushing to and pulling from.** Paste the link you copied at the end of the "Make a New GitHub Repository" into the code shown in the chunk below (inside of the `[...]`) and run it.
+Now that your project files have been committed, you need to **tell your computer where you will be pushing to and pulling from.** Paste the link you copied at the end of the "Make a New GitHub Repository" into the code shown in the chunk below (instead of `GITHUB_URL`) and run it.
 
 ```{r set-remote, eval = F}
 # Tell your computer which GitHub repository to connect to
-git remote add origin [GITHUB_URL]
+git remote add origin GITHUB_URL
 ```
 
 **Verify that URL** before continuing.
