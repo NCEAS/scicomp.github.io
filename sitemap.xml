@@ -2,134 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/index.html</loc>
-    <lastmod>2023-06-23T16:39:57.467Z</lastmod>
+    <lastmod>2023-06-23T16:43:40.652Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/onboard-scaffold_other-materials.html</loc>
-    <lastmod>2023-06-23T16:39:58.783Z</lastmod>
+    <lastmod>2023-06-23T16:43:43.156Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/staff.html</loc>
-    <lastmod>2023-06-23T16:39:59.291Z</lastmod>
+    <lastmod>2023-06-23T16:43:43.716Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/tutorial-scaffold_googledrive-auth.html</loc>
-    <lastmod>2023-06-23T16:40:00.255Z</lastmod>
+    <lastmod>2023-06-23T16:43:44.824Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/portfolio.html</loc>
-    <lastmod>2023-06-23T16:40:01.103Z</lastmod>
+    <lastmod>2023-06-23T16:43:45.772Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/onboard-scaffold_services.html</loc>
-    <lastmod>2023-06-23T16:40:01.647Z</lastmod>
+    <lastmod>2023-06-23T16:43:46.400Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_tutorials/quarto-website_new-proj.html</loc>
-    <lastmod>2023-06-23T16:40:02.123Z</lastmod>
+    <lastmod>2023-06-23T16:43:46.880Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_tutorials/googledrive-auth.html</loc>
-    <lastmod>2023-06-23T16:40:02.951Z</lastmod>
+    <lastmod>2023-06-23T16:43:47.688Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_tutorials/googledrive-fxns.html</loc>
-    <lastmod>2023-06-23T16:40:03.727Z</lastmod>
+    <lastmod>2023-06-23T16:43:48.524Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_tutorials/github-connect.html</loc>
-    <lastmod>2023-06-23T16:40:04.471Z</lastmod>
+    <lastmod>2023-06-23T16:43:49.296Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_tutorials/github-create.html</loc>
-    <lastmod>2023-06-23T16:40:04.951Z</lastmod>
+    <lastmod>2023-06-23T16:43:49.776Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_tutorials/quarto-website_deploy-prep.html</loc>
-    <lastmod>2023-06-23T16:40:05.391Z</lastmod>
+    <lastmod>2023-06-23T16:43:50.245Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_tutorials/github-website-deploy.html</loc>
-    <lastmod>2023-06-23T16:40:05.923Z</lastmod>
+    <lastmod>2023-06-23T16:43:50.865Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_tutorials/quarto-website_add-content.html</loc>
-    <lastmod>2023-06-23T16:40:06.427Z</lastmod>
+    <lastmod>2023-06-23T16:43:51.449Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/tutorial_server.html</loc>
-    <lastmod>2023-06-23T16:40:08.051Z</lastmod>
+    <lastmod>2023-06-23T16:43:53.257Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_best-practices/file-paths.html</loc>
-    <lastmod>2023-06-23T16:40:08.899Z</lastmod>
+    <lastmod>2023-06-23T16:43:54.085Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_best-practices/pkg-loading.html</loc>
-    <lastmod>2023-06-23T16:40:09.627Z</lastmod>
+    <lastmod>2023-06-23T16:43:54.885Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_best-practices/markdown-vs-script.html</loc>
-    <lastmod>2023-06-23T16:40:10.192Z</lastmod>
+    <lastmod>2023-06-23T16:43:55.429Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/workshops.html</loc>
-    <lastmod>2023-06-23T16:40:10.740Z</lastmod>
+    <lastmod>2023-06-23T16:43:56.069Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/tutorials.html</loc>
-    <lastmod>2023-06-23T16:40:12.384Z</lastmod>
+    <lastmod>2023-06-23T16:43:57.765Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/sci-comp-definition.html</loc>
-    <lastmod>2023-06-23T16:40:12.828Z</lastmod>
+    <lastmod>2023-06-23T16:43:58.249Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/tutorial-scaffold_quarto-website.html</loc>
-    <lastmod>2023-06-23T16:40:14.076Z</lastmod>
+    <lastmod>2023-06-23T16:43:59.637Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/data-acquisition.html</loc>
-    <lastmod>2023-06-23T16:40:14.888Z</lastmod>
+    <lastmod>2023-06-23T16:44:00.545Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/team-onboarding.html</loc>
-    <lastmod>2023-06-23T16:40:15.540Z</lastmod>
+    <lastmod>2023-06-23T16:44:01.229Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/onboard-scaffold_infrastructure.html</loc>
-    <lastmod>2023-06-23T16:40:16.032Z</lastmod>
+    <lastmod>2023-06-23T16:44:01.765Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/best_practices.html</loc>
-    <lastmod>2023-06-23T16:40:16.932Z</lastmod>
+    <lastmod>2023-06-23T16:44:02.777Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/onboard-scaffold_suggested-tools.html</loc>
-    <lastmod>2023-06-23T16:40:17.536Z</lastmod>
+    <lastmod>2023-06-23T16:44:03.425Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_wg-onboarding/infrastructure-data-archive.html</loc>
-    <lastmod>2023-06-23T16:40:17.972Z</lastmod>
+    <lastmod>2023-06-23T16:44:03.881Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_wg-onboarding/services-trainings.html</loc>
-    <lastmod>2023-06-23T16:40:18.460Z</lastmod>
+    <lastmod>2023-06-23T16:44:04.369Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_wg-onboarding/infrastructure-server.html</loc>
-    <lastmod>2023-06-23T16:40:18.896Z</lastmod>
+    <lastmod>2023-06-23T16:44:04.829Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_wg-onboarding/services-tasks.html</loc>
-    <lastmod>2023-06-23T16:40:19.324Z</lastmod>
+    <lastmod>2023-06-23T16:44:05.285Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_wg-onboarding/services-sprints.html</loc>
-    <lastmod>2023-06-23T16:40:19.748Z</lastmod>
+    <lastmod>2023-06-23T16:44:05.769Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/NCEAS/scicomp.github.io/modules_wg-onboarding/services-office-hours.html</loc>
-    <lastmod>2023-06-23T16:40:20.164Z</lastmod>
+    <lastmod>2023-06-23T16:44:06.209Z</lastmod>
   </url>
 </urlset>
