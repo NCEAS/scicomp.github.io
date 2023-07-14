@@ -33,7 +33,7 @@ Contact [our team](https://nceas.github.io/scicomp.github.io/staff.html) with yo
 
 For members of our working groups, this website is a centralized hub of resources designed to help you get familiar with the way our team works and what we offer. The pages under the **Working Group Onboarding** tab contain materials that will facilitate collaboration between our team and your group! 
 
-[**Team Coding**](https://nceas.github.io/scicomp.github.io/onboard-team_coding.html) contains 5 essential recommendations to keep in mind while coding collaboratively. 
+[**Team Coding**](https://nceas.github.io/scicomp.github.io/onboard-scaffold_team_coding.html) contains 5 essential recommendations to keep in mind while coding collaboratively. 
 
 Visit [**Working Together**](https://nceas.github.io/scicomp.github.io/onboard-scaffold_services.html) for more details on the types of tasks we can help with. 
 
