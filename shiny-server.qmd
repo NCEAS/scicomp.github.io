@@ -1,0 +1,75 @@
+---
+title: "Deploying Shiny Apps"
+engine: knitr
+---
+  
+LTER-related Shiny apps can be deployed on our server at: [https://shiny.lternet.edu/](https://shiny.lternet.edu/)
+
+To deploy your working app, first make sure that all the files live at a GitHub repository. Once our sysadmin Nick Outin has made you an account on the server, you can log in via SSH.
+
+## Log in
+
+For Mac users, open the Terminal app and type the following command, replacing `<YOUR-USERNAME>` with your own username. 
+```{bash, eval = F}
+ssh <YOUR-USERNAME>@shiny.lternet.edu
+```
+
+Windows users can log in with [PuTTY](https://help.nceas.ucsb.edu/NCEAS/Computing/connecting_to_linux_using_ssh?s[]=putty), using shiny.lternet.edu as the host name. 
+
+## Set up proper permissions
+
+### Join `shiny-apps`
+
+A `shiny-apps` user group has been created in this server. Set up the proper permissions for your account by adding yourself to this group with this command. 
+```{bash, eval = F}
+sudo usermod -aG shiny-apps <YOUR-USERNAME>
+```
+
+To decipher this command a bit: `sudo` will enable you to run commands as a user with full control and privileges. The `usermod` command is used to modify user account details. The basic syntax is:
+```{bash, eval = F}
+usermod [OPTIONS] <YOUR-USERNAME>
+```
+
+The `-G` option will add the user to a supplementary group. The `-aG` combined options will add the user to the new supplementary group while also leaving them in the other supplementary group(s) they were already a part of.
+
+As an FYI, the apps on the server will run as the user `shiny`, so `shiny` is also in the `shiny-apps` user group. 
+
+### Allow access to your home directory
+
+Additionally, you need to allow `shiny` access to your user home directory by running:
+```{bash, eval = F}
+chmod a+x /home/<YOUR-USERNAME>
+```
+
+This `chmod` (change mode) command is used to control file permissions. Basic syntax:
+```{bash, eval = F}
+chmod [OPTIONS] MODE FILE/DIRECTORY
+```
+
+There are two "modes" that you can use to set permissions: Symbolic and Octal mode. The Symbolic mode uses operators and letters. For example, the `a` option denotes all the owner/groups the file/directory belongs to. The `+` operator grants the permission, and the letter `x` stands for the execute permission. 
+
+
+## Tell `git` who you are
+
+Now that your account has the proper permissions, use the `git config` commands to tell `git` who you are.
+
+```{bash, eval = F}
+git config --global user.name "<YOUR-GITHUB-USERNAME>"
+git config --global user.email "<YOUR-GITHUB-EMAIL>"
+```
+
+You can check to see if you entered your details correctly by entering `git config --list`.
+
+## Copy your app to the server
+
+The easiest way to get all the files for your app to the server is by `git clone`. 
+
+If you like, you can create a folder named "github" to store all your future apps. For example, in the screenshot below, I created a "github" folder using the `mkdir` command in my home directory.
+
+To check that the folder was created, I can list all the files/folders in this directory with `ls`. Since I want my app to be inside the "github" folder, I used the `cd` command to change my directory. 
+
+Finally, `git clone` the GitHub repo that has all the files for your app. Here, I am cloning the [`lterpalettefinder-shiny` repo](https://github.com/lter/lterpalettefinder-shiny) to my local directory on the virtual machine as `lterpalettefinder`.
+
+<img src="images/shiny-server/shiny-server-1.png" align="center" width="100%"/>
+
+## Install necessary dependencies and R packages
