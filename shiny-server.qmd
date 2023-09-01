@@ -14,7 +14,9 @@ For Mac users, open the Terminal app and type the following command, replacing `
 ssh <YOUR-USERNAME>@shiny.lternet.edu
 ```
 
-Windows users can log in with [PuTTY](https://help.nceas.ucsb.edu/NCEAS/Computing/connecting_to_linux_using_ssh?s[]=putty), using shiny.lternet.edu as the host name. 
+Windows users can log in with [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/), using shiny.lternet.edu as the host name. 
+
+Check out [NCEAS' guide to using SSH](https://help.nceas.ucsb.edu/NCEAS/Computing/connecting_to_linux_using_ssh) for additional help. 
 
 ## Set up proper permissions
 
@@ -32,7 +34,9 @@ usermod [OPTIONS] <YOUR-USERNAME>
 
 The `-G` option will add the user to a supplementary group. The `-aG` combined options will add the user to the new supplementary group while also leaving them in the other supplementary group(s) they were already a part of.
 
+:::callout-note
 As an FYI, the apps on the server will run as the user `shiny`, so `shiny` is also in the `shiny-apps` user group. 
+:::
 
 ### Allow access to your home directory
 
@@ -78,7 +82,7 @@ You can go one level above the current directory by typing `cd ..`
 
 ## Install necessary R packages
 
-After you cloned the repository for your app, you can start installing the necessary R packages! To make these packages available for all users, you will want to switch over to the `root` user with the `sudo -i` command. Then open R by simply typing `R` and install packages with the usual `install.packages()` function. 
+After you cloned the repository for your app, you can start installing the necessary R packages! To make these packages available for all users, you will want to switch over to the `root` user with the `sudo -i` command. Then open R by simply typing "R" and install packages with the usual `install.packages()` function. 
 
 <img src="images/shiny-server/shiny-server-2.png" align="center" width="100%"/>
 
@@ -109,3 +113,22 @@ Afterwards, `libcurl4-openssl-dev` installed successfully, and then I can finall
 <img src="images/shiny-server/shiny-server-8.png" align="center" width="100%"/>
 
 You can repeat a similar process to find and install the rest of the required dependencies before you are able to install certain R packages. 
+
+## Symlink to deployed folder
+
+Since all the Shiny apps are located under **<span style="color:blue">/srv/shiny-server/</span>**, how can we deploy the app we have in our local directory? We can create a symlink (symbolic link) between the local directory and **<span style="color:blue">/srv/shiny-server/</span>**. A symlink is essentially a pointer to other folders.
+
+Create the link by running this command:
+```{bash, eval = F}
+ln -s <LOCAL-DIRECTORY-OF-APP> <SHINY-SERVER-DIRECTORY-OF-APP>
+```
+
+Replace `<LOCAL-DIRECTORY-OF-APP>` with your own directory and replace `<SHINY-SERVER-DIRECTORY-OF-APP>` with the file path of where you would like your app to live. 
+
+For example, the actual `lterpalettefinder` app lives under my home directory, but it needs to be deployed under **<span style="color:blue">/srv/shiny-server/</span>**, so I ran this command to link the two:
+
+<img src="images/shiny-server/shiny-server-9.png" align="center" width="100%"/>
+
+Now **<span style="color:blue">/srv/shiny-server/lterpalettefinder</span>** points to **<span style="color:blue">/home/anchen/github/lterpalettefinder</span>**! 
+
+You can check the current symlinks by navigating to **<span style="color:blue">/srv/shiny-server/</span>** and typing `ls -l`. 
