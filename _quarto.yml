@@ -43,6 +43,8 @@ website:
             href: team-onboarding.qmd
           - text: "Data Acquisition"
             href: data-acquisition.qmd
+          - text: "Deploy Shiny Apps"
+            href: shiny-server.qmd
     right:
       - icon: github
         href: https://github.com/NCEAS/scicomptasks
