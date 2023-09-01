@@ -123,7 +123,7 @@ Create the link by running this command:
 ln -s <LOCAL-DIRECTORY-OF-APP> <SHINY-SERVER-DIRECTORY-OF-APP>
 ```
 
-Replace `<LOCAL-DIRECTORY-OF-APP>` with your own directory and replace `<SHINY-SERVER-DIRECTORY-OF-APP>` with the file path of where you would like your app to live. 
+Replace `<LOCAL-DIRECTORY-OF-APP>` with your own directory and replace `<SHINY-SERVER-DIRECTORY-OF-APP>` with the file path of where you would like your app to deploy. 
 
 For example, the actual `lterpalettefinder` app lives under my home directory, but it needs to be deployed under **<span style="color:blue">/srv/shiny-server/</span>**, so I ran this command to link the two:
 
@@ -132,3 +132,11 @@ For example, the actual `lterpalettefinder` app lives under my home directory, b
 Now **<span style="color:blue">/srv/shiny-server/lterpalettefinder</span>** points to **<span style="color:blue">/home/anchen/github/lterpalettefinder</span>**! 
 
 You can check the current symlinks by navigating to **<span style="color:blue">/srv/shiny-server/</span>** and typing `ls -l`. 
+
+:::callout-note
+The name of the deployed folder corresponds to the URL: https://shiny.lternet.edu/\<YOUR-APP\>/
+:::
+
+## Debug app and check its live link
+
+If everything goes right, your app will be live at https://shiny.lternet.edu/\<YOUR-APP\>/! If not, don't worry and try troubleshooting what went wrong. Remember to check file paths and required R packages. 
