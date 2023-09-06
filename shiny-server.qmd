@@ -62,7 +62,7 @@ git config --global user.name "<YOUR-GITHUB-USERNAME>"
 git config --global user.email "<YOUR-GITHUB-EMAIL>"
 ```
 
-You can check to see if you entered your details correctly by entering `git config --list`.
+Replace `<YOUR-GITHUB-USERNAME>` and `<YOUR-GITHUB-EMAIL>` with your own credentials. You can check to see if you entered your details correctly by entering `git config --list`.
 
 ## Copy your app to the server
 
@@ -70,9 +70,9 @@ The easiest way to get all the files for your app to the server is by `git clone
 
 If you like, you can create a folder named "github" to store all your future apps. For example, in the screenshot below, I created a "github" folder using the `mkdir` command in my home directory.
 
-To check that the folder was created, I can list all the files/folders in this directory with `ls`. Since I want my app to be inside the "github" folder, I used the `cd` command to change my directory. 
+To check that the folder was created, I can list all the files/folders in my current directory with `ls`. Since I want my app to be inside the "github" folder, I used the `cd` command to change into that directory. 
 
-Finally, `git clone` the GitHub repo that has all the files for your app. Here, I am cloning the [`lterpalettefinder-shiny` repo](https://github.com/lter/lterpalettefinder-shiny) to my local directory on the virtual machine as `lterpalettefinder`.
+Finally, `git clone` the GitHub repo that has all the files for your app. Here, I am cloning the [`lterpalettefinder-shiny`](https://github.com/lter/lterpalettefinder-shiny) repo to my local directory on the virtual machine as `lterpalettefinder`.
 
 <img src="images/shiny-server/shiny-server-1.png" align="center" width="100%"/>
 
@@ -82,7 +82,7 @@ You can go one level above the current directory by typing `cd ..`
 
 ## Install necessary R packages
 
-After you cloned the repository for your app, you can start installing the necessary R packages! To make these packages available for all users, you will want to switch over to the `root` user with the `sudo -i` command. Then open R by simply typing "R" and install packages with the usual `install.packages()` function. 
+After you cloned the repository for your app, you can start installing the necessary R packages! To make these packages available for all users, you will want to execute commands with the `root` user's privileges by typing the `sudo -i` command. Then open R by simply typing "R" and install packages with the usual `install.packages()` function. 
 
 <img src="images/shiny-server/shiny-server-2.png" align="center" width="100%"/>
 
