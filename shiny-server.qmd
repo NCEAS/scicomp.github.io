@@ -2,12 +2,17 @@
 title: "Deploy Shiny Apps"
 engine: knitr
 ---
-  
-LTER-related Shiny apps can be deployed on our server at: [https://shiny.lternet.edu/](https://shiny.lternet.edu/)
+:::callout-note
+Please note that the following instructions for deploying Shiny apps are meant to serve as internal documentation and will only work if you have `sudo` power on the SciComp team's Shiny server.
 
-To deploy your working app, first make sure that all the files live at a GitHub repository. Once our sysadmin Nick Outin has made you an account on the server, you can log in via SSH.
+Feel free to [contact us](https://nceas.github.io/scicomp.github.io/staff.html) if you have a LTER-related Shiny app that you would like to deploy on our server!
+:::
 
-## Log in
+SciComp team members can deploy LTER-related Shiny apps on our server at: [https://shiny.lternet.edu/](https://shiny.lternet.edu/)
+
+To deploy your working app, first make sure that all the files live at a GitHub repository. Once our sysadmin Nick Outin has made you an account on the server, you can log in via SSH. 
+
+## Log In
 
 For Mac users, open the Terminal app and type the following command, replacing `<YOUR-USERNAME>` with your own username. 
 ```{bash, eval = F}
@@ -18,7 +23,7 @@ Windows users can log in with [PuTTY](https://www.chiark.greenend.org.uk/~sgtath
 
 Check out [NCEAS' guide to using SSH](https://help.nceas.ucsb.edu/NCEAS/Computing/connecting_to_linux_using_ssh) for additional help. 
 
-## Set up proper permissions
+## Set Up Proper Permissions
 
 ### Join `shiny-apps`
 
@@ -38,7 +43,7 @@ The `-G` option will add the user to a supplementary group. The `-aG` combined o
 As an FYI, the apps on the server will run as the user `shiny`, so `shiny` is also in the `shiny-apps` user group. 
 :::
 
-### Allow access to your home directory
+### Allow Access to Your Home Directory
 
 Additionally, you need to allow `shiny` access to your user home directory by running:
 ```{bash, eval = F}
@@ -53,7 +58,7 @@ chmod [OPTIONS] MODE FILE/DIRECTORY
 There are two "modes" that you can use to set permissions: Symbolic and Octal mode. The Symbolic mode uses operators and letters. For example, the `a` option denotes all the owner/groups the file/directory belongs to. The `+` operator grants the permission, and the letter `x` stands for the execute permission. 
 
 
-## Tell `git` who you are
+## Tell `git` Who You Are
 
 Now that your account has the proper permissions, use the `git config` commands to tell `git` who you are.
 
@@ -64,7 +69,7 @@ git config --global user.email "<YOUR-GITHUB-EMAIL>"
 
 Replace `<YOUR-GITHUB-USERNAME>` and `<YOUR-GITHUB-EMAIL>` with your own credentials. You can check to see if you entered your details correctly by entering `git config --list`.
 
-## Copy your app to the server
+## Copy Your App to the Server
 
 The easiest way to get all the files for your app to the server is by `git clone`. 
 
@@ -80,13 +85,13 @@ Finally, `git clone` the GitHub repo that has all the files for your app. Here, 
 You can go one level above the current directory by typing `cd ..`
 :::
 
-## Install necessary R packages
+## Install Necessary R Packages
 
 After you cloned the repository for your app, you can start installing the necessary R packages! To make these packages available for all users, you will want to execute commands with the `root` user's privileges by typing the `sudo -i` command. Then open R by simply typing "R" and install packages with the usual `install.packages()` function. 
 
 <img src="images/shiny-server/shiny-server-2.png" align="center" width="100%"/>
 
-### Missing dependencies? 
+### Missing Dependencies? 
 
 If you run into an error installing a R package, it's likely because the server does not have the required dependencies installed yet. 
 
@@ -114,7 +119,7 @@ Afterwards, `libcurl4-openssl-dev` installed successfully, and then I can finall
 
 You can repeat a similar process to find and install the rest of the required dependencies before you are able to install certain R packages. 
 
-## Symlink to deployed folder
+## Symlink to Deployed Folder
 
 Since all the Shiny apps are located under **<span style="color:blue">/srv/shiny-server/</span>**, how can we deploy the app we have in our local directory? We can create a symlink (symbolic link) between the local directory and **<span style="color:blue">/srv/shiny-server/</span>**. A symlink is essentially a pointer to other folders.
 
@@ -137,6 +142,6 @@ You can check the current symlinks by navigating to **<span style="color:blue">/
 The name of the deployed folder corresponds to the URL: https://shiny.lternet.edu/\<YOUR-APP\>/
 :::
 
-## Debug app and check its live link
+## Debug App and Check its Live Link
 
 If everything goes right, your app will be live at https://shiny.lternet.edu/\<YOUR-APP\>/! If not, don't worry and try troubleshooting what went wrong. Remember to check file paths and required R packages. 
