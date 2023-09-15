@@ -47,7 +47,7 @@ As an FYI, the apps on the server will run as the user `shiny`, so `shiny` is al
 
 Additionally, you need to allow `shiny` access to your user home directory by running:
 ```{bash, eval = F}
-chmod a+x /home/<YOUR-USERNAME>
+sudo chmod a+x /home/<YOUR-USERNAME>
 ```
 
 This `chmod` (change mode) command is used to control file permissions. Basic syntax:
@@ -103,7 +103,7 @@ I saw that the `curl` dependency was missing, so I attempted to install that. Ho
 
 <img src="images/shiny-server/shiny-server-4.png" align="center" width="100%"/>
 
-Looking closer, it asks me to install `libcurl4-openssl-dev` first. To install this Ubuntu package, I exited R with `q()` and logged off `root` with `exit`. Once I'm back in my own user profile, I can use the `sudo apt-get install` command to install `libcurl4-openssl-dev`.
+Looking closer, it asks me to install `libcurl4-openssl-dev` first. To install this Ubuntu package, I exited R with `q()` and logged off `root` with `exit`. Once I'm back in my own user profile, I can use the `sudo apt install` command to install `libcurl4-openssl-dev`.
 
 <img src="images/shiny-server/shiny-server-5.png" align="center" width="100%"/>
 
@@ -125,7 +125,7 @@ Since all the Shiny apps are located under **<span style="color:blue">/srv/shiny
 
 Create the link by running this command:
 ```{bash, eval = F}
-ln -s <LOCAL-DIRECTORY-OF-APP> <SHINY-SERVER-DIRECTORY-OF-APP>
+sudo ln -s <LOCAL-DIRECTORY-OF-APP> <SHINY-SERVER-DIRECTORY-OF-APP>
 ```
 
 Replace `<LOCAL-DIRECTORY-OF-APP>` with your own directory and replace `<SHINY-SERVER-DIRECTORY-OF-APP>` with the file path of where you would like your app to deploy. 
