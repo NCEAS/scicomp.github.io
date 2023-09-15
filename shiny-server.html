@@ -336,7 +336,7 @@ Note
 <h3 class="anchored" data-anchor-id="allow-access-to-your-home-directory">Allow Access to Your Home Directory</h3>
 <p>Additionally, you need to allow <code>shiny</code> access to your user home directory by running:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> a+x /home/<span class="op">&lt;</span>YOUR-USERNAME<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> chmod a+x /home/<span class="op">&lt;</span>YOUR-USERNAME<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This <code>chmod</code> (change mode) command is used to control file permissions. Basic syntax:</p>
 <div class="cell">
@@ -386,7 +386,7 @@ Tip
 <p><img src="images/shiny-server/shiny-server-3.png" align="center" width="100%"></p>
 <p>I saw that the <code>curl</code> dependency was missing, so I attempted to install that. However, R gives me another error.</p>
 <p><img src="images/shiny-server/shiny-server-4.png" align="center" width="100%"></p>
-<p>Looking closer, it asks me to install <code>libcurl4-openssl-dev</code> first. To install this Ubuntu package, I exited R with <code>q()</code> and logged off <code>root</code> with <code>exit</code>. Once I’m back in my own user profile, I can use the <code>sudo apt-get install</code> command to install <code>libcurl4-openssl-dev</code>.</p>
+<p>Looking closer, it asks me to install <code>libcurl4-openssl-dev</code> first. To install this Ubuntu package, I exited R with <code>q()</code> and logged off <code>root</code> with <code>exit</code>. Once I’m back in my own user profile, I can use the <code>sudo apt install</code> command to install <code>libcurl4-openssl-dev</code>.</p>
 <p><img src="images/shiny-server/shiny-server-5.png" align="center" width="100%"></p>
 <p>If you get these prompts to restart services, you can tap Return/Enter to continue the installation.</p>
 <p><img src="images/shiny-server/shiny-server-6.png" align="center" width="100%"></p>
@@ -401,7 +401,7 @@ Tip
 <p>Since all the Shiny apps are located under <strong><span style="color:blue">/srv/shiny-server/</span></strong>, how can we deploy the app we have in our local directory? We can create a symlink (symbolic link) between the local directory and <strong><span style="color:blue">/srv/shiny-server/</span></strong>. A symlink is essentially a pointer to other folders.</p>
 <p>Create the link by running this command:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ln</span> <span class="at">-s</span> <span class="op">&lt;</span>LOCAL-DIRECTORY-OF-APP<span class="op">&gt;</span> <span class="op">&lt;</span>SHINY-SERVER-DIRECTORY-OF-APP<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> ln <span class="at">-s</span> <span class="op">&lt;</span>LOCAL-DIRECTORY-OF-APP<span class="op">&gt;</span> <span class="op">&lt;</span>SHINY-SERVER-DIRECTORY-OF-APP<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Replace <code>&lt;LOCAL-DIRECTORY-OF-APP&gt;</code> with your own directory and replace <code>&lt;SHINY-SERVER-DIRECTORY-OF-APP&gt;</code> with the file path of where you would like your app to deploy.</p>
 <p>For example, the actual <code>lterpalettefinder</code> app lives under my home directory, but it needs to be deployed under <strong><span style="color:blue">/srv/shiny-server/</span></strong>, so I ran this command to link the two:</p>
