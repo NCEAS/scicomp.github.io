@@ -1,0 +1,10 @@
+---
+title: "Working Group Setup Checklist"
+---
+
+:::callout-note
+Please note that the following checklist of working group setup steps is meant to serve as internal documentation _only_! Our team will be taking these steps on your behalf when you are funded so none of these steps are things you (a working member/PI) need to handle.
+
+Feel free to [contact us](https://nceas.github.io/scicomp.github.io/staff.html) if you find these instructions useful and want to apply them to non-working group contexts!
+:::
+
