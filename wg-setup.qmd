@@ -61,6 +61,29 @@ Make a repository in the [LTER GitHub Organization](https://github.com/lter) wit
 4. Create a `.gitignore` <u>using the R template</u>
     - R is the most common working group language and the `.gitignore` is easily changed in the event the group is primarily using a different language
 
+### Edit README
+
+Edit the default README with the following content:
+
+- Make a top level markdown heading (i.e., one `#`) with the title of the group
+- Make a second level markdown heading (`##`) called "Project Summary"
+    - Include a link to the group-specific page on [the LTER Network Office website](https://lternet.edu/current-working-groups/)
+- Make a second level markdown heading called "Supplementary Resources"
+    - Add a link to [the home page](https://nceas.github.io/scicomp.github.io/) of the NCEAS Scientific Computing team (i.e., the home page of _this_ website!)
+
+Note that you can make these edits directly from GitHub so you don't need to worry about cloning at this stage!
+
+### Edit `.gitignore`
+
+If you used the R template then this is basically ready to go but we can make two small edits that are convenient for many groups (and easily undone for those groups that decide to do so).
+
+1. Add `.DS_Store`
+
+This file type (short for "Desktop Services Store") is created by the Apple macOS operating system that stores visual information (e.g., icon positions, view options, etc.). In other words, it is a file that is completely irrelevant to reproducibility in a coding context and there will be one in _every_ folder for Mac users. By ignoring it when we create the GitHub repository we can guarantee that no group members accidentally commit these useless (in this context) files and in so doing add clutter to their repository.
+
+2. Add a wildcard `*.Rproj` 
+
+There is some debate about whether to ignore the .Rproj (see [our summary of this discussion](https://nceas.github.io/scicomp-workshop-collaborative-coding/git_ignore.html#should-you-ignore-the-.rproj-file) from our GitHub workshop materials) but for working groups _the default position is that we should ignore it_. There are two reasons to do this. **First**, working group members may change the name of the project on their local computer and then commit their uniquely-named .Rproj file. Taken to an extreme this means that there may be one .Rproj / user which can be confusing to some users and is not (in our opinion) very aesthetically pleasing. **Second** if groups commit a .Rproj and then later delete it, anyone who pulls that change will delete their cloned repository automatically (similar to a snake eating its own tail). By ignoring the .Rproj from the outset we can avoid this possisbility entirely.
 
 ## NCEAS' Server
 
