@@ -11,13 +11,13 @@ Feel free to [contact us](https://nceas.github.io/scicomp.github.io/staff.html) 
 When new working groups are funded, our team takes a number of setup steps to create some of the infrastructure that past groups have requested/found useful. This is mainly an attempt to help the group avoid spending their precious in-person meeting time doing relatively dry technical steps that we can easily accomplish early-on. Some of these steps also set a useful 'tone' in terms of facilitating groups' adherence to reproducibility best practices.
 
 
-## Create Shared Google Drive
+## Shared Google Drive
 
 Many groups gravitate towards using Google Drive for storing data, relevant scientific literature, and (eventually) manuscript drafts. One advantage of a true Shared Drive over simply creating a folder and sharing that is that the distributed ownership of the Shared Drive makes it very difficult to accidentally delete/lose important files.
 
 Some groups have experience serious heartbreak when one member's Google identity gets closed by their institution and all files/folders created by that member vanish. A Shared Drive makes this horror story an impossibility.
 
-#### Creating the Shared Drive
+### Creating the Shared Drive
 
 Our `@nceas.ucsb.edu` email addresses are empowered to create Shared Drives. Navigate to your Google Drive, then in the left sidebar click "Shared drives". Once there you can click the "+ New" button to create a brand new Shared Drive.
 
@@ -25,7 +25,7 @@ The naming convention you should use is: LTER-WG_`WG-NAME`
 
 Note that for groups with longer names you will want to abbreviate so that the Shared Drive name doesn't get ambiguously cropped in a default browser window.
 
-#### Adding Users
+### Adding Users
 
 Once the Shared Drive exists, add the following people as "Content Managers":
 
@@ -35,10 +35,29 @@ Once the Shared Drive exists, add the following people as "Content Managers":
 
 When you reach out to the working groups you can also make a note of their emails and add them as well though you may want to first tell them about the Shared Drive before sending them a semi-random Shared Drive invite.
 
+### Content Creation
+
+We want to use as light a touch as possible here to make sure that groups feel empowered to make their Shared Drive whatever they need it to be but there are a few things we can do.
+
+1. Make a "Data" folder
+2. Add a [data log template GoogleSheet](https://docs.google.com/spreadsheets/d/1WOH_EPUF0XL9qutkLgia--YANieXFFX8Goic8LGcVgI/edit#gid=0) to the Data folder
+
+In the past we have also added a [README GoogleDoc](https://docs.google.com/document/d/1q6ajgYjvfiaPH2PFsbybOxCWP5JX64nRMRMc7ABzagc/edit#heading=h.kyp2vjxt438v) but it is unclear to what extent this is used by groups. We may want to look into whether this is useful and--if not--how we can improve it.
 
 ## Create GitHub Repository
 
 
+
+## NCEAS' Server
+
+Some groups wind up doing computationally-intense work (e.g., machine learning, spatial data wrangling, etc.). Such groups often find it useful to get set up on NCEAS' server "Aurora" to leverage the greater computing power to do these heavy operations relatively quickly. However, because adoption/need for this is somewhat mixed we _do not_ recommend creating a server group for every group before they request one.
+
+Instead, gage group interest and need and when it becomes relevant we can do the setup steps listed below. Note that we have a nice [group-facing server tutorial](https://nceas.github.io/scicomp-workshop-collaborative-coding/server.html) in our GitHub workshop materials.
+
+1. Reach out to Thomas Hetmank / Nick Outin to get a group made on the server for this working group
+2. Make sure that NCEAS Scientific Computing team staff are added as members
+3. Make a folder in the "shares" folder for this group
+4. Gather emails from all interested working group members and get them added to the Aurora group
 
 ## Create Google Group
 
