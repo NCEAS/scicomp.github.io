@@ -11,7 +11,7 @@ Feel free to [contact us](https://nceas.github.io/scicomp.github.io/staff.html) 
 When new working groups are funded, our team takes a number of setup steps to create some of the infrastructure that past groups have requested/found useful. This is mainly an attempt to help the group avoid spending their precious in-person meeting time doing relatively dry technical steps that we can easily accomplish early-on. Some of these steps also set a useful 'tone' in terms of facilitating groups' adherence to reproducibility best practices.
 
 
-## Shared Google Drive
+## Google Shared Drive
 
 Many groups gravitate towards using Google Drive for storing data, relevant scientific literature, and (eventually) manuscript drafts. One advantage of a true Shared Drive over simply creating a folder and sharing that is that the distributed ownership of the Shared Drive makes it very difficult to accidentally delete/lose important files.
 
@@ -98,4 +98,4 @@ Instead, gage group interest and need and when it becomes relevant we can do the
 
 ## Google Group
 
-Note that there is discussion within the larger NCEAS administration that this task may become something handled by NCEAS' IT team.
+There is ongoing discussion within the larger NCEAS administration that this task may become something handled by NCEAS' IT team so we will leave out our setup instructions at this time.
