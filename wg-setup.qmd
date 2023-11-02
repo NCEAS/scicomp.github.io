@@ -44,7 +44,7 @@ We want to use as light a touch as possible here to make sure that groups feel e
 
 In the past we have also added a [README GoogleDoc](https://docs.google.com/document/d/1q6ajgYjvfiaPH2PFsbybOxCWP5JX64nRMRMc7ABzagc/edit#heading=h.kyp2vjxt438v) but it is unclear to what extent this is used by groups. We may want to look into whether this is useful and--if not--how we can improve it.
 
-## Create GitHub Repository
+## GitHub Repository
 
 
 
@@ -59,6 +59,6 @@ Instead, gage group interest and need and when it becomes relevant we can do the
 3. Make a folder in the "shares" folder for this group
 4. Gather emails from all interested working group members and get them added to the Aurora group
 
-## Create Google Group
+## Google Group
 
 Note that there is discussion within the larger NCEAS administration that this task may become something handled by NCEAS' IT team.
