@@ -8,3 +8,38 @@ Please note that the following checklist of working group setup steps is meant t
 Feel free to [contact us](https://nceas.github.io/scicomp.github.io/staff.html) if you find these instructions useful and want to apply them to non-working group contexts!
 :::
 
+When new working groups are funded, our team takes a number of setup steps to create some of the infrastructure that past groups have requested/found useful. This is mainly an attempt to help the group avoid spending their precious in-person meeting time doing relatively dry technical steps that we can easily accomplish early-on. Some of these steps also set a useful 'tone' in terms of facilitating groups' adherence to reproducibility best practices.
+
+
+## Create Shared Google Drive
+
+Many groups gravitate towards using Google Drive for storing data, relevant scientific literature, and (eventually) manuscript drafts. One advantage of a true Shared Drive over simply creating a folder and sharing that is that the distributed ownership of the Shared Drive makes it very difficult to accidentally delete/lose important files.
+
+Some groups have experience serious heartbreak when one member's Google identity gets closed by their institution and all files/folders created by that member vanish. A Shared Drive makes this horror story an impossibility.
+
+#### Creating the Shared Drive
+
+Our `@nceas.ucsb.edu` email addresses are empowered to create Shared Drives. Navigate to your Google Drive, then in the left sidebar click "Shared drives". Once there you can click the "+ New" button to create a brand new Shared Drive.
+
+The naming convention you should use is: LTER-WG_`WG-NAME`
+
+Note that for groups with longer names you will want to abbreviate so that the Shared Drive name doesn't get ambiguously cropped in a default browser window.
+
+#### Adding Users
+
+Once the Shared Drive exists, add the following people as "Content Managers":
+
+- <u>All</u> members of the NCEAS Scientific Computing team
+- Marty Downs (LTER Network Office Director)
+- Thomas Hetmank (NCEAS Programmer/Analyst)
+
+When you reach out to the working groups you can also make a note of their emails and add them as well though you may want to first tell them about the Shared Drive before sending them a semi-random Shared Drive invite.
+
+
+## Create GitHub Repository
+
+
+
+## Create Google Group
+
+Note that there is discussion within the larger NCEAS administration that this task may become something handled by NCEAS' IT team.
