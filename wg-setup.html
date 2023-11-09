@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Scientific Computing Support - Other Resources</title>
+<title>Scientific Computing Support - Working Group Setup Checklist</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,10 +73,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </script>
 
 
-<meta name="twitter:title" content="Scientific Computing Support - Other Resources">
+<meta name="twitter:title" content="Scientific Computing Support - Working Group Setup Checklist">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://github.com/NCEAS/scicomp.github.io/images/lter-photos/notes.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed">
@@ -209,10 +208,20 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lter-network-office-guidance" id="toc-lter-network-office-guidance" class="nav-link active" data-scroll-target="#lter-network-office-guidance">LTER Network Office Guidance</a></li>
-  <li><a href="#nceas-resources-for-working-groups" id="toc-nceas-resources-for-working-groups" class="nav-link" data-scroll-target="#nceas-resources-for-working-groups">NCEAS’ Resources for Working Groups</a></li>
-  <li><a href="#diversity-equity-and-inclusion" id="toc-diversity-equity-and-inclusion" class="nav-link" data-scroll-target="#diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</a></li>
-  <li><a href="#visiting-santa-barbara" id="toc-visiting-santa-barbara" class="nav-link" data-scroll-target="#visiting-santa-barbara">Visiting Santa Barbara</a></li>
+  <li><a href="#google-shared-drive" id="toc-google-shared-drive" class="nav-link active" data-scroll-target="#google-shared-drive">Google Shared Drive</a>
+  <ul class="collapse">
+  <li><a href="#creating-the-shared-drive" id="toc-creating-the-shared-drive" class="nav-link" data-scroll-target="#creating-the-shared-drive">Creating the Shared Drive</a></li>
+  <li><a href="#adding-users" id="toc-adding-users" class="nav-link" data-scroll-target="#adding-users">Adding Users</a></li>
+  <li><a href="#content-creation" id="toc-content-creation" class="nav-link" data-scroll-target="#content-creation">Content Creation</a></li>
+  </ul></li>
+  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub Repository</a>
+  <ul class="collapse">
+  <li><a href="#initialize-repository" id="toc-initialize-repository" class="nav-link" data-scroll-target="#initialize-repository">Initialize Repository</a></li>
+  <li><a href="#edit-readme" id="toc-edit-readme" class="nav-link" data-scroll-target="#edit-readme">Edit README</a></li>
+  <li><a href="#edit-.gitignore" id="toc-edit-.gitignore" class="nav-link" data-scroll-target="#edit-.gitignore">Edit <code>.gitignore</code></a></li>
+  </ul></li>
+  <li><a href="#nceas-server" id="toc-nceas-server" class="nav-link" data-scroll-target="#nceas-server">NCEAS’ Server</a></li>
+  <li><a href="#google-group" id="toc-google-group" class="nav-link" data-scroll-target="#google-group">Google Group</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/NCEAS/scicomptasks/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -223,7 +232,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Other Resources</h1>
+<h1 class="title">Working Group Setup Checklist</h1>
 </div>
 
 
@@ -238,30 +247,117 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 </header>
 
-<p align="center">
-<img src="images/lter-photos/notes.jpg" width="100%">
-</p><figcaption>
-REU Student Organizing Data Sheets, Harvard Forest - Photographer: Jocelyn Fahlen
-</figcaption>
-<p></p>
-<section id="lter-network-office-guidance" class="level2">
-<h2 class="anchored" data-anchor-id="lter-network-office-guidance">LTER Network Office Guidance</h2>
-<p>The LTER Network Office (LNO) has curated some useful resources on their website (<a href="https://lternet.edu/">lternet.edu</a>) that we strongly recommend exploring! In particular, the LNO has centralized resources for working group primary investigators (PIs) (see <a href="https://lternet.edu/synthesis/guidance-working-group-pis/">here</a>). Additionally, the LNO has created some broader resources for all members of working groups (see <a href="https://lternet.edu/synthesis/synthesis-resources/">here</a>).</p>
-<p>The <a href="https://lternet.edu/lter-meetings-code-of-conduct/">LTER Code of Conduct</a> is also publicly available if you’d like to explore it.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please note that the following checklist of working group setup steps is meant to serve as internal documentation <em>only</em>! Our team will be taking these steps on your behalf when you are funded so none of these steps are things you (a working member/PI) need to handle.</p>
+<p>Feel free to <a href="https://nceas.github.io/scicomp.github.io/staff.html">contact us</a> if you find these instructions useful and want to apply them to non-working group contexts!</p>
+</div>
+</div>
+<p>When new working groups are funded, our team takes a number of setup steps to create some of the infrastructure that past groups have requested/found useful. This is mainly an attempt to help the group avoid spending their precious in-person meeting time doing relatively dry technical steps that we can easily accomplish early-on. Some of these steps also set a useful ‘tone’ in terms of facilitating groups’ adherence to reproducibility best practices.</p>
+<section id="google-shared-drive" class="level2">
+<h2 class="anchored" data-anchor-id="google-shared-drive">Google Shared Drive</h2>
+<p>Many groups gravitate towards using Google Drive for storing data, relevant scientific literature, and (eventually) manuscript drafts. One advantage of a true Shared Drive over simply creating a folder and sharing that is that the distributed ownership of the Shared Drive makes it very difficult to accidentally delete/lose important files.</p>
+<p>Some groups have experience serious heartbreak when one member’s Google identity gets closed by their institution and all files/folders created by that member vanish. A Shared Drive makes this horror story an impossibility.</p>
+<section id="creating-the-shared-drive" class="level3">
+<h3 class="anchored" data-anchor-id="creating-the-shared-drive">Creating the Shared Drive</h3>
+<p>Our <code>@nceas.ucsb.edu</code> email addresses are empowered to create Shared Drives. Navigate to your Google Drive, then in the left sidebar click “Shared drives”. Once there you can click the “+ New” button to create a brand new Shared Drive.</p>
+<p>The naming convention you should use is: LTER-WG_<code>WG-NAME</code></p>
+<p>Note that for groups with longer names you will want to abbreviate so that the Shared Drive name doesn’t get ambiguously cropped in a default browser window.</p>
 </section>
-<section id="nceas-resources-for-working-groups" class="level2">
-<h2 class="anchored" data-anchor-id="nceas-resources-for-working-groups">NCEAS’ Resources for Working Groups</h2>
-<p>NCEAS hosts many working groups and so has drawn from its wealth of experience to assemble a set of useful information on its <a href="https://www.nceas.ucsb.edu/working-group-resources">Resources for Working Groups page</a>.</p>
-<p>In particular, <em>we recommend checking out the documents nested in the “How to Run a Working Group” dropdown menu.</em> Your group may also want to check out the “Reimbursement Forms” dropdown after your meetings in Santa Barbara to ensure that your eligible expenses get reimbursed!</p>
+<section id="adding-users" class="level3">
+<h3 class="anchored" data-anchor-id="adding-users">Adding Users</h3>
+<p>Once the Shared Drive exists, add the following people as “Content Managers”:</p>
+<ul>
+<li><u>All</u> members of the NCEAS Scientific Computing team</li>
+<li>Marty Downs (LTER Network Office Director)</li>
+<li>Thomas Hetmank (NCEAS Programmer/Analyst)</li>
+</ul>
+<p>When you reach out to the working groups you can also make a note of their emails and add them as well though you may want to first tell them about the Shared Drive before sending them a semi-random Shared Drive invite.</p>
 </section>
-<section id="diversity-equity-and-inclusion" class="level2">
-<h2 class="anchored" data-anchor-id="diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</h2>
-<p>The LTER Network and NCEAS are committed to improving diversity and inclusion in science. For the LTER Network Office’s diversity, equity and inclusion resources see <a href="https://lternet.edu/network-organization/diversity-resources/">here</a>. For more information on NCEAS’ commitment to this mission–and related links–please visit NCEAS’ <a href="https://www.nceas.ucsb.edu/DEIJ">DEIJ page</a>.</p>
+<section id="content-creation" class="level3">
+<h3 class="anchored" data-anchor-id="content-creation">Content Creation</h3>
+<p>We want to use as light a touch as possible here to make sure that groups feel empowered to make their Shared Drive whatever they need it to be but there are a few things we can do.</p>
+<ol type="1">
+<li>Make a “Data” folder</li>
+<li>Add a <a href="https://docs.google.com/spreadsheets/d/1WOH_EPUF0XL9qutkLgia--YANieXFFX8Goic8LGcVgI/edit#gid=0">data log template GoogleSheet</a> to the Data folder</li>
+</ol>
+<p>In the past we have also added a <a href="https://docs.google.com/document/d/1q6ajgYjvfiaPH2PFsbybOxCWP5JX64nRMRMc7ABzagc/edit#heading=h.kyp2vjxt438v">README GoogleDoc</a> but it is unclear to what extent this is used by groups. We may want to look into whether this is useful and–if not–how we can improve it.</p>
 </section>
-<section id="visiting-santa-barbara" class="level2">
-<h2 class="anchored" data-anchor-id="visiting-santa-barbara">Visiting Santa Barbara</h2>
-<p>When your group is visiting at NCEAS’ office in beautiful Santa Barbara there are additional resources available to your group and opportunities for recreation and bonding as a team! Check out NCEAS’ <a href="https://nceaswelcome.weebly.com/computing.html">general computing resources page</a> for a quick rundown of some resources available only in Santa Barbara (including how to get on the WiFi!).</p>
-<p>We very much recommend taking an afternoon or morning on one of the days of your visit to get out and explore Santa Barbara! NCEAS’ <a href="https://nceaswelcome.weebly.com/life-in-sb.html">page for things to do in SB</a> for new employees might prove to be a helpful resource for you and your group as you’re deciding where to eat and what to do!</p>
+</section>
+<section id="github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="github-repository">GitHub Repository</h2>
+<p>We encourage all groups to engage with GitHub for–at minimum–storing their final code products. We have found that creating a GitHub repository at this stage tends to increase adoption of GitHub and is therefore very much worthwhile even if no group members use it at the time that their group gets funded.</p>
+<section id="initialize-repository" class="level3">
+<h3 class="anchored" data-anchor-id="initialize-repository">Initialize Repository</h3>
+<p>Make a repository in the <a href="https://github.com/lter">LTER GitHub Organization</a> with the following information:</p>
+<ol type="1">
+<li>Create a name that fits one of the following naming conventions
+<ul>
+<li>For full working groups (3-4 meetings): “lterwg-<code>abbreviated-group-name</code>”</li>
+<li>For SPARC groups (1 meeting): “lter-sparc-<code>abbreviated-group-name</code>”</li>
+</ul></li>
+<li>Set the “Description” to the title of the working group
+<ul>
+<li>As indicated on <a href="https://lternet.edu/current-working-groups/">the LTER Network Office website</a></li>
+</ul></li>
+<li>Add a README</li>
+<li>Create a <code>.gitignore</code> <u>using the R template</u>
+<ul>
+<li>R is the most common working group language and the <code>.gitignore</code> is easily changed in the event the group is primarily using a different language</li>
+</ul></li>
+</ol>
+</section>
+<section id="edit-readme" class="level3">
+<h3 class="anchored" data-anchor-id="edit-readme">Edit README</h3>
+<p>Edit the default README with the following content:</p>
+<ul>
+<li>Make a top level markdown heading (i.e., one <code>#</code>) with the title of the group</li>
+<li>Make a second level markdown heading (<code>##</code>) called “Project Summary”
+<ul>
+<li>Include a link to the group-specific page on <a href="https://lternet.edu/current-working-groups/">the LTER Network Office website</a></li>
+</ul></li>
+<li>Make a second level markdown heading called “Supplementary Resources”
+<ul>
+<li>Add a link to <a href="https://nceas.github.io/scicomp.github.io/">the home page</a> of the NCEAS Scientific Computing team (i.e., the home page of <em>this</em> website!)</li>
+</ul></li>
+</ul>
+<p>Note that you can make these edits directly from GitHub so you don’t need to worry about cloning at this stage!</p>
+</section>
+<section id="edit-.gitignore" class="level3">
+<h3 class="anchored" data-anchor-id="edit-.gitignore">Edit <code>.gitignore</code></h3>
+<p>If you used the R template then this is basically ready to go but we can make two small edits that are convenient for many groups (and easily undone for those groups that decide to do so).</p>
+<ol type="1">
+<li>Add <code>.DS_Store</code></li>
+</ol>
+<p>This file type (short for “Desktop Services Store”) is created by the Apple macOS operating system that stores visual information (e.g., icon positions, view options, etc.). In other words, it is a file that is completely irrelevant to reproducibility in a coding context and there will be one in <em>every</em> folder for Mac users. By ignoring it when we create the GitHub repository we can guarantee that no group members accidentally commit these useless (in this context) files and in so doing add clutter to their repository.</p>
+<ol start="2" type="1">
+<li>Add a wildcard <code>*.Rproj</code></li>
+</ol>
+<p>There is some debate about whether to ignore the .Rproj (see <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/git_ignore.html#should-you-ignore-the-.rproj-file">our summary of this discussion</a> from our GitHub workshop materials) but for working groups <em>the default position is that we should ignore it</em>. There are two reasons to do this. <strong>First</strong>, working group members may change the name of the project on their local computer and then commit their uniquely-named .Rproj file. Taken to an extreme this means that there may be one .Rproj / user which can be confusing to some users and is not (in our opinion) very aesthetically pleasing. <strong>Second</strong> if groups commit a .Rproj and then later delete it, anyone who pulls that change will delete their cloned repository automatically (similar to a snake eating its own tail). By ignoring the .Rproj from the outset we can avoid this possisbility entirely.</p>
+</section>
+</section>
+<section id="nceas-server" class="level2">
+<h2 class="anchored" data-anchor-id="nceas-server">NCEAS’ Server</h2>
+<p>Some groups wind up doing computationally-intense work (e.g., machine learning, spatial data wrangling, etc.). Such groups often find it useful to get set up on NCEAS’ server “Aurora” to leverage the greater computing power to do these heavy operations relatively quickly. However, because adoption/need for this is somewhat mixed we <em>do not</em> recommend creating a server group for every group before they request one.</p>
+<p>Instead, gage group interest and need and when it becomes relevant we can do the setup steps listed below. Note that we have a nice <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/server.html">group-facing server tutorial</a> in our GitHub workshop materials.</p>
+<ol type="1">
+<li>Reach out to Thomas Hetmank / Nick Outin to get a group made on the server for this working group</li>
+<li>Make sure that NCEAS Scientific Computing team staff are added as members</li>
+<li>Make a folder in the “shares” folder for this group</li>
+<li>Gather emails from all interested working group members and get them added to the Aurora group</li>
+</ol>
+</section>
+<section id="google-group" class="level2">
+<h2 class="anchored" data-anchor-id="google-group">Google Group</h2>
+<p>There is ongoing discussion within the larger NCEAS administration that this task may become something handled by NCEAS’ IT team so we will leave out our setup instructions at this time.</p>
 
 
 </section>
