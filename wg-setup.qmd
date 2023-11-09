@@ -46,7 +46,7 @@ In the past we have also added a [README GoogleDoc](https://docs.google.com/docu
 
 ## GitHub Repository
 
-We encourage all groups to engage with GitHub for--at minimum--storing their final code products. We have found that creating a GitHub repository at this stage tends to increase adoption of GitHub and is therefor very much worthwhile even if no group members use it at the time that their group gets funded.
+We encourage all groups to engage with GitHub for--at minimum--storing their final code products. We have found that creating a GitHub repository at this stage tends to increase adoption of GitHub and is therefore very much worthwhile even if no group members use it at the time that their group gets funded.
 
 ### Initialize Repository
 
@@ -56,7 +56,7 @@ Make a repository in the [LTER GitHub Organization](https://github.com/lter) wit
     - For full working groups (3-4 meetings): "lterwg-`abbreviated-group-name`"
     - For SPARC groups (1 meeting): "lter-sparc-`abbreviated-group-name`"
 2. Set the "Description" to the title of the working group
-    - As indicated on [the LTER Network Office website]](https://lternet.edu/current-working-groups/)
+    - As indicated on [the LTER Network Office website](https://lternet.edu/current-working-groups/)
 3. Add a README
 4. Create a `.gitignore` <u>using the R template</u>
     - R is the most common working group language and the `.gitignore` is easily changed in the event the group is primarily using a different language
