@@ -39,11 +39,13 @@ website:
         menu:
           - text: "People"
             href: staff.qmd
-          - text: "Internal Onboarding"
-            href: team-onboarding.qmd
           - text: "Data Acquisition"
             href: data-acquisition.qmd
-          - text: "Deploy Shiny Apps"
+          - text: "Internal - Team Onboarding"
+            href: team-onboarding.qmd
+          - text: "Internal - Group Setup"
+            href: wg-setup.qmd
+          - text: "Internal - Deploy Shiny Apps"
             href: shiny-server.qmd
     right:
       - icon: github
