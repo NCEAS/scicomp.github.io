@@ -1,1 +1,1 @@
-Sitemap: https://github.com/NCEAS/scicomp.github.io/sitemap.xml
+Sitemap: https://NCEAS.github.io/scicomp.github.io/sitemap.xml
