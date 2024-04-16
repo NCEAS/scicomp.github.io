@@ -177,7 +177,7 @@ git config --global credential.helper 'cache --timeout=10000000'
 
 The `timeout` bit of that argument is the amount of time in minutes you want your token to be remembered. You can't set it to remember your token forever so 10 million minutes (just over 19 years) should be long enough that you don't need to worry about this again.
 
-## Accessing Data
+## Uploading Data
 
 ### Via RStudio
 
