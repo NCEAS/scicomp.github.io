@@ -8,6 +8,10 @@ Some of the content that we produce is not as detailed as our full workshops but
 
 {{< include /tutorial-scaffold_googledrive-auth.qmd >}}
 
+## Using the `jsonlite` R Package
+
+{{< include /tutorial-scaffold_jsonlite.qmd >}}
+
 ## Building a Website with Quarto
 
 {{< include /tutorial-scaffold_quarto-website.qmd >}}
