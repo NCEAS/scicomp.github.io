@@ -264,6 +264,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#create-necessary-sub-folders-in-the-code-with-dir.create" id="toc-create-necessary-sub-folders-in-the-code-with-dir.create" class="nav-link" data-scroll-target="#create-necessary-sub-folders-in-the-code-with-dir.create">2. Create Necessary Sub-Folders in the Code with <code>dir.create</code></a></li>
   <li><a href="#file-paths-summary" id="toc-file-paths-summary" class="nav-link" data-scroll-target="#file-paths-summary">File Paths Summary</a></li>
   </ul></li>
+  <li><a href="#good-naming-conventions" id="toc-good-naming-conventions" class="nav-link" data-scroll-target="#good-naming-conventions">Good Naming Conventions</a></li>
   <li><a href="#package-loading" id="toc-package-loading" class="nav-link" data-scroll-target="#package-loading">Package Loading</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/NCEAS/scicomptasks/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -363,10 +364,31 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="file-paths-summary" class="level3">
 <h3 class="anchored" data-anchor-id="file-paths-summary">File Paths Summary</h3>
 <p>We strongly recommend following these guidelines so that your scripts work regardless of (1) the operating system, (2) folders “upstream” of the working directory, and (3) folders within the project. This will help your code by flexible and reproducible when others are attempting to re-run your scripts!</p>
+<p>Also, for more information on how to read files in cloud storage locations such as Google Drive, Box, Dropbox, etc., please refer to our <a href="https://nceas.github.io/scicomp.github.io/tutorials.html">Other Tutorials</a>.</p>
 <p align="center">
 <img src="images/lter-photos/penguins.jpg" width="100%">
 </p>
 </section>
+</section>
+<section id="good-naming-conventions" class="level2">
+<h2 class="anchored" data-anchor-id="good-naming-conventions">Good Naming Conventions</h2>
+<p>When you first start working on a project with your group members, figuring out what to name your folders/files may not be at the top of your priority list. However, following a good naming convention will allow team members to quickly locate files and figure out what they contain. The organized naming structure will also allow new members of the group to be onboarded more easily!</p>
+<p>Here is a summary of some naming tips that we recommend. These were taken from the <a href="https://lter.github.io/ssecr/mod_reproducibility.html#naming-tips">Reproducibility Best Practices module</a> in the LTER’s SSECR course. Please feel free to refer to the aforementioned link for more information.</p>
+<ul>
+<li>Names should be informative
+<ul>
+<li>An ideal file name should give some information about the file’s contents, purpose, and relation to other project files.</li>
+<li>For example, if you have a bunch of scripts that need to be run in order, consider adding step numbers to the start of each file name (e.g., “01_harmonize_data.R” or “step01_harmonize_data.R”).</li>
+</ul></li>
+<li>Names should avoid spaces and special characters
+<ul>
+<li>Spaces and special characters (e.g., é, ü, etc.) in folder/file names may cause errors when someone with a Windows computer tries to read those file paths. You can replace spaces with delimiters like underscores or hyphens to increase machine readability.</li>
+</ul></li>
+<li>Follow a consistent naming convention throughout!
+<ul>
+<li>If you and your group members find a naming convention that works, stick with it! Having a consistent naming convention is key to getting new collaborators to follow it.</li>
+</ul></li>
+</ul>
 </section>
 <section id="package-loading" class="level2">
 <h2 class="anchored" data-anchor-id="package-loading">Package Loading</h2>
