@@ -30,6 +30,10 @@ Check the headings below or in the table of contents on the right of this page t
 <img src="images/lter-photos/penguins.jpg" width="100%"/>
 </p>
 
+## Good Naming Conventions
+
+{{< include /modules_best-practices/naming-conventions.qmd >}}
+
 ## Package Loading
 
 {{< include /modules_best-practices/pkg-loading.qmd >}}
