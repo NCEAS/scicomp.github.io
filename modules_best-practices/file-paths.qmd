@@ -39,3 +39,5 @@ The `showWarnings` argument of `dir.create` simply warns you if the folder you'r
 ### File Paths Summary
 
 We strongly recommend following these guidelines so that your scripts work regardless of (1) the operating system, (2) folders "upstream" of the working directory, and (3) folders within the project. This will help your code by flexible and reproducible when others are attempting to re-run your scripts!
+
+Also, for more information on how to read files in cloud storage locations such as Google Drive, Box, Dropbox, etc., please refer to our [Other Tutorials](https://nceas.github.io/scicomp.github.io/tutorials.html).
