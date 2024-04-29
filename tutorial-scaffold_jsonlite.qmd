@@ -1,4 +1,6 @@
-The above section shows how R users can access their data stored on Google Drive, but how about other types of cloud storage like Box or Dropbox? If your data or your team's data is synced to the cloud through those tools, we recommend that all group members store relevant file paths in a JSON file. Then you can read those file paths using the [`jsonlite` R package](https://cran.r-project.org/web/packages/jsonlite/index.html)!
+The above section shows how R users can access their data stored on Google Drive, but how about other types of cloud storage like Box or Dropbox? If your data or your team's data is synced to the cloud through those tools, we recommend that all group members store relevant file paths in their own respective JSON file. Then everyone can read those file paths using the [`jsonlite` R package](https://cran.r-project.org/web/packages/jsonlite/index.html)! 
+
+The main advantage of this method is that you and your group members do not have to manually change the file paths in each script whenever a different person runs it!
 
 ### Prerequisites
 
@@ -61,7 +63,7 @@ install.packages("jsonlite")
 
 ### Access your files in cloud storage
 
-Now whenever you want to access the files for your group, you can load `jsonlite` and run its `read_json()` function:
+Now whenever you want to access the files for your group, you can load `jsonlite` and run its `read_json()` function. If your path was not saved as `data_path` then in the code below, make sure to replace `data_path` with the actual name.
 
 ```{r read-json-1, eval = F}
 # Load jsonlite
