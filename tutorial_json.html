@@ -76,6 +76,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -250,11 +252,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#copy-the-desired-file-paths" id="toc-copy-the-desired-file-paths" class="nav-link" data-scroll-target="#copy-the-desired-file-paths">Copy the desired file paths</a></li>
-  <li><a href="#create-the-json-file" id="toc-create-the-json-file" class="nav-link" data-scroll-target="#create-the-json-file">Create the JSON file</a></li>
-  <li><a href="#put-the-json-file-in-gitignore" id="toc-put-the-json-file-in-gitignore" class="nav-link" data-scroll-target="#put-the-json-file-in-gitignore">Put the JSON file in <code>gitignore</code></a></li>
-  <li><a href="#install-jsonlite" id="toc-install-jsonlite" class="nav-link" data-scroll-target="#install-jsonlite">Install <code>jsonlite</code></a></li>
-  <li><a href="#access-your-files-in-cloud-storage" id="toc-access-your-files-in-cloud-storage" class="nav-link" data-scroll-target="#access-your-files-in-cloud-storage">Access your files in cloud storage</a></li>
+  <li><a href="#create-the-json" id="toc-create-the-json" class="nav-link" data-scroll-target="#create-the-json">1. Create the JSON</a></li>
+  <li><a href="#save-the-json-with-a-consistent-name" id="toc-save-the-json-with-a-consistent-name" class="nav-link" data-scroll-target="#save-the-json-with-a-consistent-name">2. Save the JSON with a Consistent Name</a></li>
+  <li><a href="#tell-git-to-ignore-the-json" id="toc-tell-git-to-ignore-the-json" class="nav-link" data-scroll-target="#tell-git-to-ignore-the-json">3. Tell Git to Ignore the JSON</a></li>
+  <li><a href="#benefit-from-the-json" id="toc-benefit-from-the-json" class="nav-link" data-scroll-target="#benefit-from-the-json">4. Benefit from the JSON!</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/NCEAS/scicomptasks/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -266,75 +267,68 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 
 
-<p>The above section shows how R users can access their data stored on Google Drive, but how about other types of cloud storage like Box or Dropbox? If your data or your team’s data is synced to the cloud through those tools, we recommend that all group members store relevant file paths in their own respective JSON file. Then everyone can read those file paths using the <a href="https://cran.r-project.org/web/packages/jsonlite/index.html"><code>jsonlite</code> R package</a>!</p>
-<p>The main advantage of this method is that you and your group members do not have to manually change the file paths in each script whenever a different person runs it!</p>
+<p>Working groups sometimes need to handle user-specific information in their code. For example, if your group stores your data in the cloud (e.g., in Box, in Dropbox, etc.) each user will have a different “absolute file path” to the synced version of the data folder on their personal computer. Similarly, groups may find it valuable to use their email address in the code. While you <em>could</em> simply have each group member add their information (file path, email, etc.) and comment out all but one of them when you work in that script, there is a better option: user-specific JSON files!</p>
+<p>The main advantage of this method is that you and your group members <u>do not have to manually change <em>any user-specific information</em> in scripts</u> just because a different person runs them!</p>
 <section id="prerequisites" class="level3">
 <h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
 <p>To follow along with this tutorial you will need to take the following steps:</p>
 <ul>
-<li><p><a href="https://cran.r-project.org/">Download R</a></p></li>
-<li><p><a href="https://www.rstudio.com/products/rstudio/download/">Download RStudio</a></p></li>
-<li><p>Make sure you have access to your cloud storage files on your local machine</p></li>
+<li>Download <a href="https://cran.r-project.org/">R</a></li>
+<li>Download <a href="https://posit.co/downloads/">RStudio</a></li>
+<li>Install the <code>jsonlite</code> R package</li>
 </ul>
 <p>Feel free to skip any steps that you have already completed!</p>
 </section>
-<section id="copy-the-desired-file-paths" class="level3">
-<h3 class="anchored" data-anchor-id="copy-the-desired-file-paths">Copy the desired file paths</h3>
-<p>First, navigate to the folder(s) that contain the files that you and your team most frequently need to access. Copy the absolute path to each needed folder. On Mac, you can right-click and then “Copy … as Pathname” (see below).</p>
-<p align="center">
-<img src="images/tutorial_jsonlite/jsonlite-1.png" width="90%">
-</p>
-<p>If you have multiple paths, feel free to paste them into an empty text file for now.</p>
-</section>
-<section id="create-the-json-file" class="level3">
-<h3 class="anchored" data-anchor-id="create-the-json-file">Create the JSON file</h3>
-<p>Once you have the absolute file paths, open RStudio to the main working directory for your project. At the top left corner, click on File -&gt; New File -&gt; Text File.</p>
-<p>Type the following lines into the file, except replace <code>YOUR_ABSOLUTE_PATH</code> with your path. Keep the quotation marks around the path.</p>
+<section id="create-the-json" class="level3">
+<h3 class="anchored" data-anchor-id="create-the-json">1. Create the JSON</h3>
+<p>First, you’ll need to use RStudio to create your JSON file by creating a new text file (in the top left of RStudio click “File” <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> “New File” <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> “Text File”). In the new text file, add content that looks like this:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="st">"data_path"</span><span class="sc">:</span><span class="st">"YOUR_ABSOLUTE_PATH"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"email"</span><span class="sc">:</span><span class="st">"my_email@gmail.com"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"dropbox_path"</span><span class="sc">:</span><span class="st">"path/to/dropbox-sync/for/me"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>You can customize the name of this path but make sure everyone in your team have the same name(s)! For example, if <code>data_path</code> refers to the folder containing all of the data for the group, then everyone should have a <code>data_path</code> in their own respective JSON file pointing to the same data folder. The absolute file path will be unique for each person, though.</p>
-<p>If you have multiple paths, you can save them like so:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="st">"raw_data_path"</span><span class="sc">:</span><span class="st">"YOUR_ABSOLUTE_PATH"</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="st">"tidy_data_path"</span><span class="sc">:</span><span class="st">"YOUR_ABSOLUTE_PATH"</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Save this file as <code>paths.json</code> in your main working directory.</p>
+<p>Replace the content on the <em>right</em> of the colon with your actual information. If desired, you can add as many other pieces of user-specific information as you’d like! Simply follow the <code>"info name":"info content"</code> format and make sure that each piece of information is on its own line.</p>
+<p>One small note here for when you work with your group: <u>all group members need to use <em>exactly the same name</em> to the left of each colon</u>.</p>
+<p>You’ll see later when we show an example of this but you can think of the information on the left of the colon as comparable with a column name. It doesn’t matter that the text in the “rows” will differ between users as long as the script has a consistent “column” in which to look for that text.</p>
 </section>
-<section id="put-the-json-file-in-gitignore" class="level3">
-<h3 class="anchored" data-anchor-id="put-the-json-file-in-gitignore">Put the JSON file in <code>gitignore</code></h3>
-<p>Navigate to the <code>gitignore</code> file of your project and list <code>paths.json</code> as one of the files to ignore. We don’t want to push this file to GitHub since everyone’s own <code>paths.json</code> will look different and you wouldn’t want to accidentally overwrite your teammate’s custom absolute path!</p>
+<section id="save-the-json-with-a-consistent-name" class="level3">
+<h3 class="anchored" data-anchor-id="save-the-json-with-a-consistent-name">2. Save the JSON with a Consistent Name</h3>
+<p>This may seem self-evident but <u>all group members need to use the same file name for this new JSON file</u>. We recommend <code>user.json</code> if you are undecided. This will let scripts that refer to the JSON use the same file name regardless of which user is running the code (same spirit as using consistent names for each piece of information in the file.)</p>
 </section>
-<section id="install-jsonlite" class="level3">
-<h3 class="anchored" data-anchor-id="install-jsonlite">Install <code>jsonlite</code></h3>
-<p>If you don’t have <code>jsonlite</code> already, install it with:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"jsonlite"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<section id="tell-git-to-ignore-the-json" class="level3">
+<h3 class="anchored" data-anchor-id="tell-git-to-ignore-the-json">3. Tell Git to Ignore the JSON</h3>
+<p>If you’re using version control for your project (which we strongly recommend!), you’ll want Git to ignore the fact that this file differs for each user. Navigate to the <code>.gitignore</code> file of your project and put in the name of your JSON file as one of the files to ignore. We don’t want to push the JSON to GitHub since each person’s file will look different (that is our intent after all) and you wouldn’t want to accidentally overwrite your teammate’s user-specific information or cause a merge conflict.</p>
+<p>For a deeper dive into the <code>.gitignore</code> check out <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/git_ignore.html">that module</a> of our “Collaborative Coding with GitHub” workshop!</p>
 </section>
-<section id="access-your-files-in-cloud-storage" class="level3">
-<h3 class="anchored" data-anchor-id="access-your-files-in-cloud-storage">Access your files in cloud storage</h3>
-<p>Now whenever you want to access the files for your group, you can load <code>jsonlite</code> and run its <code>read_json()</code> function. If your path was not saved as <code>data_path</code> then in the code below, make sure to replace <code>data_path</code> with the actual name.</p>
+<section id="benefit-from-the-json" class="level3">
+<h3 class="anchored" data-anchor-id="benefit-from-the-json">4. Benefit from the JSON!</h3>
+<p>If you’ve made it through the preceding steps, you can now use the information you stored in the JSON file. You’ll need to use the <code>jsonlite</code> R package to read in your file but once you’ve done that, you can access the information inside of it in classic R fashion.</p>
+<p>See an example below:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load jsonlite</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"jsonlite"</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the path to your files</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>path_to_data <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">read_json</span>(<span class="st">"paths.json"</span>)<span class="sc">$</span>data_path</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed library</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the JSON file</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>user_info <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">read_json</span>(<span class="st">"user.json"</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Grab the file path out of it</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>dropbox <span class="ot">&lt;-</span> user_info<span class="sc">$</span>dropbox_path</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Use it as you would any other file path</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">file.path</span>(dropbox, <span class="st">"2024_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>And <code>path_to_data</code> will contain the path to the folder where all your relevant files live!</p>
-<p>If you combine this path with the <a href="https://nceas.github.io/scicomp.github.io/best_practices.html#preserve-file-paths-as-objects-using-file.path"><code>file.path()</code> function</a> then you’ll have a powerful, flexible tool for managing file paths!</p>
-<p>For example, if <code>example.csv</code> lives in the folder that <code>path_to_data</code> points to, then you <strong>and your team members</strong> can read <code>example.csv</code> like so:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the csv reproducibly</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>example <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">file.path</span>(path_to_data, <span class="st">"example.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>Now everyone in your group can use the same script because their personal file paths are readily accessible without needing to be hard-coded! The same theory applies to any other piece of information your group finds it valuable to store in the JSON.</p>
+<section id="help-with-absolute-file-paths" class="level4">
+<h4 class="anchored" data-anchor-id="help-with-absolute-file-paths">Help with Absolute File Paths</h4>
+<p>Identifying and manually writing out an absolute file path can be cumbersome so we’ve found a nice work-around (at least for Mac users) that you may find useful. First, in Finder, navigate to the last folder in the file path you’d like to preserve. In the row of folder names in the bottom of the Finder window, right-click the folder name and select “Copy ‘&lt;folder name&gt;’ as Pathname”.</p>
+<p>Once you’ve done that, you can simply paste the file path into your JSON file.</p>
+<p align="center">
+<img src="images/tutorial_jsonlite/jsonlite-1.png" width="75%">
+</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
