@@ -1,16 +1,14 @@
-The above section shows how R users can access their data stored on Google Drive, but how about other types of cloud storage like Box or Dropbox? If your data or your team's data is synced to the cloud through those tools, we recommend that all group members store relevant file paths in their own respective JSON file. Then everyone can read those file paths using the [`jsonlite` R package](https://cran.r-project.org/web/packages/jsonlite/index.html)! 
+Working groups sometimes need to handle user-specific information in their code. For example, if your group stores your data in the cloud (e.g., in Box, in Dropbox, etc.) each user will have a different "absolute file path" to the synced version of the data folder on their personal computer. Similarly, groups may find it valuable to use their email address in the code. While you _could_ simply have each group member add their information (file path, email, etc.) and comment out all but one of them when you work in that script, there is a better option: user-specific JSON files!
 
-The main advantage of this method is that you and your group members do not have to manually change the file paths in each script whenever a different person runs it!
+The main advantage of this method is that you and your group members <u>do not have to manually change _any user-specific information_ in scripts</u> just because a different person runs them!
 
 ### Prerequisites
 
 To follow along with this tutorial you will need to take the following steps:
 
 - [Download R](https://cran.r-project.org/)
-
 - [Download RStudio](https://www.rstudio.com/products/rstudio/download/)
-
-- Make sure you have access to your cloud storage files on your local machine
+- Install the `jsonlite` R package
 
 Feel free to skip any steps that you have already completed!
 
