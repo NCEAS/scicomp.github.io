@@ -6,10 +6,8 @@ Because this package requires access to an R user's GoogleDrive, you must "authe
 
 To follow along with this tutorial you will need to take the following steps:
 
-- [Download R](https://cran.r-project.org/)
-
-- [Download RStudio](https://www.rstudio.com/products/rstudio/download/)
-
+- Download [R](https://cran.r-project.org/)
+- Download [RStudio](https://posit.co/downloads/)
 - Create a Gmail account
 
 Feel free to skip any steps that you have already completed!
