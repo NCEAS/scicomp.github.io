@@ -5,17 +5,8 @@
 
 To follow along with this tutorial you will need to take the following steps:
 
-- [Download R](https://cran.r-project.org/)
-
-- [Download RStudio](https://www.rstudio.com/products/rstudio/download/)
-
+- Do all of the [pre-workshop steps](https://nceas.github.io/scicomp-workshop-collaborative-coding/#workshop-preparation) relevant to our "Collaborative Coding with GitHub" workshop
 - [Download Quarto](https://quarto.org/docs/get-started/)
-
-- [Install `git`](https://happygitwithr.com/install-git.html)
-
-- [Create a GitHub Account](https://github.com/)
-
-- [Connect `git` to GitHub](https://njlyon0.github.io/asm-2022_github-workshop/setup.html#connecting-programs)
 
 Feel free to skip any steps that you have already completed!
 
