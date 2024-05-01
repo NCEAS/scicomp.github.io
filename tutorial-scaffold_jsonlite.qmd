@@ -6,8 +6,8 @@ The main advantage of this method is that you and your group members <u>do not h
 
 To follow along with this tutorial you will need to take the following steps:
 
-- [Download R](https://cran.r-project.org/)
-- [Download RStudio](https://www.rstudio.com/products/rstudio/download/)
+- Download [R](https://cran.r-project.org/)
+- Download [RStudio](https://posit.co/downloads/)
 - Install the `jsonlite` R package
 
 Feel free to skip any steps that you have already completed!
@@ -46,6 +46,7 @@ For a deeper dive into the `.gitignore` check out [that module](https://nceas.gi
 If you've made it through the preceding steps, you can now use the information you stored in the JSON file. You'll need to use the `jsonlite` R package to read in your file but once you've done that, you can access the information inside of it in classic R fashion.
 
 See an example below:
+
 ```{r read-json}
 #| eval: false
 
@@ -73,73 +74,3 @@ Once you've done that, you can simply paste the file path into your JSON file.
 <p align="center">
 <img src="images/tutorial_jsonlite/jsonlite-1.png" width = "75%" />
 </p>
-
-----
-
-### Put the JSON file in `gitignore`
-
-
-
-### Install `jsonlite`
-
-If you don't have `jsonlite` already, install it with:
-
-```{r install-json, eval = F}
-install.packages("jsonlite")
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-
-
-
-
-
-### Copy the desired file paths
-
-First, navigate to the folder(s) that contain the files that you and your team most frequently need to access. Copy the absolute path to each needed folder. On Mac, you can right-click and then "Copy ... as Pathname" (see below).
-
-<p align="center">
-<img src="images/tutorial_jsonlite/jsonlite-1.png" width = "90%" />
-</p>
-
-If you have multiple paths, feel free to paste them into an empty text file for now.
-
-
-### Access your files in cloud storage
-
-Now whenever you want to access the files for your group, you can load `jsonlite` and run its `read_json()` function. If your path was not saved as `data_path` then in the code below, make sure to replace `data_path` with the actual name.
-
-```{r read-json-1, eval = F}
-# Load jsonlite
-library("jsonlite")
-
-# Get the path to your files
-path_to_data <- jsonlite::read_json("paths.json")$data_path
-```
-
-And `path_to_data` will contain the path to the folder where all your relevant files live! 
-
-If you combine this path with the [`file.path()` function](https://nceas.github.io/scicomp.github.io/best_practices.html#preserve-file-paths-as-objects-using-file.path) then you'll have a powerful, flexible tool for managing file paths!
-
-For example, if `example.csv` lives in the folder that `path_to_data` points to, then you **and your team members** can read `example.csv` like so:
-
-```{r read-json-2, eval = F}
-# Read the csv reproducibly
-example <- read.csv(file = file.path(path_to_data, "example.csv"))
-```
