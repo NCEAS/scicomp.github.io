@@ -12,17 +12,26 @@ To follow along with this tutorial you will need to take the following steps:
 
 Feel free to skip any steps that you have already completed!
 
-### Copy the desired file paths
+### 1. Create the JSON file
 
-First, navigate to the folder(s) that contain the files that you and your team most frequently need to access. Copy the absolute path to each needed folder. On Mac, you can right-click and then "Copy ... as Pathname" (see below).
+First, you'll need to use RStudio to create your JSON file by creating a new text file (in the top left of RStudio click "File" {{< fa arrow-right >}} "New File" {{< fa arrow-right >}} "Text File"). In the new text file, add content that looks like this:
 
-<p align="center">
-<img src="images/tutorial_jsonlite/jsonlite-1.png" width = "90%" />
-</p>
+```{r create-json}
+#| eval: false
 
-If you have multiple paths, feel free to paste them into an empty text file for now.
+{
+  "email":"my_email@gmail.com"
+  "dropbox_path":"path/to/dropbox-sync/for/me"
+}
+```
 
-### Create the JSON file
+Replace the content on the _right_ of the colon with your actual information. If desired, you can add as many other pieces of user-specific information as you'd like! Simply follow the `"info name":"info content"` format and make sure that each piece of information is on its own line.
+
+One small note here for when you work with your group: <u>all group members need to use _exactly the same name_ to the left of each colon</u>.
+
+You'll see later when we show an example of this but you can think of the information on the left of the colon as comparable with a column name. It doesn't matter that the text in the "rows" will differ between users as long as the script has a consistent "column" in which to look for that text.
+
+----
 
 Once you have the absolute file paths, open RStudio to the main working directory for your project. At the top left corner, click on File -> New File -> Text File. 
 
@@ -58,6 +67,39 @@ If you don't have `jsonlite` already, install it with:
 ```{r install-json, eval = F}
 install.packages("jsonlite")
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+### Copy the desired file paths
+
+First, navigate to the folder(s) that contain the files that you and your team most frequently need to access. Copy the absolute path to each needed folder. On Mac, you can right-click and then "Copy ... as Pathname" (see below).
+
+<p align="center">
+<img src="images/tutorial_jsonlite/jsonlite-1.png" width = "90%" />
+</p>
+
+If you have multiple paths, feel free to paste them into an empty text file for now.
+
 
 ### Access your files in cloud storage
 
