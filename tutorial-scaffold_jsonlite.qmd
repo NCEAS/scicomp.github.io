@@ -12,7 +12,7 @@ To follow along with this tutorial you will need to take the following steps:
 
 Feel free to skip any steps that you have already completed!
 
-### 1. Create the JSON file
+### 1. Create the JSON
 
 First, you'll need to use RStudio to create your JSON file by creating a new text file (in the top left of RStudio click "File" {{< fa arrow-right >}} "New File" {{< fa arrow-right >}} "Text File"). In the new text file, add content that looks like this:
 
@@ -31,34 +31,54 @@ One small note here for when you work with your group: <u>all group members need
 
 You'll see later when we show an example of this but you can think of the information on the left of the colon as comparable with a column name. It doesn't matter that the text in the "rows" will differ between users as long as the script has a consistent "column" in which to look for that text.
 
+### 2. Save the JSON with a Consistent Name
+
+This may seem self-evident but <u>all group members need to use the same file name for this new JSON file</u>. We recommend `user.json` if you are undecided. This will let scripts that refer to the JSON use the same file name regardless of which user is running the code (same spirit as using consistent names for each piece of information in the file.)
+
+### 3. Tell Git to Ignore the JSON
+
+If you're using version control for your project (which we strongly recommend!), you'll want Git to ignore the fact that this file differs for each user. Navigate to the `.gitignore` file of your project and put in the name of your JSON file as one of the files to ignore. We don't want to push the JSON to GitHub since each person's file will look different (that is our intent after all) and you wouldn't want to accidentally overwrite your teammate's user-specific information or cause a merge conflict.
+
+For a deeper dive into the `.gitignore` check out [that module](https://nceas.github.io/scicomp-workshop-collaborative-coding/git_ignore.html) of our "Collaborative Coding with GitHub" workshop!
+
+### 4. Benefit from the JSON!
+
+If you've made it through the preceding steps, you can now use the information you stored in the JSON file. You'll need to use the `jsonlite` R package to read in your file but once you've done that, you can access the information inside of it in classic R fashion.
+
+See an example below:
+```{r read-json}
+#| eval: false
+
+# Load needed library
+library(jsonlite)
+
+# Read in the JSON file
+user_info <- jsonlite::read_json("user.json")
+
+# Grab the file path out of it
+dropbox <- user_info$dropbox_path
+
+# Use it as you would any other file path
+my_data <- read.csv(file = file.path(dropbox, "2024_data.csv"))
+```
+
+Now everyone in your group can use the same script because their personal file paths are readily accessible without needing to be hard-coded! The same theory applies to any other piece of information your group finds it valuable to store in the JSON.
+
+#### Help with Absolute File Paths
+
+Identifying and manually writing out an absolute file path can be cumbersome so we've found a nice work-around (at least for Mac users) that you may find useful. First, in Finder, navigate to the last folder in the file path you'd like to preserve. In the row of folder names in the bottom of the Finder window, right-click the folder name and select "Copy '\<folder name\>' as Pathname".
+
+Once you've done that, you can simply paste the file path into your JSON file.
+
+<p align="center">
+<img src="images/tutorial_jsonlite/jsonlite-1.png" width = "75%" />
+</p>
+
 ----
-
-Once you have the absolute file paths, open RStudio to the main working directory for your project. At the top left corner, click on File -> New File -> Text File. 
-
-Type the following lines into the file, except replace `YOUR_ABSOLUTE_PATH` with your path. Keep the quotation marks around the path. 
-
-```{r create-json-1, eval = F}
-{
-"data_path":"YOUR_ABSOLUTE_PATH"
-}
-```
-
-You can customize the name of this path but make sure everyone in your team have the same name(s)! For example, if `data_path` refers to the folder containing all of the data for the group, then everyone should have a `data_path` in their own respective JSON file pointing to the same data folder. The absolute file path will be unique for each person, though. 
-
-If you have multiple paths, you can save them like so:
-
-```{r create-json-2, eval = F}
-{
-"raw_data_path":"YOUR_ABSOLUTE_PATH",
-"tidy_data_path":"YOUR_ABSOLUTE_PATH"
-}
-```
-
-Save this file as `paths.json` in your main working directory. 
 
 ### Put the JSON file in `gitignore`
 
-Navigate to the `gitignore` file of your project and list `paths.json` as one of the files to ignore. We don't want to push this file to GitHub since everyone's own `paths.json` will look different and you wouldn't want to accidentally overwrite your teammate's custom absolute path!
+
 
 ### Install `jsonlite`
 
