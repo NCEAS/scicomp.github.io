@@ -6,7 +6,7 @@ Some of the content that we produce is not as detailed as our full workshops but
 
 ## Storing User-Specific Information
 
-{{< include /tutorial-scaffold_jsonlite.qmd >}}
+{{< include /tutorial_json.qmd >}}
 
 ## Using the `googledrive` R Package
 
