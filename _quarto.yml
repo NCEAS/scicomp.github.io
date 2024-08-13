@@ -16,8 +16,6 @@ website:
   navbar:
     background: primary
     left:
-      - href: index.qmd
-        text: "Home"
       - text: "Working Group Onboarding"
         menu: 
           - href: onboard-scaffold_team_coding.qmd
