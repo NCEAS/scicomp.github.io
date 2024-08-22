@@ -2,6 +2,8 @@ project:
   type: website
   execute-dir: project
   output-dir: docs
+  render:
+    - index.qmd
   
 execute:
   freeze: auto
@@ -9,45 +11,15 @@ execute:
 website:
   title: "Scientific Computing Support"
   favicon: images/scicomptools_hex.png
-  repo-url: https://github.com/NCEAS/scicomptasks
+  repo-url: https://github.com/lter/scicomp
   repo-actions: [issue]
   twitter-card: true
   google-analytics: "G-YGFW2JT4EY"
   navbar:
     background: primary
-    left:
-      - text: "Working Group Onboarding"
-        menu: 
-          - href: onboard-scaffold_team_coding.qmd
-            text: "Team Coding"
-          - onboard-scaffold_services.qmd
-          - href: sci-comp-definition.qmd
-            text: "What is Scientific Computing?"
-          - onboard-scaffold_infrastructure.qmd
-          - onboard-scaffold_suggested-tools.qmd
-          - onboard-scaffold_other-materials.qmd
-      - text: "Trainings"
-        menu:
-         - workshops.qmd
-         - tutorial_server.qmd
-         - tutorials.qmd
-      - best_practices.qmd
-      - portfolio.qmd
-      - text: "Our Team"
-        menu:
-          - text: "People"
-            href: staff.qmd
-          - text: "Data Acquisition"
-            href: data-acquisition.qmd
-          - text: "Internal - Team Onboarding"
-            href: team-onboarding.qmd
-          - text: "Internal - Group Setup"
-            href: wg-setup.qmd
-          - text: "Internal - Deploy Shiny Apps"
-            href: shiny-server.qmd
     right:
       - icon: github
-        href: https://github.com/NCEAS/scicomptasks
+        href: https://github.com/lter/scicomp
   page-footer:
     center: "Copyright 2022, NCEAS"
     background: secondary
